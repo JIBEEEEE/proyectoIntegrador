@@ -1,6 +1,9 @@
 # proyectoIntegrador
+
 Tematica: Venta de muebles 
+
 Descripción: 
+
 Publico Objetivo: "Esta dirigido a cualquier persona que quiera decorar su casa de una forma única y diferente" 
 
 Integrantes del grupo:
