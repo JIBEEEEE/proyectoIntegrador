@@ -2,7 +2,7 @@
 
 Tematica: Venta de muebles 
 
-Descripción: 
+Descripción: Es un sitio web argentino dedicado a la comercialización de muebles para el hogar, Iniciamos nuestro camino con el propósito de mejorar la calidad de vida en los hogares de cada uno de nuestros clientes, buscando siempre un diseño único y personalizado que se trasladen a distintos rincones del país.
 
 Publico Objetivo: "Esta dirigido a cualquier persona que quiera decorar su casa de una forma única y diferente" 
 
