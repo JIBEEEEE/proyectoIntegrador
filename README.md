@@ -19,4 +19,4 @@ Soy Santiago Hernández, tengo 26 años. Vivo en Caballito, Capital Federal. Tra
 Soy Ezequiel Scoffoni, tengo 24 años. Vivo en Parque Avellaneda, Capital Federal. Actualmente trabajo como asesor financiero en un Banco. En mis tiempos libres me gusta juntarme/salir con amigos y familia.
 
 links referentes 
-https://decohouselomas.com.ar/ https://www.holacasa.com.ar/  https://www.thefutureperfect.com/ https://plinioilgiovane.com/ https://www.variopinte.com/
+ https://www.holacasa.com.ar/  https://www.thefutureperfect.com/ https://plinioilgiovane.com/ https://www.variopinte.com/
