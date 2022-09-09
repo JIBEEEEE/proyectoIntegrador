@@ -1,0 +1,23 @@
+{
+  "name": "proyectoIntegrador",
+  "version": "1.0.0",
+  "description": "Tematica: Venta de muebles",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JIBEEEEE/proyectoIntegrador.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JIBEEEEE/proyectoIntegrador/issues"
+  },
+  "homepage": "https://github.com/JIBEEEEE/proyectoIntegrador#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
