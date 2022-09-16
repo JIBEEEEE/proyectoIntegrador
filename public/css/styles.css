@@ -15,6 +15,7 @@
 
     border: solid 10px rgb(46, 18, 170);
     position: relative;
+   
 
 }
 
@@ -28,6 +29,7 @@
 
 .sillon-amarillo{
 
+ 
     width: 100%;
     border: solid 5px rgb(132, 187, 150);
 
@@ -35,11 +37,11 @@
 
 .primer-listado {
     position: absolute;
-    display: flex;
+    display: ;
       
 }
 
-.primer-listado li {
+.primer-listado a {
    
     display: flex;
     flex-direction: row;
@@ -47,8 +49,6 @@
 
    
 }
-
-
 
 
 
