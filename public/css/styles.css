@@ -15,10 +15,7 @@
 /*HEADER*/
 
 .parte-top{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10 10 0 10;
+    padding: 10px 10px 0 10px ;
     background-color: #eeec93;
 }
 
@@ -84,14 +81,14 @@
     margin-bottom: 20px;
     margin-right: 0%;
 }
-
+/*
 .espejo{
     align-items: center;
     align-content: center;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+*/
 
 .cuotas h6,
 .cuotas h4{
@@ -138,8 +135,9 @@
 }
 
 .productos{
-    display: flex;
-    max-width: 380px;
+    /*display: flex;
+    max-width: 380px;*/
+    text-align: center;
 }
 
 .productos img{
@@ -156,7 +154,7 @@
 
 .descripcion{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
 }
