@@ -62,6 +62,9 @@ footer{
 .main-menu-left, .main-menu-right {
     list-style: none;
 }
+.responsive-logo-icons {
+    display: none;
+}
 
 .menu-item {
     margin-left: 30px;
@@ -80,6 +83,7 @@ footer{
     
     
 }
+
 /* FIN DISEÑO HEADER */
 
 
@@ -432,10 +436,91 @@ footer{
     font-size: 12px;
 }
 
+/* MEDIA QUERIES  */
 
+@media (max-width: 480px) {
+    /* MEDIA QUERIES FOOTER Y HEADER */
+    .main-menu-left,.main-menu-right, .logo, .marca {
+        display: none;
+    }
 
+    .responsive-logo-icons {
+        border: solid red 1px;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        
+    }
+    .responsive-logo-icons h1 {
+        font-size: 20px;
+        position: relative;
+        right: 20px;
+        margin: 10px;
+        font-weight: bold;
+    }
+    .responsive-icons {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    .responsive-icons li {
+        padding: 10px;
+    }
+    .contenedores-footer {
+        flex-direction: column;
+        margin: 0;
+    }
+    .marca {
+        /* border: solid 1px red; */
+        padding: 15px;
+        width: 100%;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .list-footer {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+    }
+    .footer-item{
+    line-height: 20px;
 
+    }
+    .contenedores-footer {
+        /* border: yellow 2px solid; */
+        height: auto;
+    }
+    .list-footer-icons {
+        display: flex;
+        width: auto; 
+        
+    }
+    .footer-icon {
+        
+        width: 100%;
+        
+    }
+    /* MEDIA QUERIES MAIN LOGIN */
+    .formularios-main {
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    .formulario-login {
+        display: flex;
+        justify-content: space-around;
 
-
-
+}
+    .marca-registrada h1 {
+        font-size: 15px;
+    }
+}
