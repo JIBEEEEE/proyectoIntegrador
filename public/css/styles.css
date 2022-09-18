@@ -1,5 +1,15 @@
+/*
+.fotografia{
+    background-image: url(../images/sillon-amarillo.jpeg);
+    background-position: center center;
+    background-size: 100vh;
+}
+*/
+
+/*Global*/
 * {
     box-sizing: border-box;
+
     margin: 0;
 }
 body{
@@ -290,4 +300,142 @@ footer{
 }
 #iconos-beneficios {
     font-size: 50px;
+    font-family: sans-serif;
 }
+
+
+@keyframes aumentologo {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+.listado-top ul{
+    font-size: 10px;
+    display: flex;
+    justify-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+.listado-top li{
+    margin: 0 2px;
+    text-transform: none;
+    color: black;
+}
+
+.segunda-linea{
+    border-bottom: black 1px solid;
+    margin: auto;
+}
+
+.segunda-linea h5{
+    margin: 5px;
+    text-align: center;
+}
+
+/*Comienza MAIN*/
+
+
+
+.el-main nav{
+    margin-bottom: 20px;
+    margin-right: 0%;
+}
+/*
+.espejo{
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+*/
+
+.cuotas h6,
+.cuotas h4{
+    font-size: 10px;
+    text-align: center;
+    margin: 7px;
+    border-bottom: black 1px solid;
+    padding: 5px;
+}
+
+.productosdestacados p{
+    text-align: center;
+    margin: 7px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.fa-truck {
+    color: #3417b4;
+    border: solid 1px #3417b4;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 3px;
+    animation: aumentoventa 5s linear infinite alternate;
+}
+
+@keyframes aumentoventa {
+    0% {
+        transform: scale(0.5);
+        color: rgb(47, 121, 218);
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: scale(1);
+        color: rgb(70, 99, 228);
+        transform: rotate(180deg)
+    }
+    100%{
+        transform: scale(1.2);
+        color: #3417b4;
+        transform: rotate(360deg)
+    }
+}
+
+.productos{
+    /*display: flex;
+    max-width: 380px;*/
+    text-align: center;
+}
+
+.productos img{
+    border: solid 1px black;
+}
+
+.productos img{
+    width: 85vw;
+    height: 67vw;
+    max-width: 200px;
+    max-height: 180px;
+    margin: auto;
+}
+
+.descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.descripcion p{
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
