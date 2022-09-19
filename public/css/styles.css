@@ -644,22 +644,43 @@ footer{
 }
 
 .detalle2 {
-    border: solid 2px salmon;
-    display: flex;    
+    display: flex;  
+    border-bottom: solid 1px #d1d1d1e7;
 }
 
 .imagen-productos-similares {
     width: 50%;
 }
 
-.precio-producto2 {
-    display: flex;
+.descripcion2 {
+    margin: 50px 16px;
 }
 
 .titulo-reviews {
-    border: solid 2px green;
-    border-top: solid 1px #d1d1d1e7;
+    margin: 10px 0;
 }
+
+.reviews {
+    border: solid 2px salmon;
+    display: flex;
+}
+
+.fa-solid-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 100% green;
+}
+
+.descripcion-reviews {
+    font-size: 10px;
+    margin: 33px 8px;
+}
+ 
+
+
+
 
 
 
