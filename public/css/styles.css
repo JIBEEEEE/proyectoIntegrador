@@ -18,13 +18,13 @@ body{
 header {
     width: 100%;
     height: 20%;
-    border: solid 1px red;
+
     
 }
 main {
     width: 100%;
     height: 1200px;
-    border: solid 1px red;
+    
 }
 footer{
     width: 100%;
@@ -209,10 +209,20 @@ footer{
     align-items: center;
 
 }
-.titulo-formulario-login {
+.formulario-registrarse {
+    background-color: rgb(245, 245, 245);
+}
+
+.titulo-formulario-login, .titulo-formulario-registrarse {
     
     width: 60%;
     padding: 10px;
+
+}
+.titulo-formulario-registrarse {
+    font-size: 12px;
+    color: grey;
+    font-weight: lighter;
 
 }
 .titulo-formulario-login p{
@@ -220,12 +230,18 @@ footer{
     color: grey;
     font-weight: lighter;
 }
-.texto-titulo-login {
+.titulo-formulario-registrarse h2, .titulo-formulario-login h2 {
+    font-size: 30px;
+    line-height: 1em;
+    color: rgb(16, 2, 61);
+    font-weight: 1000;
+}
+.texto-titulo-login, .texto-titulo-registrarse {
     margin-left: 70px;
     line-height: 25px;
 }
 
-.login {
+.login, .registrarse {
     width: 60%;
     height: 60%;
     display: flex;
@@ -235,7 +251,10 @@ footer{
     
 
 }
-.botones-login {
+.botones-registrarse {
+    background-color: rgb(245, 245, 245);
+}
+.botones-login, .botones-registrarse {
     width: 280px;
     height: 50px;
     border:none;
@@ -243,7 +262,7 @@ footer{
     padding: 0px;
     margin: 7px;
 }
-.boton-ingresar {
+.boton-ingresar, .boton-registrar {
     width: 300px;
     height: 30px;
     position: relative;
@@ -285,10 +304,10 @@ footer{
     font-size: 20px;
 }
 
-.botones-login:focus{
+.botones-login:focus, .botones-registrarse:focus{
     outline: none;
 }
-.boton-ingresar:hover{
+.boton-ingresar:hover, .boton-registrar:hover{
     background-color: rgb(16, 2, 61);
 }
 .cartas-main{
@@ -297,14 +316,27 @@ footer{
 }
 .beneficios  {
     width: 100%;
-    border: red solid 2px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
-#iconos-beneficios {
+.beneficios i {
     font-size: 50px;
-    font-family: sans-serif;
+    position: relative;
+    bottom: 100px;
+    color: rgb(16, 2, 61);
+    
+}
+.beneficios h2 {
+    color: rgb(16, 2, 61);
+    font-weight: lighter;
+}
+.beneficios p {
+    position: relative;
+    color: gray;
+    top: 40px;
 }
 
 
@@ -516,13 +548,36 @@ footer{
         align-items: center;
 }
     .formulario-login {
+        border: red 1px solid;
+        width: 100%;
         display: flex;
         justify-content: space-around;
 
 }
+    .login {
+        border: yellow solid 2px;
+        width: 100%;
+    }
     .marca-registrada h1 {
         font-size: 15px;
     }
+} 
+
+.botones-login,
+.boton-ingresar,
+.label-email,
+.label-password,
+.titulo-formulario-login {
+
+    align-items: baseline;
+    border:  red 1px solid;
+    width: auto;
+}
+.cartas-main {
+    border: red 1px solid;
+}
+.beneficios {
+    border: green 1px solid;
 }
 
 /* MAIN VISTA PRODUCTS*/
@@ -605,4 +660,8 @@ footer{
     border: solid 2px green;
     border-top: solid 1px #d1d1d1e7;
 }
+
+
+
+    
 
