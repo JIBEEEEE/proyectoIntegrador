@@ -524,3 +524,85 @@ footer{
         font-size: 15px;
     }
 }
+
+/* MAIN VISTA PRODUCTS*/
+
+.imagen {
+    border: solid 1px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e2e2e7;
+    margin: 2px;
+}
+
+.imagen-espejo {
+    width: 250px;
+    margin: 25px 0;
+}
+
+/*.detalle {
+    /*border: solid 2px salmon;
+}*/
+
+.titulo-producto {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.fa-solid2 {
+    color: #d1d1d1e7;
+}
+
+.puntacion-reviews {
+    display: inline;
+    margin: 5px;
+}
+
+.descripcion {
+    display: block;
+}
+
+.precio-producto {
+    margin: 5px 0;
+    font-size: 42px;
+}
+
+.button {
+    width: 150px;
+    height: 35px;
+    border-radius: 0.5em;
+    background-color: rgb(25, 0, 106);
+    color: white;
+    border: 0.1px solid rgb(195,194,194);
+}
+
+.segundo-titulo {
+    border-top: solid 2px #d1d1d1e7;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.segundo-titilo-producto {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.detalle2 {
+    border: solid 2px salmon;
+    display: flex;    
+}
+
+.imagen-productos-similares {
+    width: 50%;
+}
+
+.precio-producto2 {
+    display: flex;
+}
+
+.titulo-reviews {
+    border: solid 2px green;
+    border-top: solid 1px #d1d1d1e7;
+}
+
