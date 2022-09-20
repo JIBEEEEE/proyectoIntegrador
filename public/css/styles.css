@@ -798,3 +798,36 @@ footer {
 
 
 }
+
+/*vista de carrito mobile*/
+
+.caja-de-opciones {
+box-sizing: content-box;
+background-color: rgb(255, 255, 255);
+color: white;
+padding: 500px;
+text-align: center;
+
+
+
+}
+
+.opciones-box{
+position: relative;
+box-sizing: content-box;
+background-color: rgb(63, 111, 133);
+padding: 100px;
+bottom: 1350px;
+opacity: 70%;
+
+}
+
+.opciones-dentro-box {
+   
+    display: flex;
+    font-size: 24px;
+    justify-content: space-around;
+    position: relative;
+    padding-bottom: 1250px;
+    
+}
