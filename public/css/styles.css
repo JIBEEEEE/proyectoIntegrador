@@ -326,10 +326,6 @@ footer {
     padding-bottom: 15px;
 }
 
-/*.footer3 {
-    width: 100%;
-}*/
-
 .list-footer-icons {
     padding: 0;
     display: flex;
@@ -460,7 +456,6 @@ footer {
         animation: aumentologo 2500ms ease-out infinite alternate;
     }
 
-    
 @keyframes aumentologo {
     0% {
         transform: scale(0.8);
@@ -521,89 +516,49 @@ footer {
 
      /* /FOOTER -----------------/ */
 
+    .contenedor-top-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 35px 0 15px 0;
+    }
+
     .footer1{
-        margin-left: 30px;
+        margin-left: 20px;
+        margin-right: 20px
     }
 
     .footer-item{
         margin-top: 3.5px;
     }
-
+    
+    .footer1 a,
+    .footer2 a{
+        font-size: 17px;
+    }
+    
+    .footer1 a,
+    .footer2 a,
+    .footer3 a{
+        color: grey;
+    }
+    
     .footer3{
         display: flex;
-        width: 15%;
         align-items: center;
         justify-content: center;
     }
-
-    .list-footer-icons{
-        display: flex;
-    }
-
+   
     .list-footer-icons li{
-        margin-left: 5px;
-    }
-    /*MAIN -----------------*/
-
-    .el-main h6 {
-        font-size: 13px;
-        letter-spacing: 1px;
-        padding-bottom: 10px;
+        margin-left: 8px;
     }
 
-    .productosdestacados p {
-        padding-top: 15px;
+    .marca-registrada h1{
+        opacity: 0.8;
+        letter-spacing: 0.8px;
+        font-size: 18.5px;
     }
 
-    .ocultando-imagen{
-        display: none;
-    }
-
-    .contenedor-img{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .imagenes{
-        margin-right: 55px;
-        margin-top: 35px;
-        margin-bottom: 30px;
-    }
-
-    .imagenes img {
-        max-width: 275px;
-        max-height: 230px;
-    }
-
-    .fa-truck {
-        animation: none;
-    }
-
-     /*FOOTER -----------------*/
-
-    .footer1{
-        margin-left: 30px;
-    }
-
-    .footer-item{
-        margin-top: 3.5px;
-    }
-
-    .footer3{
-        display: flex;
-        width: 15%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .list-footer-icons{
-        display: flex;
-    }
-
-    .list-footer-icons li{
-        margin-left: 5px;
-    }
 }
 
 @media (min-width: 960px){
@@ -677,25 +632,17 @@ footer {
 
      /*--FOOTER -----------------*/
 
-    .contenedor-top-footer{
-        justify-content: space-around;
-        padding: 10px;
-    }
-
     .footer-item{
         margin-top: 5px;
     }
 
-    .footer-item a {
-        font-size: 16.5px;
+    .footer1{
+        margin-left: 40px;
+        margin-right: 30px;
     }
 
     .list-footer-icons li {
-        margin-left: 16px;
-    }
-
-    .list-footer-icons a {
-        font-size: 24px;
+        margin-left: 12px;
     }
 
     .marca-registrada {
@@ -704,7 +651,7 @@ footer {
 
     .marca-registrada h1{
         font-size: 17px;
-        letter-spacing: 1.5px;
+        letter-spacing: 1.1px;
         opacity: 0.8;
         padding-bottom: 30px;
     }
@@ -827,7 +774,10 @@ footer {
         padding: 6px;
     }
 
-
+    .marca-registrada h1{
+        font-size: 18.5px;
+        letter-spacing: 1.6px;
+    }
 }
 
 /*vista de carrito mobile*/
