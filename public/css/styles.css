@@ -11,6 +11,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
 }
 
 body{
@@ -23,7 +24,9 @@ margin: 0;
     padding: 10px 10px 0 10px;
     border: red 1px solid;
     
+/*HEADER*/
 }
+
 
 .primera-linea{
     display: flex;
@@ -54,6 +57,11 @@ margin: 0;
 }
 
 
+.listado-top{
+    display: flex;
+    align-items: center;
+}
+
 .fa-address-card,
     .fa-cart-shopping,
     .fa-house,
@@ -68,6 +76,12 @@ margin: 0;
 }
 
 /* @keyframes aumentologo {
+    width: 80px;
+    height: 80px;
+    animation: aumentologo 2500ms ease-out infinite alternate;
+}
+
+@keyframes aumentologo {
     0% {
         transform: scale(0.8);
     }
@@ -97,6 +111,7 @@ margin: 0;
 .segunda-linea{
     width: 100%;
     display: none;
+    width: 100%;
 }
 
 .segunda-linea h5{
@@ -109,6 +124,7 @@ margin: 0;
 }
 
 /* /Comienza MAIN/ */
+/*Comienza MAIN*/
 
 .el-main nav{
     margin-bottom: 20px;
@@ -288,12 +304,6 @@ footer {
 }
 .footer1 ul,
 .footer2 ul {
-
-    padding: 0;
-}
-
-.footer1 li,
-.footer2 li{
     list-style: none;
     font-size: 12px;
 
@@ -317,6 +327,11 @@ footer {
     padding: 20px;
     
 }
+.footer1 a,
+.footer2 a,
+.footer3 a{
+    color: white;
+}
 
 .marca-registrada h1{
     font-size: 13px;
@@ -339,11 +354,12 @@ footer {
 .enlaces-footer-redes {
     color: white;
     line-height: 30px;
-}
 
+}
 @media (min-width: 500px) {
 
     /* /HEADER -----------------/ */
+    /*HEADER -----------------*/
 
     .logo{
         width: 110px;
@@ -356,6 +372,7 @@ footer {
         font-size: 12px;
         display: flex;
     }
+   
     .fa-address-card,
     .fa-cart-shopping,
     .fa-house,
@@ -372,11 +389,16 @@ footer {
         letter-spacing: 1px;
     }
 
+        
+    }
+
+
     .borde-bajo{
         font-weight: 400
     }
 
     /* /MAIN -----------------/ */
+
 
     .el-main h6 {
         font-weight: bold;
@@ -413,6 +435,7 @@ footer {
 
      /* /FOOTER -----------------/ */
 
+
     .list-footer1 li,
     .list-footer2 li{
         font-size: 15.5px;
@@ -426,11 +449,12 @@ footer {
         font-size: 16px;
         padding-bottom: 20px;
     }
-}
+
 
 @media (min-width: 760px){
 
     /* /HEADER -----------------/ */
+    /*HEADER -----------------*/
 
     .parte-top{
         background-image: url(../images/sillon-amarillo-2.JPG);
@@ -516,4 +540,260 @@ footer {
     .list-footer-icons li{
         margin-left: 5px;
     }
+    /*MAIN -----------------*/
+
+    .el-main h6 {
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+
+    .productosdestacados p {
+        padding-top: 15px;
+    }
+
+    .ocultando-imagen{
+        display: none;
+    }
+
+    .contenedor-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imagenes{
+        margin-right: 55px;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    .imagenes img {
+        max-width: 275px;
+        max-height: 230px;
+    }
+
+    .fa-truck {
+        animation: none;
+    }
+
+     /*FOOTER -----------------*/
+
+    .footer1{
+        margin-left: 30px;
+    }
+
+    .footer-item{
+        margin-top: 3.5px;
+    }
+
+    .footer3{
+        display: flex;
+        width: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list-footer-icons{
+        display: flex;
+    }
+
+    .list-footer-icons li{
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 960px){
+
+    /*--HEADER -----------------*/
+
+    .parte-top{
+        height: 500px;
+        max-height: none;
+    }
+
+    .primera-linea{
+        justify-content: space-evenly;
+    }
+
+    .listado-top ul {
+        margin-left: 30px;
+        padding-left: 35px;
+    }
+
+    .listado-top li,
+    .listado-top a {
+        font-size: 16px;
+    }
+
+    /*--MAIN -----------------*/
+
+    .cuotas h6,
+    .productosdestacados {
+        opacity: 0.8;
+        animation: movimiento 2200ms alternate 20 linear;
+    }
+
+    @keyframes movimiento{
+        0% {
+            transform: translateY(-30%);
+        }
+        50%{
+            transform: translateY(-10%);
+        }
+        75%{
+            transform: translateY(10%);
+        }
+        100% {
+            transform: translateY(25%);
+        }
+    }
+
+    .imagenes{
+        margin: 45px 60px;
+    }
+
+    .imagenes img{
+        max-width: 295px;
+        max-height: 250px;
+    }
+
+    .descripcion p{
+        padding-top: 10px;
+    }
+
+    .descripcion p{
+        opacity: 0.7;
+        font-size: 15.5px;
+    }
+
+    .descripcion i{
+      font-size: 17px;
+      padding: 4px
+    }
+
+     /*--FOOTER -----------------*/
+
+    .contenedor-top-footer{
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .footer-item{
+        margin-top: 5px;
+    }
+
+    .footer-item a {
+        font-size: 16.5px;
+    }
+
+    .list-footer-icons li {
+        margin-left: 16px;
+    }
+
+    .list-footer-icons a {
+        font-size: 24px;
+    }
+
+    .marca-registrada {
+        padding-top: 15px;
+    }
+
+    .marca-registrada h1{
+        font-size: 17px;
+        letter-spacing: 1.5px;
+        opacity: 0.8;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px){
+
+    /*HEADER -----------------*/
+
+    .parte-top{
+        height: 560px;
+    }
+
+    @keyframes aumentologo {
+        0% {
+            transform: scale(0.9);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1.5);
+        }
+    }
+
+    .listado-top{
+        margin-left: 25px;
+    }
+
+    .listado-top ul {
+        margin-left: 70px;
+    }
+
+    .listado-top li{
+        margin-left: 17px;
+    }
+
+    .listado-top i{
+        font-size: 15px;
+    }
+
+    .listado-top a {
+        font-size: 18px;
+    }
+
+    /*MAIN -----------------*/
+
+    .cuotas h6{
+        font-size: 15.5px;
+    }
+
+    .productosdestacados p{
+        font-size: 25px
+    }
+
+    .imagenes{
+        margin: 70px 80px;
+    }
+
+    .imagenes img{
+        max-width: 320px;
+        max-height: 280px;
+    }
+
+    .descripcion p{
+        padding-top: 12px;
+    }
+
+    .descripcion p{
+        opacity: 0.8;
+        font-size: 17px;
+    }
+
+    .descripcion i{
+      font-size: 18px;
+      padding: 4.5px
+    }
+
+    /*FOOTER -----------------*/
+
+    .contenedor-top-footer {
+        padding-top: 55px;
+    }
+
+    .footer-item{
+        margin-top: 7.5px;
+    }
+
+    .footer-item a {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+
 }
