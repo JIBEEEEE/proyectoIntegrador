@@ -27,6 +27,9 @@ margin: 0;
 }
 
 /*HEADER*/
+.main-header  {
+    
+}
 
 .primera-linea{
     display: flex;
@@ -45,27 +48,18 @@ margin: 0;
     align-items: center;
 }
 
-.iconos-header-mobile {
-    width: 100%;
-    margin: 0;
-    border: green 1px solid;
-}
-
-.iconos-header-mobile ul {
-    list-style: none;
-    border: red 1px solid;
+.iconos-top-mobile {
+    border: solid green 2px;
+    width: 60%;
     display: flex;
-    font-size: 21px;
-    justify-content: space-evenly;
-}
-
-.iconos-header-mobile li {
-    font-weight: 15px;
-}
-
-.listado-top{
-    display: flex;
+    justify-content: flex-end;
     align-items: center;
+    list-style: none;
+    color: rgb(25, 0, 106);
+}
+
+.iconos-top-mobile li {
+    margin: 10px;
 }
 
 .logo{
@@ -87,21 +81,21 @@ margin: 0;
     text-transform: none;
     color: rgb(25, 0, 106);
 }
-
-.segunda-linea{
-    width: 100%;
-    display: none;
-    width: 100%;
+.segunda-linea {
+    border: rex 1px solid;
 }
 
 .segunda-linea h5{
-    margin: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
-}
+    }
+    
+    
 
-.borde-bajo{
-    border-bottom: solid black 1px;
-}
+
+
 
 /*Comienza MAIN*/
 
@@ -789,6 +783,35 @@ footer {
       padding: 4.5px
     }
 
+
+    /* VISTA LOGIN  */
+    .div-formularios-monitor {
+        display: flex;
+        padding-bottom: 20px;
+
+    }
+    .formulario-login,
+    .formulario-registrarse {
+        width: 100%;
+        border: green 2px solid;
+        padding-bottom: 233px;
+    }
+
+    .boton-login,
+    .boton-registrarse {
+        margin-top: 45px;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+    .boton-login-registrar {
+        width: 50%;
+        margin-top: 40px;
+    }
+
+    .cartas-beneficios {
+        display: flex;
+        margin-bottom: 50px;
+    }
     /*FOOTER -----------------*/
 
     .contenedor-top-footer {
