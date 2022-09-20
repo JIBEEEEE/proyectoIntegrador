@@ -10,6 +10,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
     font-family: sans-serif;
 }
 
@@ -17,19 +18,44 @@ body{
 margin: 0;
 }
 
-/*HEADER*/
+/* /HEADER/ */
 
 .parte-top{
     padding: 10px 10px 0 10px;
-    background-color: #e9e768;
+    border: red 1px solid;
+    
+/*HEADER*/
 }
+
 
 .primera-linea{
     display: flex;
     justify-content: space-around;
-    height: 25vh;
+    border: blue 2px solid;
+}
+
+.listado-top{
+    display: none;
     align-items: center;
 }
+.iconos-header-mobile {
+    width: 100%;
+    margin: 0;
+    border: green 1px solid;
+}
+.iconos-header-mobile ul {
+    list-style: none;
+    border: red 1px solid;
+    display: flex;
+    font-size: 21px;
+    
+    justify-content: space-evenly;
+}
+.iconos-header-mobile li {
+    font-weight: 15px;
+    
+}
+
 
 .listado-top{
     display: flex;
@@ -44,6 +70,12 @@ margin: 0;
     }
 
 .logo{
+    width: 120px;
+    
+    /* animation: aumentologo 2500ms ease-out infinite alternate; */
+}
+
+/* @keyframes aumentologo {
     width: 80px;
     height: 80px;
     animation: aumentologo 2500ms ease-out infinite alternate;
@@ -59,7 +91,7 @@ margin: 0;
     100%{
         transform: scale(1.3);
     }
-}
+} */
 
 .listado-top ul{
     font-size: 10px;
@@ -77,7 +109,9 @@ margin: 0;
 }
 
 .segunda-linea{
-   width: 100%;
+    width: 100%;
+    display: none;
+    width: 100%;
 }
 
 .segunda-linea h5{
@@ -89,6 +123,7 @@ margin: 0;
     border-bottom: solid black 1px;
 }
 
+/* /Comienza MAIN/ */
 /*Comienza MAIN*/
 
 .el-main nav{
@@ -167,38 +202,136 @@ margin: 0;
     font-size: 12px;
 }
 
+/* VISTA LOGIN MOBILE */
 
-/*----Comienza FOOTER-----*/
+.formulario-login, 
+.formulario-registrarse {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    
+}
+.formulario-registrarse {
+    background-color: rgb(233, 233, 233);
+}
+.boton-login,
+.boton-registrarse {
+    margin: 16px;
+    border: none;
+    border-bottom: solid 0.5px grey;
+    outline: none;
+    width: 90%;
+    margin-bottom: 26px;
+    padding: 17px 0px;
+}
+.boton-registrarse {
+    background-color: rgb(233, 233, 233);
+}
+.formulario-login a {
+    text-decoration: none;
+}
+.formulario-login p,
+.formulario-registrarse p {
+    font-size: 14px;
+    color: grey;
+}
+.formulario-login p {
+    margin-left: 10px;
+}
+.formulario-login h2,
+.formulario-registrarse h2 {
+    margin-right: 105px;
+}
+.formulario-registrarse p {
+    margin-right: 23px;
+    
+}
+.boton-login-registrar {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    border-radius: 0.5em;
+    border: none;
+    background-color: rgb(9, 1, 36);
+    color: white;
+}
+.div-beneficios {
+    padding: 33px;
+    margin: 8px;
+    line-height: 2em;
+}
+
+.cartas-beneficios {
+    text-align: center;
+    padding: 70px;
+}
+.cartas-beneficios i {
+    font-size: 36px;
+
+}
+
+.cartas-beneficios h2 {
+    font-size: 16px;
+    font-weight: bold
+
+}
+.cartas-beneficios p {
+    font-size: 16px;
+    font-weight: 100;
+    color: grey;
+}
+
+/* /----Comienza FOOTER-----/ */
 
 footer {
-    background-color: rgb(25, 0, 106);
+    background-color: rgb(16, 1, 66);
 }
 
-.contenedor-top-footer{
+.contenedor-top-footer {
+    
     display: flex;
-    justify-content: space-between;
-    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 0px;
 }
-
+.list-footer1, 
+.list-footer2 {
+    line-height: 26px;
+}
 .footer1 ul,
-.footer2 ul,
-.footer3 ul {
+.footer2 ul {
 
     padding: 0;
 }
 
 .footer1 li,
-.footer2 li,
-.footer3 li {
+.footer2 li{
     list-style: none;
     font-size: 12px;
 
 }
-
-.footer1 a,
-.footer2 a,
-.footer3 a{
+.footer-item {
+    text-align: center;
+}
+.list-footer2 h2,
+.list-footer1 h2 {
+    text-align: center;
     color: white;
+
+}
+
+.enlaces-footer{
+    color: grey;
+    text-decoration: none;
+}
+.marca-registrada {
+    background-color: rgb(9, 1, 36);
+    padding: 20px;
+    
 }
 
 .marca-registrada h1{
@@ -208,12 +341,25 @@ footer {
     padding-bottom: 15px;
 }
 
-.footer3{
-    width: 5%;
+.footer3 {
+    width: 100%;
+
+}
+.list-footer-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    list-style: none;
+}
+.enlaces-footer-redes {
+    color: white;
+    line-height: 30px;
 }
 
 @media (min-width: 500px) {
 
+    /* /HEADER -----------------/ */
     /*HEADER -----------------*/
 
     .logo{
@@ -242,7 +388,9 @@ footer {
     .borde-bajo{
         font-size: 15.5px;
         letter-spacing: 1px;
-        padding-bottom: 10px;
+    }
+
+        
     }
 
 
@@ -250,7 +398,8 @@ footer {
         font-weight: 400
     }
 
-    /*MAIN -----------------*/
+    /* /MAIN -----------------/ */
+
 
     .el-main h6 {
         font-weight: bold;
@@ -285,25 +434,27 @@ footer {
         font-size: 16.5px;
     }
 
-     /*FOOTER -----------------*/
+     /* /FOOTER -----------------/ */
+
 
     .list-footer1 li,
     .list-footer2 li{
         font-size: 15.5px;
     }
 
-    .list-footer-icons a {
-        font-size: 18px;
+    .list-footer-icons i {
+        font-size: 38px;
     }
 
     .marca-registrada h1{
         font-size: 16px;
         padding-bottom: 20px;
     }
-}
+
 
 @media (min-width: 760px){
 
+    /* /HEADER -----------------/ */
     /*HEADER -----------------*/
 
     .parte-top{
@@ -329,6 +480,67 @@ footer {
         display: none;
     }
 
+    /* /MAIN -----------------/ */
+
+    .el-main h6 {
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+
+    .productosdestacados p {
+        padding-top: 15px;
+    }
+
+    .ocultando-imagen{
+        display: none;
+    }
+
+    .contenedor-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imagenes{
+        margin-right: 55px;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    .imagenes img {
+        max-width: 275px;
+        max-height: 230px;
+    }
+
+    .fa-truck {
+        animation: none;
+    }
+
+     /* /FOOTER -----------------/ */
+
+    .footer1{
+        margin-left: 30px;
+    }
+
+    .footer-item{
+        margin-top: 3.5px;
+    }
+
+    .footer3{
+        display: flex;
+        width: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list-footer-icons{
+        display: flex;
+    }
+
+    .list-footer-icons li{
+        margin-left: 5px;
+    }
     /*MAIN -----------------*/
 
     .el-main h6 {
@@ -585,4 +797,37 @@ footer {
     }
 
 
+}
+
+/*vista de carrito mobile*/
+
+.caja-de-opciones {
+box-sizing: content-box;
+background-color: rgb(255, 255, 255);
+color: white;
+padding: 500px;
+text-align: center;
+
+
+
+}
+
+.opciones-box{
+position: relative;
+box-sizing: content-box;
+background-color: rgb(63, 111, 133);
+padding: 100px;
+bottom: 1350px;
+opacity: 70%;
+
+}
+
+.opciones-dentro-box {
+   
+    display: flex;
+    font-size: 24px;
+    justify-content: space-around;
+    position: relative;
+    padding-bottom: 1250px;
+    
 }
