@@ -9,36 +9,336 @@
 /*Global*/
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+
+    margin: 0;
 }
-
-/*HEADER*/
-
-.parte-top{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10 10 0 10;
-    background-color: #eeec93;
+body{
+    font-family: 'Roboto', sans-serif;
 }
-
-.primera-linea{
-    display: flex;
+header {
     width: 100%;
-    justify-content: space-around;
-    justify-items: center;
+    height: 20%;
+
+    
+}
+main {
+    width: 100%;
+    height: 1200px;
+    
+}
+footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    
+}
+/* DISEÑO HEADER */
+.logo {
+    width: 115px;
 }
 
-.listado-top{
+.main-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-
-.logo{
-    width: 80px;
-    height: 80px;
-    animation: aumentologo 2500ms ease-out infinite alternate;
+.main-menu-left {
+    display: flex;
+    padding: 20px;
+    /* border: blue dotted 2px; */
+    width: 100%; 
 }
+.main-menu-right {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    /* border: blue dotted 2px; */
+    width: 100%; 
+}
+.main-menu-left, .main-menu-right {
+    list-style: none;
+}
+.responsive-logo-icons {
+    display: none;
+}
+
+.menu-item {
+    margin-left: 30px;
+    padding-right: 100px;
+
+}
+.menu-item a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(16, 2, 61);
+}
+.menu-item a:hover {
+    color: gray;
+    transition: 0.3s ;
+    
+    
+}
+
+/* FIN DISEÑO HEADER */
+
+
+
+/* DISEÑO DE FOOTER  */
+.marca {
+    width: 40%;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marca h3 {
+    font-weight: 600;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    
+}
+.footer-item {
+    color: gray;
+    padding: 10px;
+    line-height: 5px;
+    list-style: none;
+    text-decoration: none;
+}
+.list-footer {
+    list-style: none;
+
+}
+.footer-tittle{
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 15px;
+}
+.footer-icon {
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-footer-icons {
+    /* border: solid green 2px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 35px;
+    
+}
+.enlaces-footer {
+    font-size: 13px;
+    text-decoration: none;
+    color: grey;
+
+}
+.enlaces-footer-redes {
+    font-size: 30px;
+    color: grey;
+}
+
+.enlaces-footer:hover, .enlaces-footer-redes:hover {
+    color: white;
+    transition: 0.3s;
+
+}
+.contenedores-footer {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    background-color: rgb(16, 2, 61);
+}
+.marca a {
+    text-decoration: none;
+    color: white;
+}
+.marca-registrada {
+    width: 100%;
+    height: 20%;
+    color: grey;
+    background-color: rgb(7, 0, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6.5px;
+    
+}
+.marca-registrada h1 {
+    font-weight: 300;
+}
+
+
+/* FIN DISEÑO FOOTER  */
+
+
+/* DISEÑO MAIN  LOG IN / REGISTRARSE */
+.formularios-main, .cartas-main {
+    width: 100%;
+    height: 600px;
+    
+}
+.formularios-main{
+    display: flex;
+    width: 100%;
+}
+.formulario-login, .formulario-registrarse{
+    /* border: red solid 2px; */
+    width: 100%;
+}
+.formulario-login, .formulario-registrarse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.formulario-registrarse {
+    background-color: rgb(245, 245, 245);
+}
+
+.titulo-formulario-login, .titulo-formulario-registrarse {
+    
+    width: 60%;
+    padding: 10px;
+
+}
+.titulo-formulario-registrarse {
+    font-size: 12px;
+    color: grey;
+    font-weight: lighter;
+
+}
+.titulo-formulario-login p{
+    font-size: 12px;
+    color: grey;
+    font-weight: lighter;
+}
+.titulo-formulario-registrarse h2, .titulo-formulario-login h2 {
+    font-size: 30px;
+    line-height: 1em;
+    color: rgb(16, 2, 61);
+    font-weight: 1000;
+}
+.texto-titulo-login, .texto-titulo-registrarse {
+    margin-left: 70px;
+    line-height: 25px;
+}
+
+.login, .registrarse {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.botones-registrarse {
+    background-color: rgb(245, 245, 245);
+}
+.botones-login, .botones-registrarse {
+    width: 280px;
+    height: 50px;
+    border:none;
+    border-bottom: 1px gray solid;
+    padding: 0px;
+    margin: 7px;
+}
+.boton-ingresar, .boton-registrar {
+    width: 300px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    border-radius: 0.5em;
+    background-color: rgb(25, 0, 106);
+    color: white;
+    border: 0.1px solid rgb(195,194,194);
+    
+}
+.olvidaste{
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(0, 89, 212);
+    font-weight: 300;
+}
+.label-email {
+    position: relative;
+    right: 120px;
+    bottom: 10px;
+    margin: 10px;
+    
+    
+
+}
+.label-password {
+    position: relative;
+    right: 95px;
+    margin: 10px;
+}
+.label-password-restart{
+    position: relative;
+    right: 65px;
+    margin: 10px;
+}
+.terminos {
+    font-size: 20px;
+}
+
+.botones-login:focus, .botones-registrarse:focus{
+    outline: none;
+}
+.boton-ingresar:hover, .boton-registrar:hover{
+    background-color: rgb(16, 2, 61);
+}
+.cartas-main{
+    display: flex;
+
+}
+.beneficios  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.beneficios i {
+    font-size: 50px;
+    position: relative;
+    bottom: 100px;
+    color: rgb(16, 2, 61);
+    
+}
+.beneficios h2 {
+    color: rgb(16, 2, 61);
+    font-weight: lighter;
+}
+.beneficios p {
+    position: relative;
+    color: gray;
+    top: 40px;
+}
+
 
 @keyframes aumentologo {
     0% {
@@ -84,14 +384,14 @@
     margin-bottom: 20px;
     margin-right: 0%;
 }
-
+/*
 .espejo{
     align-items: center;
     align-content: center;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+*/
 
 .cuotas h6,
 .cuotas h4{
@@ -138,8 +438,9 @@
 }
 
 .productos{
-    display: flex;
-    max-width: 380px;
+    /*display: flex;
+    max-width: 380px;*/
+    text-align: center;
 }
 
 .productos img{
@@ -156,7 +457,7 @@
 
 .descripcion{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
 }
@@ -167,13 +468,221 @@
     font-size: 12px;
 }
 
+/* MEDIA QUERIES  */
 
+@media (max-width: 480px) {
+    /* MEDIA QUERIES FOOTER Y HEADER */
+    .main-menu-left,.main-menu-right, .logo, .marca {
+        display: none;
+    }
 
+    .responsive-logo-icons {
+        border: solid red 1px;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        
+    }
+    .responsive-logo-icons h1 {
+        font-size: 20px;
+        position: relative;
+        right: 20px;
+        margin: 10px;
+        font-weight: bold;
+    }
+    .responsive-icons {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    .responsive-icons li {
+        padding: 10px;
+    }
+    .contenedores-footer {
+        flex-direction: column;
+        margin: 0;
+    }
+    .marca {
+        /* border: solid 1px red; */
+        padding: 15px;
+        width: 100%;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .list-footer {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+    }
+    .footer-item{
+    line-height: 20px;
 
-
-
-
-footer {
-    border: solid 5px rgb(0,0,0,1)
+    }
+    .contenedores-footer {
+        /* border: yellow 2px solid; */
+        height: auto;
+    }
+    .list-footer-icons {
+        display: flex;
+        width: auto; 
+        
+    }
+    .footer-icon {
+        
+        width: 100%;
+        
+    }
+    /* MEDIA QUERIES MAIN LOGIN */
+    .formularios-main {
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
+    .formulario-login {
+        border: red 1px solid;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+}
+    .login {
+        border: yellow solid 2px;
+        width: 100%;
+    }
+    .marca-registrada h1 {
+        font-size: 15px;
+    }
+} 
+
+.botones-login,
+.boton-ingresar,
+.label-email,
+.label-password,
+.titulo-formulario-login {
+
+    align-items: baseline;
+    border:  red 1px solid;
+    width: auto;
+}
+.cartas-main {
+    border: red 1px solid;
+}
+.beneficios {
+    border: green 1px solid;
+}
+
+/* MAIN VISTA PRODUCTS*/
+
+.imagen {
+    border: solid 1px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e2e2e7;
+    margin: 2px;
+}
+
+.imagen-espejo {
+    width: 250px;
+    margin: 25px 0;
+}
+
+/*.detalle {
+    /*border: solid 2px salmon;
+}*/
+
+.titulo-producto {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.fa-solid2 {
+    color: #d1d1d1e7;
+}
+
+.puntacion-reviews {
+    display: inline;
+    margin: 5px;
+}
+
+.descripcion {
+    display: block;
+}
+
+.precio-producto {
+    margin: 5px 0;
+    font-size: 42px;
+}
+
+.button {
+    width: 150px;
+    height: 35px;
+    border-radius: 0.5em;
+    background-color: rgb(25, 0, 106);
+    color: white;
+    border: 0.1px solid rgb(195,194,194);
+}
+
+.segundo-titulo {
+    border-top: solid 2px #d1d1d1e7;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.segundo-titilo-producto {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.detalle2 {
+    display: flex;  
+    border-bottom: solid 1px #d1d1d1e7;
+}
+
+.imagen-productos-similares {
+    width: 50%;
+}
+
+.descripcion2 {
+    margin: 50px 16px;
+}
+
+.titulo-reviews {
+    margin: 10px 0;
+}
+
+.reviews {
+    border: solid 2px salmon;
+    display: flex;
+}
+
+.fa-solid-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 100% green;
+}
+
+.descripcion-reviews {
+    font-size: 10px;
+    margin: 33px 8px;
+}
+ 
+
+
+
+
+
+
+    
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4fea1b8ebf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <title>Digital Deco House</title>
+</head>
+<body>
+    <header class="main-header">
+        <a href="#">
+        <img src="/images/logo.png" class="logo">
+        </a>
+
+        <!-- Menu Header -->
+        <ul class="main-menu-left">
+            <li class="menu-item"><a href="/index.html"> Inicio </a></li>
+            <li class="menu-item"><a href="/views/aboutus.html"> Nosotros</a></li>
+            <li class="menu-item"><a href="#"> Catálogo</a></li>
+            <li class="menu-item"><a href="#"> Contacto</a></li>
+
+        </ul>
+            <div class="responsive-logo-icons">
+                <h1>Digital Deco House</h1>
+                <ul class="responsive-icons">
+                    <li><i class="fa-solid fa-bars"></i></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                </ul>
+            </div>    
+        <ul class="main-menu-right">
+            <li class="menu-item"><a href="#"> Carrito <i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li class="menu-item"><a href="/views/login.html"> Iniciar sesión <i class="fa-solid fa-right-to-bracket"></i></a></li>
+        </ul>
+    </header>
+
+
+    
+    <main>
+        <section class="formularios-main">
+            <div class="formulario-login">
+                <div class="titulo-formulario-login">
+                    <h2 class="texto-titulo-login">Ingresa <br>a tu cuenta.</h2>
+                    <p class="texto-titulo-login">Bienvenido de nuevo, ingrese sus datos.</p>
+                </div>
+                <form action="POST" class="login">
+                    <label for="email" class="label-email">Email</label>
+                    <input type="email" id="email" placeholder="E-mail" class="botones-login">
+                    
+                    <label for="password" class="label-password"> Contraseña</label>
+                    <input type="password" id="password" placeholder="Contraseña" required class="botones-login">
+
+                    <a href="#" class="olvidaste">¿Olvidaste tu contraseña?</a>
+
+                    <input type="submit" value="Ingresar" class="boton-ingresar">
+
+                </form>
+            </div>
+
+            <div class="formulario-registrarse">
+                <div class="titulo-formulario-registrarse">
+                    <h2 class="texto-titulo-registrarse">Registrate <br>ahora.</h2>
+                    <p class="texto-titulo-registrarse">Completá los datos para registrarte.</p>
+                </div>
+                <form action="POST" class="registrarse">
+                    <label for="email" class="label-email">Email</label>
+                    <input type="email" id="email" placeholder="E-mail" class="botones-registrarse">
+                    
+                    <label for="password" class="label-password"> Contraseña</label>
+                    <input type="password" id="password" placeholder="Contraseña" required class="botones-registrarse">
+
+                    <label for="password" class="label-password-restart"> Repetir Contraseña</label>
+                    <input type="password" id="password" placeholder="Repita contraseña" required class="botones-registrarse">
+
+                
+
+                    <input type="submit" value="Registrarme" class="boton-registrar">
+
+                </form>
+            </div>
+        </section>
+
+        <section class="cartas-main">
+            <div class="beneficios">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h2> ENVÍOS A TODO EL PAÍS</h2>
+                <p>A todo el país en tiempo record.</p>
+            </div>
+
+            <div class="beneficios">
+                <i class="fa-regular fa-credit-card"></i>
+                <h2> HASTA 12 CUOTAS</h2>
+                <p> Visa, Mastercard, Amex, Mercado Pago.</p>
+            </div>
+            <div class="beneficios">
+                <i class="fa-solid fa-cubes"></i>
+                <h2>ENTREGA INMEDIATA</h2>
+                <p>Disponibilidad de stock permanente.</p>
+            </div>
+            <div class="beneficios">
+                <i class="fa-solid fa-phone"></i>
+                <h2>VENTA TELEFÓNICA</h2>
+                <p>Tel. 5961-5417 Lun a Vier de 9 a 20hs</p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="contenedores-footer">
+            <div class="marca">
+                <a href="#">
+                <h3>Digital Deco House </h3>
+                </a>
+            </div>
+            <div class="footer">
+                <ul class="list-footer">  
+                    <li class="footer-tittle">DIGITAL DECO HOUSE</li>
+                    <li class="footer-item"><a class="enlaces-footer" href="/views/index.html">Inicio</a></li>
+                    <li class="footer-item"><a class="enlaces-footer" href="/views/aboutus.html">Nosotros</a></li>
+                    <li class="footer-item"><a class="enlaces-footer" href="#">Catálogo</a></li>
+                    <li class="footer-item"><a class="enlaces-footer" href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <ul class="list-footer">
+                    <li class="footer-tittle">AYUDA</li>
+                    <li class="footer-item"><a href="#" class="enlaces-footer">Cambios y devoluciones</a></li>
+                    <li class="footer-item"><a href="#" class="enlaces-footer">Términos y condiciones</a></li>
+                    <li class="footer-item"><a href="#" class="enlaces-footer">Política de privacidad</a></li>
+                    <li class="footer-item"><a href="#" class="enlaces-footer">Información sobre envíos</a></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <ul class="list-footer-icons">
+                    <li class="footer-icon"><a href="#" class="enlaces-footer-redes"> <i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="footer-icon"><a href="#" class="enlaces-footer-redes"> <i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="footer-icon"><a href="#" class="enlaces-footer-redes"> <i class="fa-solid fa-envelope"></i></a></li>
+                    <li class="footer-icon"><a href="#" class="enlaces-footer-redes"> <i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="marca-registrada">
+            <h1>
+                Copyright © 2022 Digital Deco House ®
+            </h1>
+        </div>
+        
+
+    </footer>
+
+</body>
+</html>

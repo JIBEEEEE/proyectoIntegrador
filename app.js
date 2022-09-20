@@ -15,3 +15,15 @@ app.listen(3100, () => {
 app.get("/", (req,res) => {
     res.sendFile(path.resolve (__dirname, "./views/index.html"))
 })
+
+app.get("/views/login.html", (req,res) => {
+    res.sendFile(path.resolve (__dirname, "./views/login.html"))
+})
+
+app.get("/views/aboutus.html", (req,res) => {
+    res.sendFile(path.resolve (__dirname, "./views/aboutus.html"))
+})
+
+app.get("/views/products.html", (req,res) => {
+    res.sendFile(path.resolve (__dirname, "./views/products.html"))
+})
