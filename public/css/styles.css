@@ -304,6 +304,12 @@ footer {
 }
 .footer1 ul,
 .footer2 ul {
+
+    padding: 0;
+}
+
+.footer1 li,
+.footer2 li{
     list-style: none;
     font-size: 12px;
 
@@ -327,11 +333,6 @@ footer {
     padding: 20px;
     
 }
-.footer1 a,
-.footer2 a,
-.footer3 a{
-    color: white;
-}
 
 .marca-registrada h1{
     font-size: 13px;
@@ -354,8 +355,8 @@ footer {
 .enlaces-footer-redes {
     color: white;
     line-height: 30px;
-
 }
+
 @media (min-width: 500px) {
 
     /* /HEADER -----------------/ */
