@@ -6,339 +6,48 @@
 }
 */
 
-/*Global*/
+/* -------- Global* -------------*/
+
 * {
     box-sizing: border-box;
-
-    margin: 0;
+    font-family: sans-serif;
 }
+
 body{
-    font-family: 'Roboto', sans-serif;
-}
-header {
-    width: 100%;
-    height: 20%;
-
-    
-}
-main {
-    width: 100%;
-    height: 1200px;
-    
-}
-footer{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    
-    
-}
-/* DISEÑO HEADER */
-.logo {
-    width: 115px;
+margin: 0;
 }
 
-.main-header {
+/*HEADER*/
+
+.parte-top{
+    padding: 10px 10px 0 10px;
+    background-color: #e9e768;
+}
+
+.primera-linea{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 25vh;
     align-items: center;
 }
-.main-menu-left {
+
+.listado-top{
     display: flex;
-    padding: 20px;
-    /* border: blue dotted 2px; */
-    width: 100%; 
-}
-.main-menu-right {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-    /* border: blue dotted 2px; */
-    width: 100%; 
-}
-.main-menu-left, .main-menu-right {
-    list-style: none;
-}
-.responsive-logo-icons {
-    display: none;
-}
-
-.menu-item {
-    margin-left: 30px;
-    padding-right: 100px;
-
-}
-.menu-item a {
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    color: rgb(16, 2, 61);
-}
-.menu-item a:hover {
-    color: gray;
-    transition: 0.3s ;
-    
-    
-}
-
-/* FIN DISEÑO HEADER */
-
-
-
-/* DISEÑO DE FOOTER  */
-.marca {
-    width: 40%;
-    color: white;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
-.marca h3 {
-    font-weight: 600;
-}
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
 
-    
-}
-.footer-item {
-    color: gray;
-    padding: 10px;
-    line-height: 5px;
-    list-style: none;
-    text-decoration: none;
-}
-.list-footer {
-    list-style: none;
+.fa-address-card,
+    .fa-cart-shopping,
+    .fa-house,
+    .fa-arrow-right{
+        display: none;
+    }
 
+.logo{
+    width: 80px;
+    height: 80px;
+    animation: aumentologo 2500ms ease-out infinite alternate;
 }
-.footer-tittle{
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    line-height: 15px;
-}
-.footer-icon {
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.list-footer-icons {
-    /* border: solid green 2px; */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    font-size: 35px;
-    
-}
-.enlaces-footer {
-    font-size: 13px;
-    text-decoration: none;
-    color: grey;
-
-}
-.enlaces-footer-redes {
-    font-size: 30px;
-    color: grey;
-}
-
-.enlaces-footer:hover, .enlaces-footer-redes:hover {
-    color: white;
-    transition: 0.3s;
-
-}
-.contenedores-footer {
-    display: flex;
-    width: 100%;
-    height: 80%;
-    background-color: rgb(16, 2, 61);
-}
-.marca a {
-    text-decoration: none;
-    color: white;
-}
-.marca-registrada {
-    width: 100%;
-    height: 20%;
-    color: grey;
-    background-color: rgb(7, 0, 30);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6.5px;
-    
-}
-.marca-registrada h1 {
-    font-weight: 300;
-}
-
-
-/* FIN DISEÑO FOOTER  */
-
-
-/* DISEÑO MAIN  LOG IN / REGISTRARSE */
-.formularios-main, .cartas-main {
-    width: 100%;
-    height: 600px;
-    
-}
-.formularios-main{
-    display: flex;
-    width: 100%;
-}
-.formulario-login, .formulario-registrarse{
-    /* border: red solid 2px; */
-    width: 100%;
-}
-.formulario-login, .formulario-registrarse{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.formulario-registrarse {
-    background-color: rgb(245, 245, 245);
-}
-
-.titulo-formulario-login, .titulo-formulario-registrarse {
-    
-    width: 60%;
-    padding: 10px;
-
-}
-.titulo-formulario-registrarse {
-    font-size: 12px;
-    color: grey;
-    font-weight: lighter;
-
-}
-.titulo-formulario-login p{
-    font-size: 12px;
-    color: grey;
-    font-weight: lighter;
-}
-.titulo-formulario-registrarse h2, .titulo-formulario-login h2 {
-    font-size: 30px;
-    line-height: 1em;
-    color: rgb(16, 2, 61);
-    font-weight: 1000;
-}
-.texto-titulo-login, .texto-titulo-registrarse {
-    margin-left: 70px;
-    line-height: 25px;
-}
-
-.login, .registrarse {
-    width: 60%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-
-}
-.botones-registrarse {
-    background-color: rgb(245, 245, 245);
-}
-.botones-login, .botones-registrarse {
-    width: 280px;
-    height: 50px;
-    border:none;
-    border-bottom: 1px gray solid;
-    padding: 0px;
-    margin: 7px;
-}
-.boton-ingresar, .boton-registrar {
-    width: 300px;
-    height: 30px;
-    position: relative;
-    top: 10px;
-    border-radius: 0.5em;
-    background-color: rgb(25, 0, 106);
-    color: white;
-    border: 0.1px solid rgb(195,194,194);
-    
-}
-.olvidaste{
-    padding: 10px;
-    margin: 10px;
-    font-size: 12px;
-    text-decoration: none;
-    color: rgb(0, 89, 212);
-    font-weight: 300;
-}
-.label-email {
-    position: relative;
-    right: 120px;
-    bottom: 10px;
-    margin: 10px;
-    
-    
-
-}
-.label-password {
-    position: relative;
-    right: 95px;
-    margin: 10px;
-}
-.label-password-restart{
-    position: relative;
-    right: 65px;
-    margin: 10px;
-}
-.terminos {
-    font-size: 20px;
-}
-
-.botones-login:focus, .botones-registrarse:focus{
-    outline: none;
-}
-.boton-ingresar:hover, .boton-registrar:hover{
-    background-color: rgb(16, 2, 61);
-}
-.cartas-main{
-    display: flex;
-
-}
-.beneficios  {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.beneficios i {
-    font-size: 50px;
-    position: relative;
-    bottom: 100px;
-    color: rgb(16, 2, 61);
-    
-}
-.beneficios h2 {
-    color: rgb(16, 2, 61);
-    font-weight: lighter;
-}
-.beneficios p {
-    position: relative;
-    color: gray;
-    top: 40px;
-}
-
 
 @keyframes aumentologo {
     0% {
@@ -358,17 +67,17 @@ footer{
     justify-items: center;
     list-style: none;
     width: 100%;
+    padding-left: 10px;
 }
 
 .listado-top li{
     margin: 0 2px;
     text-transform: none;
-    color: black;
+    color: rgb(25, 0, 106);
 }
 
 .segunda-linea{
-    border-bottom: black 1px solid;
-    margin: auto;
+   width: 100%;
 }
 
 .segunda-linea h5{
@@ -376,28 +85,21 @@ footer{
     text-align: center;
 }
 
+.borde-bajo{
+    border-bottom: solid black 1px;
+}
+
 /*Comienza MAIN*/
-
-
 
 .el-main nav{
     margin-bottom: 20px;
     margin-right: 0%;
 }
-/*
-.espejo{
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-*/
 
-.cuotas h6,
-.cuotas h4{
+.cuotas h6{
     font-size: 10px;
     text-align: center;
-    margin: 7px;
+    margin: 15px;
     border-bottom: black 1px solid;
     padding: 5px;
 }
@@ -410,36 +112,7 @@ footer{
     margin-bottom: 20px;
 }
 
-.fa-truck {
-    color: #3417b4;
-    border: solid 1px #3417b4;
-    border-radius: 50%;
-    font-size: 15px;
-    padding: 3px;
-    animation: aumentoventa 5s linear infinite alternate;
-}
-
-@keyframes aumentoventa {
-    0% {
-        transform: scale(0.5);
-        color: rgb(47, 121, 218);
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: scale(1);
-        color: rgb(70, 99, 228);
-        transform: rotate(180deg)
-    }
-    100%{
-        transform: scale(1.2);
-        color: #3417b4;
-        transform: rotate(360deg)
-    }
-}
-
 .productos{
-    /*display: flex;
-    max-width: 380px;*/
     text-align: center;
 }
 
@@ -455,6 +128,32 @@ footer{
     margin: auto;
 }
 
+.imagenes{
+    align-items: center;
+    align-content: center;
+}
+
+.fa-truck {
+    color: rgb(25, 0, 106);
+    border: solid 1px rgb(25, 0, 106);
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 3px;
+    animation: rotate 5s linear infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
 .descripcion{
     display: flex;
     justify-content: center;
@@ -468,221 +167,422 @@ footer{
     font-size: 12px;
 }
 
-/* MEDIA QUERIES  */
 
-@media (max-width: 480px) {
-    /* MEDIA QUERIES FOOTER Y HEADER */
-    .main-menu-left,.main-menu-right, .logo, .marca {
+/*----Comienza FOOTER-----*/
+
+footer {
+    background-color: rgb(25, 0, 106);
+}
+
+.contenedor-top-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.footer1 ul,
+.footer2 ul,
+.footer3 ul {
+
+    padding: 0;
+}
+
+.footer1 li,
+.footer2 li,
+.footer3 li {
+    list-style: none;
+    font-size: 12px;
+
+}
+
+.footer1 a,
+.footer2 a,
+.footer3 a{
+    color: white;
+}
+
+.marca-registrada h1{
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.footer3{
+    width: 5%;
+}
+
+@media (min-width: 500px) {
+
+    /*HEADER -----------------*/
+
+    .logo{
+        width: 110px;
+        height: 110px;
+        animation: aumentologo 3000ms linear infinite alternate;
+    }
+
+    .listado-top li {
+        margin-left: 12px;
+        font-size: 12px;
+        display: flex;
+    }
+   
+    .fa-address-card,
+    .fa-cart-shopping,
+    .fa-house,
+    .fa-arrow-right{
+        display: block;
+        font-size: 12px;
+        padding-left: 5px;
+        color: rgb(25, 0, 106)
+    }
+
+    .welcome,
+    .borde-bajo{
+        font-size: 15.5px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+
+
+    .borde-bajo{
+        font-weight: 400
+    }
+
+    /*MAIN -----------------*/
+
+    .el-main h6 {
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+    .productosdestacados {
+        letter-spacing: 1px;
+    }
+
+    .productosdestacados p{
+        font-size: 22px;
+        color: rgb(25, 0, 106);
+    }
+
+    .imagenes img {
+        max-width: 255px;
+        max-height: 215px;
+        transition: transform 750ms; 
+    }
+
+    .imagenes img:hover {
+        transform: scale(1.1);
+    }
+
+    .descripcion p {
+        font-size: 13.5px;
+        letter-spacing: 1.5px;
+    }
+
+    .descripcion i {
+        font-size: 16.5px;
+    }
+
+     /*FOOTER -----------------*/
+
+    .list-footer1 li,
+    .list-footer2 li{
+        font-size: 15.5px;
+    }
+
+    .list-footer-icons a {
+        font-size: 18px;
+    }
+
+    .marca-registrada h1{
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 760px){
+
+    /*HEADER -----------------*/
+
+    .parte-top{
+        background-image: url(../images/sillon-amarillo-2.JPG);
+        background-position: center;
+        background-size: cover;
+        height: 390px;
+        max-height: 390px;
+    }
+
+    .logo{
+        width: 125px;
+        height: 115px;
+    }
+
+    .listado-top li {
+        margin-left: 15px;
+        font-size: 14px;
+        display: flex;
+    }
+
+    .segunda-linea{
         display: none;
     }
 
-    .responsive-logo-icons {
-        border: solid red 1px;
-        list-style: none;
+    /*MAIN -----------------*/
+
+    .el-main h6 {
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+
+    .productosdestacados p {
+        padding-top: 15px;
+    }
+
+    .ocultando-imagen{
+        display: none;
+    }
+
+    .contenedor-img{
         display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .responsive-logo-icons h1 {
-        font-size: 20px;
-        position: relative;
-        right: 20px;
-        margin: 10px;
-        font-weight: bold;
+
+    .imagenes{
+        margin-right: 55px;
+        margin-top: 35px;
+        margin-bottom: 30px;
     }
-    .responsive-icons {
+
+    .imagenes img {
+        max-width: 275px;
+        max-height: 230px;
+    }
+
+    .fa-truck {
+        animation: none;
+    }
+
+     /*FOOTER -----------------*/
+
+    .footer1{
+        margin-left: 30px;
+    }
+
+    .footer-item{
+        margin-top: 3.5px;
+    }
+
+    .footer3{
         display: flex;
-        justify-content: space-evenly;
-        list-style: none;
+        width: 15%;
+        align-items: center;
+        justify-content: center;
     }
-    .responsive-icons li {
+
+    .list-footer-icons{
+        display: flex;
+    }
+
+    .list-footer-icons li{
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 960px){
+
+    /*--HEADER -----------------*/
+
+    .parte-top{
+        height: 500px;
+        max-height: none;
+    }
+
+    .primera-linea{
+        justify-content: space-evenly;
+    }
+
+    .listado-top ul {
+        margin-left: 30px;
+        padding-left: 35px;
+    }
+
+    .listado-top li,
+    .listado-top a {
+        font-size: 16px;
+    }
+
+    /*--MAIN -----------------*/
+
+    .cuotas h6,
+    .productosdestacados {
+        opacity: 0.8;
+        animation: movimiento 2200ms alternate 20 linear;
+    }
+
+    @keyframes movimiento{
+        0% {
+            transform: translateY(-30%);
+        }
+        50%{
+            transform: translateY(-10%);
+        }
+        75%{
+            transform: translateY(10%);
+        }
+        100% {
+            transform: translateY(25%);
+        }
+    }
+
+    .imagenes{
+        margin: 45px 60px;
+    }
+
+    .imagenes img{
+        max-width: 295px;
+        max-height: 250px;
+    }
+
+    .descripcion p{
+        padding-top: 10px;
+    }
+
+    .descripcion p{
+        opacity: 0.7;
+        font-size: 15.5px;
+    }
+
+    .descripcion i{
+      font-size: 17px;
+      padding: 4px
+    }
+
+     /*--FOOTER -----------------*/
+
+    .contenedor-top-footer{
+        justify-content: space-around;
         padding: 10px;
     }
-    .contenedores-footer {
-        flex-direction: column;
-        margin: 0;
-    }
-    .marca {
-        /* border: solid 1px red; */
-        padding: 15px;
-        width: 100%;
-    }
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        
-    }
-    .list-footer {
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
-    }
     .footer-item{
-    line-height: 20px;
+        margin-top: 5px;
+    }
 
+    .footer-item a {
+        font-size: 16.5px;
     }
-    .contenedores-footer {
-        /* border: yellow 2px solid; */
-        height: auto;
-    }
-    .list-footer-icons {
-        display: flex;
-        width: auto; 
-        
-    }
-    .footer-icon {
-        
-        width: 100%;
-        
-    }
-    /* MEDIA QUERIES MAIN LOGIN */
-    .formularios-main {
-        display: inline-block;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
-    .formulario-login {
-        border: red 1px solid;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
 
-}
-    .login {
-        border: yellow solid 2px;
-        width: 100%;
+    .list-footer-icons li {
+        margin-left: 16px;
     }
-    .marca-registrada h1 {
+
+    .list-footer-icons a {
+        font-size: 24px;
+    }
+
+    .marca-registrada {
+        padding-top: 15px;
+    }
+
+    .marca-registrada h1{
+        font-size: 17px;
+        letter-spacing: 1.5px;
+        opacity: 0.8;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px){
+
+    /*HEADER -----------------*/
+
+    .parte-top{
+        height: 560px;
+    }
+
+    @keyframes aumentologo {
+        0% {
+            transform: scale(0.9);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1.5);
+        }
+    }
+
+    .listado-top{
+        margin-left: 25px;
+    }
+
+    .listado-top ul {
+        margin-left: 70px;
+    }
+
+    .listado-top li{
+        margin-left: 17px;
+    }
+
+    .listado-top i{
         font-size: 15px;
     }
-} 
 
-.botones-login,
-.boton-ingresar,
-.label-email,
-.label-password,
-.titulo-formulario-login {
+    .listado-top a {
+        font-size: 18px;
+    }
 
-    align-items: baseline;
-    border:  red 1px solid;
-    width: auto;
+    /*MAIN -----------------*/
+
+    .cuotas h6{
+        font-size: 15.5px;
+    }
+
+    .productosdestacados p{
+        font-size: 25px
+    }
+
+    .imagenes{
+        margin: 70px 80px;
+    }
+
+    .imagenes img{
+        max-width: 320px;
+        max-height: 280px;
+    }
+
+    .descripcion p{
+        padding-top: 12px;
+    }
+
+    .descripcion p{
+        opacity: 0.8;
+        font-size: 17px;
+    }
+
+    .descripcion i{
+      font-size: 18px;
+      padding: 4.5px
+    }
+
+    /*FOOTER -----------------*/
+
+    .contenedor-top-footer {
+        padding-top: 55px;
+    }
+
+    .footer-item{
+        margin-top: 7.5px;
+    }
+
+    .footer-item a {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+
 }
-.cartas-main {
-    border: red 1px solid;
-}
-.beneficios {
-    border: green 1px solid;
-}
-
-/* MAIN VISTA PRODUCTS*/
-
-.imagen {
-    border: solid 1px grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e2e2e2e7;
-    margin: 2px;
-}
-
-.imagen-espejo {
-    width: 250px;
-    margin: 25px 0;
-}
-
-/*.detalle {
-    /*border: solid 2px salmon;
-}*/
-
-.titulo-producto {
-    font-size: 30px;
-    margin: 10px 0;
-}
-
-.fa-solid2 {
-    color: #d1d1d1e7;
-}
-
-.puntacion-reviews {
-    display: inline;
-    margin: 5px;
-}
-
-.descripcion {
-    display: block;
-}
-
-.precio-producto {
-    margin: 5px 0;
-    font-size: 42px;
-}
-
-.button {
-    width: 150px;
-    height: 35px;
-    border-radius: 0.5em;
-    background-color: rgb(25, 0, 106);
-    color: white;
-    border: 0.1px solid rgb(195,194,194);
-}
-
-.segundo-titulo {
-    border-top: solid 2px #d1d1d1e7;
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-.segundo-titilo-producto {
-    margin: 15px;
-    font-weight: bold;
-}
-
-.detalle2 {
-    display: flex;  
-    border-bottom: solid 1px #d1d1d1e7;
-}
-
-.imagen-productos-similares {
-    width: 50%;
-}
-
-.descripcion2 {
-    margin: 50px 16px;
-}
-
-.titulo-reviews {
-    margin: 10px 0;
-}
-
-.reviews {
-    border: solid 2px salmon;
-    display: flex;
-}
-
-.fa-solid-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    border-radius: 100% green;
-}
-
-.descripcion-reviews {
-    font-size: 10px;
-    margin: 33px 8px;
-}
- 
-
-
-
-
-
-
-    
-
