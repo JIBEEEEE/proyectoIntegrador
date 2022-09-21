@@ -67,10 +67,6 @@ margin: 0;
     font-weight: 15px;
 }
 
-.listado-top{
-    display: flex;
-    align-items: center;
-}
 
 .logo{
     width: 75px;
@@ -105,6 +101,7 @@ margin: 0;
     display: flex;
     width: 500%;
     animation: cambio-slider 25s infinite linear alternate;
+    margin-bottom: 0;
 }
 
 .contenedor-slider li {
@@ -141,9 +138,9 @@ margin: 0;
 .cuotas h6{
     font-size: 10px;
     text-align: center;
-    margin: 15px;
+    margin: 0px 15px 10px 15px;
     border-bottom: black 1px solid;
-    padding: 5px;
+    padding: 8px;
 }
 
 .productosdestacados p{
@@ -491,6 +488,15 @@ footer {
         padding-top: 2px;
     }
 
+    .listado-top{
+        display: flex;
+        align-items: center;
+    }
+
+    .hamb-button{
+        display: none;
+    }
+
     .listado-top li {
         margin-left: 15px;
         font-size: 14px;
@@ -589,15 +595,6 @@ footer {
 @media (min-width: 960px){
 
     /*--HEADER -----------------*/
-
-    .parte-top{
-        height: 500px;
-        max-height: none;
-    }
-
-    .primera-linea{
-        justify-content: space-evenly;
-    }
 
     .listado-top ul {
         margin-left: 30px;
