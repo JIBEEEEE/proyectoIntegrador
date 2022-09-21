@@ -17,7 +17,20 @@ body{
 margin: 0;
 }
 
+
 /* ---------------------- /HEADER/ */
+
+/* /HEADER/ */
+
+.parte-top{
+    background-image: url(../images/sillon-gris.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 235px;
+}
+
+/*HEADER*/
+
 
 .primera-linea{
     display: flex;
@@ -68,6 +81,21 @@ margin: 0;
 }
 
 
+.iconos-top-mobile {
+    border: solid green 2px;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    color: rgb(25, 0, 106);
+}
+
+.iconos-top-mobile li {
+    margin: 10px;
+}
+
+
 .logo{
     width: 75px;
      
@@ -87,6 +115,17 @@ margin: 0;
     text-transform: none;
     color: rgb(25, 0, 106);
 }
+
+.segunda-linea {
+    border: rex 1px solid;
+}
+
+.segunda-linea h5{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
 
 /*Comienza MAIN*/
 
@@ -684,7 +723,28 @@ footer {
     /*HEADER -----------------*/
 
     .parte-top{
-        height: 560px;
+        display: flex;
+        border: red 1px solid;
+    }
+    .listado-top {
+        display: flex;
+        border: green 1px solid;
+        width: 100%;
+    }
+    .listado-top ul {
+        justify-content: space-evenly;
+    }
+ 
+    .listado-top a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .primera-linea {
+        width: 100%;
+    }
+    .iconos-top-mobile {
+        display: none;
     }
 
     @keyframes aumentologo {
@@ -697,26 +757,6 @@ footer {
         100%{
             transform: scale(1.5);
         }
-    }
-
-    .listado-top{
-        margin-left: 25px;
-    }
-
-    .listado-top ul {
-        margin-left: 70px;
-    }
-
-    .listado-top li{
-        margin-left: 17px;
-    }
-
-    .listado-top i{
-        font-size: 15px;
-    }
-
-    .listado-top a {
-        font-size: 18px;
     }
 
     /*MAIN -----------------*/
@@ -752,6 +792,35 @@ footer {
       padding: 4.5px
     }
 
+
+    /* VISTA LOGIN  */
+    .div-formularios-monitor {
+        display: flex;
+        padding-bottom: 20px;
+
+    }
+    .formulario-login,
+    .formulario-registrarse {
+        width: 100%;
+        border: green 2px solid;
+        padding-bottom: 233px;
+    }
+
+    .boton-login,
+    .boton-registrarse {
+        margin-top: 45px;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+    .boton-login-registrar {
+        width: 50%;
+        margin-top: 40px;
+    }
+
+    .cartas-beneficios {
+        display: flex;
+        margin-bottom: 50px;
+    }
     /*FOOTER -----------------*/
 
     .contenedor-top-footer {
@@ -775,33 +844,284 @@ footer {
 
 /*vista de carrito mobile*/
 
-.caja-de-opciones {
-box-sizing: content-box;
-background-color: rgb(255, 255, 255);
-color: white;
-padding: 500px;
-text-align: center;
-
-
-
-}
-
 .opciones-box{
-position: relative;
-box-sizing: content-box;
-background-color: rgb(63, 111, 133);
-padding: 100px;
-bottom: 1350px;
-opacity: 70%;
-
-}
-
-.opciones-dentro-box {
-   
-    display: flex;
-    font-size: 24px;
-    justify-content: space-around;
     position: relative;
-    padding-bottom: 1250px;
+    box-sizing: content-box;
+    background-color: rgb(63, 111, 133);
+    color: aquamarine;
+    padding: 40px;
+    opacity: 60%;
+    z-index: 1;
+    top: 10px;
     
-}
+    }
+    
+    .opciones-dentro-box {
+       
+        display: flex;
+        font-size: 14px;
+        justify-content: space-around;
+        position: relative;
+        padding-bottom: 300px;
+        left: 3px;
+        bottom: 55px;
+        z-index: 20;
+    }
+    
+
+    .envio {
+        opacity: 50%;
+    }
+
+    .pago {
+        
+        opacity: 50%;
+    }
+    
+    .linea-opciones {
+        position: relative;
+    width: 450px;
+    background-color: gray;
+    color: aquamarine;
+    padding: 1px;
+    opacity: 60%;
+    z-index: 1;
+    bottom: 365px;
+    z-index: 2;
+    border-left: 40%;
+    left: 20px;
+    }
+    
+    .Carrito-de-Compras {
+        display: flex;
+        font-size: 18px;
+        justify-content: space-around;
+        position: relative;
+        right: 150px;
+        bottom: 320px;
+        z-index: 10;
+        
+    }
+    
+    .linea-carrito-de-compras {
+        position: relative;
+        width: 290px;
+        background-color: gray;
+        color: aquamarine;
+        padding: 1px;
+        opacity: 60%;
+        z-index: 1;
+        bottom: 280px;
+        z-index: 2;
+        border-left: 40%;
+        left: 13px;
+    }
+    
+    .Resumen {
+        display: flex;
+        font-size: 18px;
+        justify-content: space-around;
+        position: relative;
+        left: 160px;
+        bottom: 360px;
+        z-index: 10;
+    }
+    
+    .linea-resumen {
+        position: relative;
+        width: 100px;
+        background-color: gray;
+        color: aquamarine;
+        padding: 1px;
+        opacity: 60%;
+        z-index: 1;
+        bottom: 378px;
+        z-index: 2;
+        border-left: 40%;
+        left: 350px;
+    }
+    
+    .cupon {
+        display: flex;
+        font-size: 8px;
+        justify-content: space-around;
+        position: relative;
+        left: 160px;
+        bottom: 380px;
+        z-index: 10;
+        text-transform: uppercase;
+        font-weight: 900;
+        
+    }
+    
+    .linea-cupon {
+        position: relative;
+        width: 100px;
+        background-color: gray;
+        color: aquamarine;
+        padding: 1px;
+        opacity: 60%;
+        z-index: 1;
+        bottom: 380px;
+        z-index: 2;
+        border-left: 40%;
+        left: 350px;
+    }
+    
+    .Subtotal-Envio-Impuestos {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        justify-content: space-around;
+        position: relative;
+        left: 352px;
+        bottom: 380px;
+        z-index: 10;
+    }
+    
+    .precios {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        justify-content: space-around;
+        position: relative;
+        left: 430px;
+        bottom: 473px;
+        z-index: 10;
+    }
+    
+    .linea-precios {
+        position: relative;
+        width: 100px;
+        background-color: gray;
+        color: aquamarine;
+        padding: 1px;
+        opacity: 60%;
+        z-index: 1;
+        bottom: 478px;
+        z-index: 2;
+        border-left: 40%;
+        left: 350px;
+    }
+    
+    .total {
+        display: flex;
+        font-size: 8px;
+        justify-content: space-around;
+        position: relative;
+        left: 125px;
+        bottom: 478px;
+        z-index: 10;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    
+    .numero613 {
+        display: flex;
+        font-size: 8px;
+        justify-content: space-around;
+        position: relative;
+        left: 200px;
+        bottom: 497px;
+        z-index: 10;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    
+    .silla1 {
+        display: flex;
+        position: relative;
+       width: 60px;
+       height: 60px;
+       bottom: 630px;
+    }
+    
+    .escritorio {
+        display: flex;
+        position: relative;
+        width: 60px;
+        height: 60px;
+       bottom: 620px;
+    }
+    
+    .linea-carrito-de-compras2 {
+        position: relative;
+        width: 290px;
+        background-color: gray;
+        color: aquamarine;
+        padding: 1px;
+        opacity: 60%;
+        z-index: 1;
+        bottom: 140px;
+        
+        border-left: 40%;
+        left: 13px;
+    }
+    
+    .continuar {
+        display: flex;
+        position: relative;
+        left: 50px;
+        bottom: 600px;
+        z-index: 2;
+    }
+    
+    .cancelar {
+        display: flex;
+        position: relative;
+        left: 140px;
+        bottom: 621px;
+    }
+    
+    .casilla1 {
+        display: flex;
+        position: relative;
+        width: 20px;
+        bottom: 770px;
+        left: 280px;
+        z-index: 2;
+    }
+    
+    .casilla2 {
+        display: flex;
+        position: relative;
+        width: 20px;
+        bottom: 730px;
+        left: 280px;
+        z-index: 2;
+    }
+    
+    .silla-dc {
+        display: flex;
+        position: relative;
+        
+        bottom: 828px;
+        left: 80px;
+        z-index: 2;
+        
+    }
+    
+    .escritorio-dc {
+        display: flex;
+        position: relative;
+        
+        bottom: 800px;
+        left: 70px;
+        z-index: 2;
+    }
+    .silla-precio {
+        display: flex;
+        position: relative;
+        
+        bottom: 895px;
+        left: 190px;
+        z-index: 2;
+    }
+    .escritorio-precio {
+        display: flex;
+        position: relative;
+        
+        bottom: 868px;
+        left: 200px;
+        z-index: 2;
+    }
