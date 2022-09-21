@@ -17,20 +17,18 @@ body{
 margin: 0;
 }
 
-/* /HEADER/ */
-
-.parte-top{
-    background-image: url(../images/sillon-gris.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 235px;
-}
-
-/*HEADER*/
+/* ---------------------- /HEADER/ */
 
 .primera-linea{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 7px 15px 0px 15px;
+    background-color: rgb(16, 1, 66);
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 10;
 }
 
 .fa-address-card,
@@ -42,7 +40,13 @@ margin: 0;
 
 .listado-top{
     display: none;
-    align-items: center;
+}
+
+.hamb-button{
+    color: gray;
+    font-size: 22px;
+    max-width: 50px;
+    padding: 6px;
 }
 
 .iconos-header-mobile {
@@ -88,22 +92,46 @@ margin: 0;
     color: rgb(25, 0, 106);
 }
 
-.segunda-linea{
-    width: 100%;
-    display: none;
-    width: 100%;
-}
-
-.segunda-linea h5{
-    margin: 5px;
-    text-align: center;
-}
-
-.borde-bajo{
-    border-bottom: solid black 1px;
-}
-
 /*Comienza MAIN*/
+
+.contenedor-slider{
+    margin-top: 65px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor-slider ul {
+    padding: 0;
+    display: flex;
+    width: 500%;
+    animation: cambio-slider 25s infinite linear alternate;
+}
+
+.contenedor-slider li {
+    list-style: none;    
+    width: 100%;
+}
+
+.contenedor-slider img {
+    width: 100%;
+}
+
+@keyframes cambio-slider {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    40% {margin-left: -100%;}
+
+    45% {margin-left: -200%;}
+    60% {margin-left: -200%;}
+
+    65% {margin-left: -300%;}
+    80% {margin-left: -300%;}
+
+    85% {margin-left: -400%;}
+    100% {margin-left: -400%;}
+}
 
 .el-main nav{
     margin-bottom: 20px;
@@ -351,16 +379,13 @@ footer {
 
     /*HEADER -----------------*/
 
-    .parte-top{
-        background-position: center;
-        background-size: cover;
-        height: 330px;
-        padding: 15px
-    }
-
     .logo{
         width: 110px;
         height: 110px;;
+    }
+
+    .hamb-button{
+        font-size: 28px;
     }
 
     .listado-top li {
@@ -369,26 +394,6 @@ footer {
         display: flex;
     }
    
-    .fa-address-card,
-    .fa-cart-shopping,
-    .fa-house,
-    .fa-arrow-right{
-        display: block;
-        font-size: 12px;
-        padding-left: 5px;
-        color: rgb(25, 0, 106)
-    }
-
-    .welcome,
-    .borde-bajo{
-        font-size: 15.5px;
-        letter-spacing: 1px;
-    }   
-
-    .borde-bajo{
-        font-weight: 400
-    }
-
     /* /MAIN -----------------/ */
 
     .el-main h6 {
@@ -446,9 +451,9 @@ footer {
 
 @media (min-width: 760px){
 
-    /*HEADER -----------------*/
+    /* -----------HEADER -----------------*/
 
-    .parte-top{
+    /*.parte-top{
         background-image: url(../images/sillon-amarillo-2.JPG);
         background-position: center;
         background-size: cover;
@@ -456,11 +461,7 @@ footer {
         max-height: 390px;
     }
 
-    .logo{
-        width: 125px;
-        height: 115px;
-        animation: aumentologo 2500ms ease-out infinite alternate;
-    }
+    animation: aumentologo 2500ms ease-out infinite alternate;
 
 @keyframes aumentologo {
     0% {
@@ -472,15 +473,33 @@ footer {
     100%{
         transform: scale(1.3);
     }
-    } 
+    }                    */
+    
+    .logo{
+        width: 125px;
+        height: 115px;
+    }
+
+    .fa-address-card,
+    .fa-cart-shopping,
+    .fa-house,
+    .fa-arrow-right{
+        display: block;
+        font-size: 12px;
+        padding-left: 5px;
+        color: gray;
+        padding-top: 2px;
+    }
+
     .listado-top li {
         margin-left: 15px;
         font-size: 14px;
         display: flex;
     }
 
-    .segunda-linea{
-        display: none;
+    .listado-top a {
+        color: gray;
+        text-decoration: none;
     }
 
     /* /MAIN -----------------/ */
