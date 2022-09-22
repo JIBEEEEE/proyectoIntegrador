@@ -594,6 +594,18 @@ footer {
         color: rgb(25, 0, 106)
     }
 
+    /*Probando quary carrito */
+    .opciones-box{
+        width: 421px;
+        left: 0px;
+        
+        
+        }
+            
+           
+        
+    /*Probando quary carrito final*/
+
 
     }
     /* /MAIN -----------------/ */
@@ -891,6 +903,18 @@ footer {
         font-size: 18.5px;
     }
 
+    /*Probando quary carrito*/
+    .opciones-box{
+        width: 679px;
+        
+        
+        }
+
+      
+
+      
+    
+/*Probando quary carrito final*/
 }
 
 @media (min-width: 960px){
@@ -992,6 +1016,15 @@ footer {
         justify-content: space-around;
         width: 70%;
     }
+    /*Probando quary carrito */
+    .opciones-box{
+        width: 878px;
+        left: 0px;
+        
+        
+        }
+    
+    /*Probando quary carrito final*/
 }
 
 
@@ -1159,11 +1192,22 @@ footer {
         font-size: 18.5px;
         letter-spacing: 1.6px;
     }
+    /*Probando quary carrito */
+    .opciones-box{
+        width: 1118px;
+        
+        
+        }
+   
+    /*Probando quary carrito final*/
 }
 
 /*vista de carrito mobile*/
 
+
+
 .opciones-box{
+    display: flex;
     position: relative;
     box-sizing: content-box;
     background-color: rgb(63, 111, 133);
@@ -1181,8 +1225,8 @@ footer {
         font-size: 14px;
         justify-content: space-around;
         position: relative;
-        padding-bottom: 300px;
         left: 3px;
+        height: 160px;
         bottom: 55px;
         z-index: 20;
     }
@@ -1198,16 +1242,16 @@ footer {
     }
     
     .linea-opciones {
-        position: relative;
+    display: flex;
+    position: relative;
     width: 450px;
     background-color: gray;
     color: aquamarine;
     padding: 1px;
-    opacity: 60%;
-    z-index: 1;
-    bottom: 365px;
+    opacity: 60%; 
+    bottom: 180px;
     z-index: 2;
-    border-left: 40%;
+    
     left: 20px;
     }
     
@@ -1217,33 +1261,33 @@ footer {
         justify-content: space-around;
         position: relative;
         right: 150px;
-        bottom: 320px;
-        z-index: 10;
+        bottom: 177px;
         
     }
     
     .linea-carrito-de-compras {
         position: relative;
-        width: 290px;
-        background-color: gray;
-        color: aquamarine;
-        padding: 1px;
-        opacity: 60%;
-        z-index: 1;
-        bottom: 280px;
-        z-index: 2;
-        border-left: 40%;
-        left: 13px;
+    width: 290px;
+    background-color: gray;
+    color: aquamarine;
+    padding: 1px;
+    opacity: 60%;
+    z-index: 1;
+    bottom: 133px;
+    z-index: 2;
+    border-left: 40%;
+    left: 9px;
     }
     
     .Resumen {
         display: flex;
         font-size: 18px;
-        justify-content: space-around;
         position: relative;
-        left: 160px;
-        bottom: 360px;
+       left: 360px;
+        bottom: 220px;
         z-index: 10;
+        height: 20px;
+        width: 20px;
     }
     
     .linea-resumen {
@@ -1254,22 +1298,22 @@ footer {
         padding: 1px;
         opacity: 60%;
         z-index: 1;
-        bottom: 378px;
+        bottom: 235px;
         z-index: 2;
         border-left: 40%;
         left: 350px;
     }
     
     .cupon {
-        display: flex;
+        
         font-size: 8px;
-        justify-content: space-around;
         position: relative;
-        left: 160px;
-        bottom: 380px;
-        z-index: 10;
+        left: 345px;
+        bottom: 240px;
         text-transform: uppercase;
         font-weight: 900;
+        height: 20px;
+        width: 150px;
         
     }
     
@@ -1281,7 +1325,7 @@ footer {
         padding: 1px;
         opacity: 60%;
         z-index: 1;
-        bottom: 380px;
+        bottom: 255px;
         z-index: 2;
         border-left: 40%;
         left: 350px;
@@ -1293,9 +1337,11 @@ footer {
         font-size: 10px;
         justify-content: space-around;
         position: relative;
-        left: 352px;
-        bottom: 380px;
+        left: 355px;
+    bottom: 219px;
         z-index: 10;
+        height: 20px;
+        width: 20px;
     }
     
     .precios {
@@ -1305,8 +1351,10 @@ footer {
         justify-content: space-around;
         position: relative;
         left: 430px;
-        bottom: 473px;
+        bottom: 239px;
         z-index: 10;
+        height: 20px;
+        width: 20px;
     }
     
     .linea-precios {
@@ -1317,10 +1365,10 @@ footer {
         padding: 1px;
         opacity: 60%;
         z-index: 1;
-        bottom: 478px;
+        bottom: 205px;
         z-index: 2;
         border-left: 40%;
-        left: 350px;
+        left: 352px;
     }
     
     .total {
@@ -1328,11 +1376,13 @@ footer {
         font-size: 8px;
         justify-content: space-around;
         position: relative;
-        left: 125px;
-        bottom: 478px;
+        left: 359px;
+    bottom: 210px;
         z-index: 10;
         text-transform: uppercase;
         font-weight: 900;
+        height: 20px;
+        width: 20px;
     }
     
     .numero613 {
@@ -1340,11 +1390,13 @@ footer {
         font-size: 8px;
         justify-content: space-around;
         position: relative;
-        left: 200px;
-        bottom: 497px;
+        left: 429px;
+    bottom: 238px;
         z-index: 10;
         text-transform: uppercase;
         font-weight: 900;
+        height: 20px;
+        width: 20px;
     }
     
     .silla1 {
@@ -1352,7 +1404,7 @@ footer {
         position: relative;
        width: 60px;
        height: 60px;
-       bottom: 630px;
+       bottom: 378px;
     }
     
     .escritorio {
@@ -1360,7 +1412,7 @@ footer {
         position: relative;
         width: 60px;
         height: 60px;
-       bottom: 620px;
+        bottom: 374px;
     }
     
     .linea-carrito-de-compras2 {
@@ -1371,7 +1423,7 @@ footer {
         padding: 1px;
         opacity: 60%;
         z-index: 1;
-        bottom: 140px;
+        bottom: 8px;
         
         border-left: 40%;
         left: 13px;
@@ -1381,7 +1433,7 @@ footer {
         display: flex;
         position: relative;
         left: 50px;
-        bottom: 600px;
+        bottom: 364px;
         z-index: 2;
     }
     
@@ -1389,58 +1441,67 @@ footer {
         display: flex;
         position: relative;
         left: 140px;
-        bottom: 621px;
+        bottom: 388px;
     }
     
     .casilla1 {
         display: flex;
         position: relative;
         width: 20px;
-        bottom: 770px;
+        bottom: 535px;
         left: 280px;
-        z-index: 2;
+        z-index: 1;
     }
     
     .casilla2 {
         display: flex;
         position: relative;
         width: 20px;
-        bottom: 730px;
+        bottom: 494px;
         left: 280px;
-        z-index: 2;
+        z-index: 1;
     }
     
     .silla-dc {
         display: flex;
         position: relative;
         
-        bottom: 828px;
+        bottom: 596px;
         left: 80px;
-        z-index: 2;
-        
+        height: 20px;
+        width: 169px;
     }
     
     .escritorio-dc {
         display: flex;
-        position: relative;
-        
-        bottom: 800px;
-        left: 70px;
-        z-index: 2;
+    position: relative;
+    bottom: 569px;
+    left: 76px;
+    z-index: 2;
+    height: 20px;
+    width: 140px;
     }
     .silla-precio {
         display: flex;
         position: relative;
         
-        bottom: 895px;
-        left: 190px;
+        bottom: 669px;
+        left: 220px;
         z-index: 2;
+        height: 20px;
+        width: 20px;
     }
     .escritorio-precio {
         display: flex;
         position: relative;
-        
-        bottom: 868px;
-        left: 200px;
+        height: 20px;
+        width: 20px;
+        bottom: 640px;
+        left: 220px;
         z-index: 2;
+    }
+
+    .main-carrito {
+width: 480px;
+height: 430px;
     }
