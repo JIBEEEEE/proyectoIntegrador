@@ -8,7 +8,7 @@ console.log(publicPath)
 
 app.use (express.static (publicPath));
 
-app.listen(3100, () => {
+app.listen(process.env.PORT || 3100, () => {
     console.log("Servidor corriendo en el puerto 3100")
 })
 
