@@ -252,7 +252,7 @@ margin: 0;
     justify-content: center;
   }
   
-  .carrusel ul {
+.carrusel ul {
     list-style: none;
     margin: 0 20px;
     padding: 0;
@@ -261,23 +261,26 @@ margin: 0;
     scroll-behavior: smooth;
   }
   
-  .carrusel-fotos {
+.carrusel-fotos {
     display: flex;
     gap: 10px;
     overflow: auto;
   }
   
-  .carrusel-fotos img {
-    width: 300px;
+.carrusel-fotos img {
+    width: 350px;
     height: 200px;
     object-fit: contain;
   }
   
-  .carrusel-menu {
+.carrusel-menu {
     display: none;
   }
+.main-detalle {
+    margin: 0 10px;
+}
 
-  .titulo-producto {
+.titulo-producto {
     font-size: 30px;
     margin: 10px 0;
 }
@@ -335,6 +338,7 @@ button:hover{
 .detalle2 {
     display: flex;  
     border-bottom: solid 1px #d1d1d1e7;
+    margin: 0 10px;
 }
 
 .imagen-productos-similares {
@@ -354,7 +358,7 @@ button:hover{
 }
 
 .titulo-reviews {
-    margin: 10px 0;
+    margin: 10px 10px;
 }
 
 .reviews {
@@ -626,6 +630,13 @@ footer {
         font-size: 16.5px;
     }
 
+    /* VISTA PRODUCTOS */
+    .carrusel-fotos img {
+        width: 400px;
+        height: 200px;
+        object-fit: contain;
+      }
+
      /* /FOOTER -----------------/ */
 
     .list-footer1 li,
@@ -773,12 +784,21 @@ footer {
     .detalle {
         margin: 0 20px;  
     }
+    .main-detalle {
+        border-left: solid 1px #d1d1d1e7;
+        width: 50%;
+        background-color: rgba(16, 2, 61, 0.301);
+    }
     .descripcion-prod {
+        border: solid 2px salmon;
         display: flex;
         margin: 30px 20px;
         justify-content: space-around;
         border-top: solid 1px #d1d1d1e7;
         align-items: center;
+    }
+    .elegir-modelo {
+        margin-bottom: 20px;
     }
     .comentario-producto {
         margin: 5px 20px;
@@ -1005,15 +1025,10 @@ footer {
 
     /* VISTA PRODUCTS WEB */
 
-    .div-main {
-        margin: 10px 0;
-    }
-    .imagen {
-        width: 50%;
-    }
-    .imagen-espejo {
-        width: 250px;
-    }
+    .carrusel-fotos img {
+        width: 500px;
+        height: 400px;
+      }
     .main-detalle {
         border-left: solid 1px #d1d1d1e7;
         width: 50%;
@@ -1022,7 +1037,7 @@ footer {
     .detalle {
         margin: 0 20px;  
     }
-    .descripcion {
+    .descripcion-prod {
         display: flex;
         margin: 30px 20px;
         justify-content: space-around;
