@@ -428,7 +428,6 @@ footer {
         margin-left: 12px;
         font-size: 12px;
         display: flex;
-<<<<<<< HEAD
     }   
     .fa-address-card,
     .fa-cart-shopping,
@@ -450,10 +449,8 @@ footer {
         font-weight: 400
     }
 
-=======
     }
    
->>>>>>> d24f24723c124cd2260133284535d91e8356f829
     /* /MAIN -----------------/ */
 
     .el-main h6 {
@@ -507,7 +504,7 @@ footer {
         padding-bottom: 20px;
         letter-spacing: 0.5px;
     }
-}
+
 
 @media (min-width: 760px){
 
