@@ -594,18 +594,153 @@ footer {
         color: rgb(25, 0, 106)
     }
 
-    /*Probando quary carrito */
-    .opciones-box{
-        width: 421px;
-        left: 0px;
-        
-        
-        }
-            
-           
-        
-    /*Probando quary carrito final*/
+   .Resumen {
+    left: 360px;
+    bottom: 109px;
+    height: 20px;
+    font-size: 18px;
+   }
 
+   .Subtotal-Envio-Impuestos {
+    left: 355px;
+    bottom: 100px;
+    height: 20px;
+    font-size: 15px;
+   }
+
+   .precios {
+    left: 448px;
+        bottom: 134px;
+        height: 20px;
+        font-size: 15px;
+   }
+
+   .total {
+        
+    font-size: 15px;
+    left: 355px;
+    bottom: 40px;
+    font-weight: 900;
+    height: 20px;
+   
+   
+}
+
+.numero613 {
+    
+    font-size: 15px;
+    
+    left: 429px;
+    bottom: 74px;
+   
+    
+    font-weight: 900;
+    height: 20px;
+    
+    
+}
+
+.opciones-dentro-box {
+    font-size: 14px;
+    left: 3px;
+    height: 49px;
+    bottom: 55px;
+}
+
+.Carrito-de-Compras {
+    font-size: 18px;
+        
+        right: -13px;
+        bottom: 58px;
+       
+        
+        height: 35px;
+}
+
+.casilla1 {
+    font-size: 15px;
+    bottom: 237px;
+    left: 303px;
+   
+}
+
+.casilla2 {
+    font-size: 15px;
+bottom: 332px;
+left: 304px;
+
+}
+.continuar {
+    left: -66px;
+    bottom: 143px;
+   font-size: 15px;
+}
+
+.cancelar {
+left: -47px;
+bottom: 144px;
+font-size: 15px;
+}
+
+.silla1 {
+    
+    font-size: 15px;
+    height: 60px;
+    bottom: 255px;
+  
+    left: 13px;
+}
+
+.escritorio {
+   font-size: 15px;
+    
+    height: 60px;
+    bottom: 183px;
+  
+    left: -50px;
+}
+.linea-carrito-de-compras2 {
+   padding: 1px;
+    opacity: 60%;
+   
+    bottom: -139px;
+  
+    border-left: 40%;
+    left: 13px;
+}
+.silla-dc {
+
+    
+    bottom: 370px;
+    left: 94px;
+    height: 20px;
+    font-size: 15px;
+    
+}
+
+.escritorio-dc {
+    
+    bottom: 337px;
+    left: 94px;
+    height: 20px;
+    font-size: 15px;
+    
+}
+.silla-precio {
+    
+bottom: 444px;
+left: 242px;
+height: 20px;
+font-size: 15px;
+}
+.escritorio-precio {
+  
+height: 20px;
+bottom: 409px;
+left: 242px;
+font-size: 15px;  
+
+    }
 
     }
     /* /MAIN -----------------/ */
@@ -903,18 +1038,137 @@ footer {
         font-size: 18.5px;
     }
 
-    /*Probando quary carrito*/
-    .opciones-box{
-        width: 679px;
-        
-        
-        }
+    .Carrito-de-Compras {
+        font-size: 27px;
+            
+            right: -13px;
+            bottom: 73px;
+           
+            
+            height: 35px;
+    }
+.Resumen {
+    left: 580px;
+    bottom: 133px;
+    height: 20px;
+    font-size: 27px;
+}
 
-      
+.Subtotal-Envio-Impuestos {
+    left: 551px;
+    bottom: 62px;
+    height: 20px;
+    font-size: 20px;
+   }
 
-      
+   .precios {
+    left: 675px;
+    bottom: 102px;
+    height: 20px;
+    font-size: 20px;
+   }
+
+   .total {
+    font-size: 15px;
+    left: 552px;
+    bottom: -82px;
+    font-weight: 900;
+    height: 25px;
+   }
+
+   .numero613 {
+    font-size: 15px;
+    left: 673px;
+    bottom: -42px;
+    font-weight: 900;
+    height: 25px;
+   }
+   .opciones-dentro-box {
+    font-size: 20px;
+    left: 3px;
+    height: 49px;
+    bottom: 60px;
+}
+.casilla1 {
+    font-size: 25px;
+    bottom: 257px;
+    left: 462px;
+   
+}
+
+.casilla2 {
+    font-size: 25px;
+    bottom: 450px;
+    left: 463px;
+
+}
+
+.continuar {
+    left: -38px;
+    bottom: 100px;
+    font-size: 25px;
+}
+
+.cancelar {
+    left: -20px;
+    bottom: 101px;
+    font-size: 25px;
+}
+.silla1 {
     
-/*Probando quary carrito final*/
+    font-size: 25px;
+    height: 137px;
+    bottom: 289px;
+    left: 0px;
+}
+
+.escritorio {
+    font-size: 15px;
+    height: 126px;
+    bottom: 158px;
+    left: -131px;
+}
+.linea-carrito-de-compras2 {
+    padding: 1px;
+     opacity: 60%;
+    
+     bottom: -282px;
+   
+     border-left: 40%;
+     left: 13px;
+ }
+ .silla-dc {
+
+    
+    bottom: 513px;
+    left: 184px;
+    height: 20px;
+    font-size: 25px;
+    
+}
+
+.escritorio-dc {
+    
+    bottom: 403px;
+    left: 171px;
+    height: 20px;
+    font-size: 25px;
+    
+}
+.silla-precio {
+    
+    bottom: 603px;
+    left: 334px;
+    height: 20px;
+    font-size: 25px;
+}
+.escritorio-precio {
+  
+    height: 20px;
+    bottom: 491px;
+    left: 382px;
+    font-size: 25px;
+}
 }
 
 @media (min-width: 960px){
@@ -1016,15 +1270,137 @@ footer {
         justify-content: space-around;
         width: 70%;
     }
-    /*Probando quary carrito */
-    .opciones-box{
-        width: 878px;
-        left: 0px;
-        
-        
-        }
+    .Resumen {
+        left: 673px;
+        bottom: 135px;
+        height: 20px;
+        font-size: 27px;
+    }
+    .Carrito-de-Compras {
+        font-size: 27px;
+            
+        right: -73px;
+            bottom: 73px;
+           
+            
+            height: 35px;
+    }
+    .Subtotal-Envio-Impuestos {
+        left: 629px;
+        bottom: 101px;
+        height: 20px;
+        font-size: 30px;
+       }
     
-    /*Probando quary carrito final*/
+       .precios {
+        left: 806px;
+        bottom: 150px;
+        height: 20px;
+        font-size: 30px;
+       }
+    
+       .total {
+        font-size: 30px;
+    left: 612px;
+    bottom: -52px;
+    font-weight: 900;
+    height: 25px;
+       }
+    
+       .numero613 {
+        font-size: 30px;
+        left: 731px;
+        bottom: 3px;
+        font-weight: 900;
+        height: 25px;
+       }
+       .opciones-dentro-box {
+        font-size: 20px;
+        left: 3px;
+        height: 49px;
+        bottom: 60px;
+    }
+    .casilla1 {
+        font-size: 25px;
+        bottom: 316px;
+        left: 506px;
+       
+    }
+    
+    .casilla2 {
+        font-size: 25px;
+    bottom: 478px;
+    left: 506px;
+    
+    }
+    
+    .continuar {
+        left: -38px;
+        bottom: 152px;
+        font-size: 25px;
+    }
+    
+    .cancelar {
+        left: -20px;
+        bottom: 151px;
+        font-size: 25px;
+    }
+    .silla1 {
+        
+        font-size: 25px;
+        height: 137px;
+        bottom: 355px;
+        left: 52px;
+    }
+    
+    .escritorio {
+        font-size: 15px;
+        height: 126px;
+        bottom: 221px;
+        left: -85px;
+    }
+    .linea-carrito-de-compras2 {
+        padding: 1px;
+         opacity: 60%;
+        
+         bottom: -282px;
+       
+         border-left: 40%;
+         left: 13px;
+     }
+     .silla-dc {
+    
+        
+        bottom: 545px;
+        left: 203px;
+        height: 20px;
+        font-size: 25px;
+        
+    }
+    
+    .escritorio-dc {
+        
+        bottom: 467px;
+        left: 199px;
+        height: 20px;
+        font-size: 25px;
+        
+    }
+    .silla-precio {
+        
+        bottom: 633px;
+    left: 421px;
+    height: 20px;
+    font-size: 25px;
+    }
+    .escritorio-precio {
+      
+        height: 20px;
+    bottom: 554px;
+    left: 418px;
+    font-size: 25px;
+    }
+   
 }
 
 
@@ -1198,11 +1574,13 @@ footer {
         
         
         }
+
+        
    
     /*Probando quary carrito final*/
 }
 
-/*vista de carrito mobile*/
+
 
 
 
@@ -1222,13 +1600,12 @@ footer {
     .opciones-dentro-box {
        
         display: flex;
-        font-size: 14px;
+       
         justify-content: space-around;
         position: relative;
-        left: 3px;
-        height: 160px;
-        bottom: 55px;
-        z-index: 20;
+       
+        
+        
     }
     
 
@@ -1242,266 +1619,174 @@ footer {
     }
     
     .linea-opciones {
-    display: flex;
+   
     position: relative;
-    width: 450px;
+    
     background-color: gray;
     color: aquamarine;
     padding: 1px;
     opacity: 60%; 
     bottom: 180px;
     z-index: 2;
-    
+  
     left: 20px;
     }
     
     .Carrito-de-Compras {
-        display: flex;
-        font-size: 18px;
-        justify-content: space-around;
+      
+        
         position: relative;
-        right: 150px;
-        bottom: 177px;
         
     }
     
     .linea-carrito-de-compras {
         position: relative;
-    width: 290px;
-    background-color: gray;
-    color: aquamarine;
-    padding: 1px;
-    opacity: 60%;
-    z-index: 1;
-    bottom: 133px;
-    z-index: 2;
-    border-left: 40%;
-    left: 9px;
-    }
-    
-    .Resumen {
-        display: flex;
-        font-size: 18px;
-        position: relative;
-       left: 360px;
-        bottom: 220px;
-        z-index: 10;
-        height: 20px;
-        width: 20px;
-    }
-    
-    .linea-resumen {
-        position: relative;
-        width: 100px;
-        background-color: gray;
-        color: aquamarine;
-        padding: 1px;
-        opacity: 60%;
-        z-index: 1;
-        bottom: 235px;
-        z-index: 2;
-        border-left: 40%;
-        left: 350px;
-    }
-    
-    .cupon {
         
-        font-size: 8px;
-        position: relative;
-        left: 345px;
-        bottom: 240px;
-        text-transform: uppercase;
-        font-weight: 900;
-        height: 20px;
-        width: 150px;
-        
-    }
-    
-    .linea-cupon {
-        position: relative;
-        width: 100px;
-        background-color: gray;
-        color: aquamarine;
-        padding: 1px;
-        opacity: 60%;
-        z-index: 1;
-        bottom: 255px;
-        z-index: 2;
-        border-left: 40%;
-        left: 350px;
-    }
-    
-    .Subtotal-Envio-Impuestos {
-        display: flex;
-        flex-direction: column;
-        font-size: 10px;
-        justify-content: space-around;
-        position: relative;
-        left: 355px;
-    bottom: 219px;
-        z-index: 10;
-        height: 20px;
-        width: 20px;
-    }
-    
-    .precios {
-        display: flex;
-        flex-direction: column;
-        font-size: 10px;
-        justify-content: space-around;
-        position: relative;
-        left: 430px;
-        bottom: 239px;
-        z-index: 10;
-        height: 20px;
-        width: 20px;
-    }
-    
-    .linea-precios {
-        position: relative;
-        width: 100px;
-        background-color: gray;
-        color: aquamarine;
-        padding: 1px;
-        opacity: 60%;
-        z-index: 1;
-        bottom: 205px;
-        z-index: 2;
-        border-left: 40%;
-        left: 352px;
-    }
-    
-    .total {
-        display: flex;
-        font-size: 8px;
-        justify-content: space-around;
-        position: relative;
-        left: 359px;
-    bottom: 210px;
-        z-index: 10;
-        text-transform: uppercase;
-        font-weight: 900;
-        height: 20px;
-        width: 20px;
-    }
-    
-    .numero613 {
-        display: flex;
-        font-size: 8px;
-        justify-content: space-around;
-        position: relative;
-        left: 429px;
-    bottom: 238px;
-        z-index: 10;
-        text-transform: uppercase;
-        font-weight: 900;
-        height: 20px;
-        width: 20px;
-    }
-    
-    .silla1 {
-        display: flex;
-        position: relative;
-       width: 60px;
-       height: 60px;
-       bottom: 378px;
-    }
-    
-    .escritorio {
-        display: flex;
-        position: relative;
-        width: 60px;
-        height: 60px;
-        bottom: 374px;
-    }
-    
-    .linea-carrito-de-compras2 {
-        position: relative;
-        width: 290px;
         background-color: gray;
         color: aquamarine;
         padding: 1px;
         opacity: 60%;
         z-index: 1;
         bottom: 8px;
-        
         border-left: 40%;
         left: 13px;
+      
+    }
+    
+    .Resumen {
+       
+       
+        position: relative;
+        
+       
+    }
+    
+ 
+    
+
+    
+
+    
+    .Subtotal-Envio-Impuestos {
+       
+        flex-direction: column;
+        
+        justify-content: space-around;
+        position: relative;
+       
+        
+       
+    }
+    
+    .precios {
+        
+        flex-direction: column;
+      
+        justify-content: space-around;
+        position: relative;
+        
+        
+        
+    }
+    
+
+    
+    .total {
+        
+       
+        justify-content: space-around;
+        position: relative;
+       
+       
+        text-transform: uppercase;
+       
+       
+       
+    }
+    
+    .numero613 {
+        
+        
+        justify-content: space-around;
+        position: relative;
+      
+       
+        text-transform: uppercase;
+      
+        
+        
+    }
+    
+    .silla1 {
+        position: relative;
+       
+        
+    }
+    
+    .escritorio {
+        position: relative;
+        
+        
+    }
+    
+    .linea-carrito-de-compras2 {
+        position: relative;
+      
+        background-color: gray;
+        color: aquamarine;
+        padding: 1px;
+        opacity: 60%;
+       
+        
     }
     
     .continuar {
-        display: flex;
         position: relative;
-        left: 50px;
-        bottom: 364px;
-        z-index: 2;
+        
+       
     }
     
     .cancelar {
-        display: flex;
         position: relative;
-        left: 140px;
-        bottom: 388px;
+   
     }
     
     .casilla1 {
         display: flex;
         position: relative;
-        width: 20px;
-        bottom: 535px;
-        left: 280px;
-        z-index: 1;
+        
+       
     }
     
     .casilla2 {
         display: flex;
-        position: relative;
-        width: 20px;
-        bottom: 494px;
-        left: 280px;
-        z-index: 1;
-    }
+    position: relative;
+    
+  
+}
+    
     
     .silla-dc {
-        display: flex;
+
         position: relative;
         
-        bottom: 596px;
-        left: 80px;
-        height: 20px;
-        width: 169px;
+        
+        
     }
     
     .escritorio-dc {
-        display: flex;
-    position: relative;
-    bottom: 569px;
-    left: 76px;
-    z-index: 2;
-    height: 20px;
-    width: 140px;
+        position: relative;
+       
+        
+        
     }
     .silla-precio {
-        display: flex;
         position: relative;
+    
         
-        bottom: 669px;
-        left: 220px;
-        z-index: 2;
-        height: 20px;
-        width: 20px;
     }
     .escritorio-precio {
-        display: flex;
         position: relative;
-        height: 20px;
-        width: 20px;
-        bottom: 640px;
-        left: 220px;
-        z-index: 2;
-    }
-
-    .main-carrito {
-width: 480px;
-height: 430px;
+  
+        
     }
