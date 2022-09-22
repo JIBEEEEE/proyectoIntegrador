@@ -30,37 +30,87 @@
     </header>
 
     <main class="main-main">
-        <div class="imagen">            
-            <img src="/images/espejo.jpeg" class="imagen-espejo">
-        </div>
-        <div class="detalle">       
-            <h3 class="titulo-producto">Espejo</h3>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star fa-solid2"></i>
-            <p class="puntacion-reviews">10 reviews</p>
-        </div>
-        <div class="descripcion">
-            <p class="precio-producto">$15621</p>
-        </div>
-        <button class="button">Añadir a tu carrito</button>
+        <div class="div-main">
+            <div class="carrusel">
+                <ul class="carrusel-fotos">
+                  <li id="foto1"><img src="images/espejo.jpeg" alt=""></li>
+                  <li id="foto2"><img src="images/espejo2.jpeg" alt=""></li>
+                  <li id="foto3"><img src="images/espejo3.jpeg" alt=""></li>
+                </ul>
+                <ul class="carrusel-menu">
+                  <li><a href="#foto1"><img src="images/espejo.jpeg" alt=""></a></li>
+                  <li><a href="#foto2"><img src="images/espejo2.jpeg" alt=""></a></li>
+                  <li><a href="#foto3"><img src="images/espejo3.jpeg" alt=""></a></li>
+                </ul>
+            </div>
+                <div class="main-detalle">  
+                    <div class="detalle">     
+                        <h3 class="titulo-producto">Espejo</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star fa-solid2"></i>
+                        <p class="puntacion-reviews">10 reviews</p>
+                    </div>
+                    <div class="descripcion">
+                        <p id="precio">$15621</p>
+                            <form class="elegir-modelo" action="products.html" method="POST">
+                                <label>Elegí color</label>
+                                <select name="colores">
+                                    <option value="1">Pino</option>
+                                    <option value="2">Algarrobo</option>
+                                    <option value="3">Roble</option>
+                                    <option value="4">Nogal</option>
+                                    <option value="5">Melamina</option>
+                                </select>
+                    </div>
+                    <div class="comentario-producto">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, nulla commodi! Id vel dolorem nihil eos, voluptate aliquam et mollitia. Odit recusandae cupiditate in suscipit facilis qui odio aliquam magni!</p>
+                    </div>
+                    <button class="button">Añadir a tu carrito</button>
+                </div>
         </div>
         <div class="segundo-titulo">
             <h3 class="segundo-titilo-producto">Productos similares</h3>
         </div>
         <div class="detalle2">
-            <img src="/images/mesa-exterior.jpeg" class="imagen-productos-similares">
-                <div>
-                <h2 class="titulo-producto2">Mesa exterior</h2>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-duotone fa-star"></i>
-                <p class=>$18654</p>
-                </div>
+            <div class="mobil-detalle2">
+                <img src="/images/mesa-exterior.jpeg" class="imagen-productos-similares">
+                    <div class="descripcion2">
+                        <h2 class="titulo-producto2">Mesa exterior</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star fa-solid2"></i>
+                        <p class=>$18654</p>
+                    </div>
+            </div>
+            <div class="tablet-detalle2">
+                <img src="/images/mesa-4-patas.jpeg" class="imagen-productos-similares">
+                    <div class="descripcion2">
+                        <h2 class="titulo-producto2">Mesa Modular</h2>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star fa-solid2"></i>
+                            <i class="fa-solid fa-star fa-solid2"></i>
+                            <p class=>$10650</p>
+                    </div>
+            </div>
+            <div class="compu-detalle2">
+                <img src="/images/mesa-y-sillas.jpeg" class="imagen-productos-similares">
+                    <div class="descripcion2">
+                        <h2 class="titulo-producto2">Mesa Madera Interior</h2>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p class=>$58600</p>
+                    </div>
+            </div>
         </div>
         <div class="titulo-reviews">
             <h2>Reviews</h2>
@@ -77,19 +127,22 @@
                     <i class="fa-solid fa-star fa-solid2"></i>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque sunt dolorum, culpa suscipit temporibus. Magni necessitatibus earum alias reiciendis pariatur iusto beatae, nisi nulla temporibus asperiores accusantium tempora repellat.</p>
+                    <p class="comentario-reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque sunt dolorum, culpa suscipit temporibus. Magni necessitatibus earum alias reiciendis pariatur iusto beatae, nisi nulla temporibus asperiores accusantium tempora repellat.</p>
                 </div>
         </div>
-        <div class="reviews2">
-            <i class="fa-solid fa-user-tie"></i>
-                <div></div>
-                    <p>CARLOS MASLATON</p>
-                    <p>Agosto 14, 2022</p>
+        <div class="reviews">
+            <i class="fa-solid fa-user-tie fa-solid-logo"></i>
+                <div class="descripcion-reviews">
+                    <p>RICARDO FORT</p>
+                    <p>Febrero 20, 2022</p>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-duotone fa-star"></i>
+                    <i class="fa-solid fa-star fa-solid2"></i>
+                </div>
+                <div>
+                    <p class="comentario-reviews">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur animi repellat eos unde laborum, temporibus architecto libero maiores nemo dolor incidunt nam esse quia, veniam ut eum quo. Id, earum?</p>
                 </div>
         </div>
 
