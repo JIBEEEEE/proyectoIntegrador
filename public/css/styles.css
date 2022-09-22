@@ -80,7 +80,7 @@ margin: 0;
 
 
 .iconos-top-mobile {
-    border: solid green 2px;
+
     width: 60%;
     color: white;
     display: flex;
@@ -126,6 +126,17 @@ margin: 0;
     justify-content: center;
     text-align: center;
     }
+
+    .welcome,
+    .borde-bajo{
+        font-size: 15.5px;
+        letter-spacing: 1px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .borde-bajo{
+        font-weight: 400
+    }
+
 
 /*Comienza MAIN*/
 
@@ -583,18 +594,8 @@ footer {
         color: rgb(25, 0, 106)
     }
 
-    .welcome,
-    .borde-bajo{
-        font-size: 15.5px;
-        letter-spacing: 1px;
-    }   
-
-    .borde-bajo{
-        font-weight: 400
-    }
 
     }
-   
     /* /MAIN -----------------/ */
 
     .el-main h6 {
@@ -687,6 +688,9 @@ footer {
         width: 125px;
         height: 115px;
     }
+    .iconos-top-mobile {
+        display: none;
+    }
 
     .fa-address-card,
     .fa-cart-shopping,
@@ -707,16 +711,27 @@ footer {
     .hamb-button{
         display: none;
     }
-
+    .listado-top {
+        width: 100%;
+    }
+    .listado-top ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
     .listado-top li {
         margin-left: 15px;
-        font-size: 14px;
+        font-size: 18px;
         display: flex;
+    }
+    .listado-top a:hover {
+        color: grey;
+        transition: 0.4s;
     }
 
     .listado-top a {
-        color: gray;
+        color: white;
         text-decoration: none;
+        font-weight: bold;
     }
 
     /* /MAIN -----------------/ */
@@ -851,11 +866,24 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
-   
-    .list-footer-icons li{
+    .footer3 ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }  
+    .footer-icon{
         margin-left: 8px;
+        justify-content: space-around;
+        
     }
+    .footer-icon i {
+        color: white;
+        font-size: 40px;
+    }
+    
 
     .marca-registrada h1{
         opacity: 0.8;
@@ -930,6 +958,12 @@ footer {
     .footer-item{
         margin-top: 5px;
     }
+    .footer3 {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .footer1{
         margin-left: 40px;
@@ -950,19 +984,25 @@ footer {
         opacity: 0.8;
         padding-bottom: 30px;
     }
+    .big-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .contenedor-top-footer {
+        justify-content: space-around;
+        width: 70%;
+    }
 }
+
+
 
 @media (min-width: 1200px){
 
     /*HEADER -----------------*/
 
-    .parte-top{
-        /* display: flex; */
-        border: red 1px solid;
-    }
+
     .listado-top {
         display: flex;
-        border: green 1px solid;
         width: 100%;
     }
     .listado-top ul {
@@ -970,9 +1010,9 @@ footer {
     }
  
     .listado-top a {
-        text-decoration: none;
+        
         font-size: 20px;
-        font-weight: bold;
+    
     }
     .iconos-top-mobile {
         display: none;
@@ -1082,7 +1122,6 @@ footer {
     .formulario-login,
     .formulario-registrarse {
         width: 100%;
-        border: green 2px solid;
         padding-bottom: 233px;
     }
 

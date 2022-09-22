@@ -20,15 +20,11 @@ app.get("/views/login.html", (req,res) => {
     res.sendFile(path.resolve (__dirname, "./views/login.html"))
 })
 
-app.get("/views/aboutus.html", (req,res) => {
-    res.sendFile(path.resolve (__dirname, "./views/aboutus.html"))
-})
-
 app.get("/views/products.html", (req,res) => {
     res.sendFile(path.resolve (__dirname, "./views/products.html"))
 })
 
 app.get("/views/cart.html", (req,res) => {
-    res.sendFile(path.resolve (__dirname, "./views/products.html"))
+    res.sendFile(path.resolve (__dirname, "./views/cart.html"))
 })
 
