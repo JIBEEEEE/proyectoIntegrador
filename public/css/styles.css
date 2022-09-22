@@ -102,10 +102,6 @@ margin: 0;
     width: 75px;
      
 }
-.listado-top {
-    width: 63%;
-    
-}
 
 .listado-top ul{
     font-size: 10px;
@@ -868,8 +864,6 @@ font-size: 15px;
 
     .listado-top{
         display: flex;
-        align-items: center;
-        width: 43%; 
     }
 
     .hamb-button{
@@ -1425,8 +1419,6 @@ font-size: 15px;
 
 
     .listado-top{
-        display: flex;
-        align-items: center;
         width: 52%; 
     }
 
