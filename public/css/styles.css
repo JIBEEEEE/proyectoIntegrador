@@ -26,7 +26,7 @@ margin: 0;
     /* background-image: url(../images/sillon-gris.jpg); */
     background-position: center;
     background-size: cover;
-    height: 235px;
+    height: 105px;
 }
 
 /*HEADER*/
@@ -34,12 +34,15 @@ margin: 0;
 
 .primera-linea{
     display: flex;
+    justify-content: space-around;
     justify-content: space-between;
     padding: 7px 15px 0px 15px;
     background-color: rgb(16, 1, 66);
     align-items: center;
+    position: fixed;
     width: 100%;
-    
+    top: 0%;
+    z-index: 10;
 }
 
 .fa-address-card,
@@ -80,16 +83,15 @@ margin: 0;
 
 
 .iconos-top-mobile {
-
-    width: 60%;
+    width: 39%;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
     color: rgb(25, 0, 106);
+    margin-right: 20px;
 }
-
 .iconos-top-mobile li {
     margin: 10px;
     color: white;
@@ -99,6 +101,10 @@ margin: 0;
 .logo{
     width: 75px;
      
+}
+.listado-top {
+    width: 63%;
+    
 }
 
 .listado-top ul{
@@ -140,8 +146,12 @@ margin: 0;
 
 /*Comienza MAIN*/
 
+.div-main {
+    border: solid 1px #d1d1d1e7;
+    margin-top: 30px;
+}
 .contenedor-slider{
-    margin-top: 65px;
+    margin-top: -39px;
     width: 100%;
     overflow: hidden;
 }
@@ -583,7 +593,10 @@ footer {
         margin-left: 12px;
         font-size: 12px;
         display: flex;
-    }   
+    }
+    .iconos-top-mobile {
+        width: 31%;
+    }
     .fa-address-card,
     .fa-cart-shopping,
     .fa-house,
@@ -853,14 +866,13 @@ font-size: 15px;
     .listado-top{
         display: flex;
         align-items: center;
+        width: 43%; 
     }
 
     .hamb-button{
         display: none;
     }
-    .listado-top {
-        width: 100%;
-    }
+
     .listado-top ul {
         display: flex;
         justify-content: space-evenly;
@@ -952,7 +964,6 @@ font-size: 15px;
         background-color: rgba(16, 2, 61, 0.301);
     }
     .descripcion-prod {
-        border: solid 2px salmon;
         display: flex;
         margin: 30px 20px;
         justify-content: space-around;
@@ -1410,10 +1421,12 @@ font-size: 15px;
     /*HEADER -----------------*/
 
 
-    .listado-top {
+    .listado-top{
         display: flex;
-        width: 100%;
+        align-items: center;
+        width: 52%; 
     }
+
     .listado-top ul {
         justify-content: space-evenly;
     }
@@ -1516,7 +1529,8 @@ font-size: 15px;
     }
     .div-main {
         border: solid 1px #d1d1d1e7;
-        display: flex;         
+        display: flex;
+        margin-top: 30px;
     }
     .comentario-reviews {
         margin-top: 40px;
