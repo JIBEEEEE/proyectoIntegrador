@@ -10,24 +10,24 @@
     <title>Digital Deco House</title>
 </head>
 <body>
-    <header class="main-header">
-            <a href="#">
-            <img src="/images/logo.png" class="logo">
-            </a>
-    
-            <!-- Menu Header -->
-            <ul class="main-menu-left">
-                <li class="menu-item"><a href="/views/index.html"> Inicio </a></li>
-                <li class="menu-item"><a href="/views/aboutus.html"> Nosotros</a></li>
-                <li class="menu-item"><a href="/views/products.html"> Catálogo</a></li>
-                <li class="menu-item"><a href="#"> Contacto</a></li>
-    
-            </ul>
-            <ul class="main-menu-right">
-                <li class="menu-item"><a href="#"> Carrito <i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li class="menu-item"><a href="/views/login.html"> Iniciar sesión <i class="fa-solid fa-right-to-bracket"></i></a></li>
-            </ul>
-    </header>
+    <header class="main-header fotografia" >
+        <!-- <img src="/images/sillon-amarillo.jpeg" alt="">-->
+         <div class="primera-linea">
+             <img src="/images/logo.png" class="logo">
+             <nav class="listado-top">
+             <ul>
+                 <li><a href="/views/index.html">INICIO</a><i class="fa-solid fa-house"></i></li>
+                 <li><a href="/views/products.html">PRODUCTOS</a><i class="fa-sharp fa-solid fa-arrow-right"></i></li>
+                 <li><a href="/views/login.html">CONTACTO</a><i class="fa-regular fa-address-card"></i></li>
+                 <li><a href="/views/cart.html">CARRITO</a><i class="fa-sharp fa-solid fa-cart-shopping"></i></li>
+             </ul>
+             </nav>
+             <a href="#" class="hamb-button">
+                 <i class="fa-solid fa-bars"></i>
+             </a>
+         </div>
+         
+ </header>
 
     <main class="main-main">
         <div class="div-main">
@@ -53,7 +53,7 @@
                         <i class="fa-solid fa-star fa-solid2"></i>
                         <p class="puntacion-reviews">10 reviews</p>
                     </div>
-                    <div class="descripcion">
+                    <div class="descripcion-prod">
                         <p id="precio">$15621</p>
                             <form class="elegir-modelo" action="products.html" method="POST">
                                 <label>Elegí color</label>
@@ -149,31 +149,24 @@
     </main>
 
     <footer>
-        <div class="contenedores-footer">
-            <div class="marca">
-                <a href="#">
-                <h3>Digital Deco House </h3>
-                </a>
-            </div>
-            <div class="footer">
-                <ul class="list-footer">  
-                    <li class="footer-tittle">DIGITAL DECO HOUSE</li>
+        <div class="contenedor-top-footer">
+            <div class="footer1">
+                <ul class="list-footer1">  
                     <li class="footer-item"><a class="enlaces-footer" href="#">Inicio</a></li>
                     <li class="footer-item"><a class="enlaces-footer" href="#">Nosotros</a></li>
                     <li class="footer-item"><a class="enlaces-footer" href="#">Catálogo</a></li>
                     <li class="footer-item"><a class="enlaces-footer" href="#">Contacto</a></li>
                 </ul>
             </div>
-            <div class="footer">
-                <ul class="list-footer">
-                    <li class="footer-tittle">AYUDA</li>
+            <div class="footer2">
+                <ul class="list-footer2">
                     <li class="footer-item"><a href="#" class="enlaces-footer">Cambios y devoluciones</a></li>
                     <li class="footer-item"><a href="#" class="enlaces-footer">Términos y condiciones</a></li>
                     <li class="footer-item"><a href="#" class="enlaces-footer">Política de privacidad</a></li>
                     <li class="footer-item"><a href="#" class="enlaces-footer">Información sobre envíos</a></li>
                 </ul>
             </div>
-            <div class="footer">
+            <div class="footer3">
                 <ul class="list-footer-icons">
                     <li class="footer-icon"><a href="#" class="enlaces-footer-redes"> <i class="fa-brands fa-instagram"></i></a></li>
                     <li class="footer-icon"><a href="#" class="enlaces-footer-redes"> <i class="fa-brands fa-facebook"></i></a></li>
@@ -188,7 +181,6 @@
             </h1>
         </div>
         
-
     </footer>
 </body>
 </html>

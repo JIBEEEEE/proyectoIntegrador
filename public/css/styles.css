@@ -244,6 +244,146 @@ margin: 0;
     font-size: 12px;
 }
 
+/* VISTA PRODUCTS MOBILE*/
+
+.carrusel {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .carrusel ul {
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+    /*max-width: 1030px;*/
+    max-width: 500px;
+    scroll-behavior: smooth;
+  }
+  
+  .carrusel-fotos {
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+  }
+  
+  .carrusel-fotos img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .carrusel-menu {
+    display: none;
+  }
+
+  .titulo-producto {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.fa-solid2 {
+    color: #d1d1d1e7;
+}
+
+.puntacion-reviews {
+    display: inline;
+    margin: 5px;
+}
+
+.descripcion-prod {
+    display: block;
+}
+.comentario-producto {
+    display: none;
+}
+
+.precio-producto {
+    margin: 5px 0;
+    font-size: 42px;
+}
+.elegir-modelo {
+    margin-top: 20px;
+}
+
+.button {
+    display: block;
+    margin-top: 20px;
+    width: 150px;
+    height: 35px;
+    border-radius: 0.5em;
+    background-color: rgb(25, 0, 106);
+    color: white;
+    border: 0.1px solid rgb(195,194,194);
+}
+
+button:hover{
+    background-color: grey;
+}
+
+.segundo-titulo {
+    border-top: solid 2px #d1d1d1e7;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.segundo-titilo-producto {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.detalle2 {
+    display: flex;  
+    border-bottom: solid 1px #d1d1d1e7;
+}
+
+.imagen-productos-similares {
+    width: 50%;
+}
+.mobil-detalle2 {
+    display: flex;
+}
+
+.descripcion2 {
+    margin: 50px 6px;
+}
+
+.tablet-detalle2,
+.compu-detalle2 {
+    display: none;
+}
+
+.titulo-reviews {
+    margin: 10px 0;
+}
+
+.reviews {
+    border-bottom: solid 1px #d1d1d1e7;
+    display: flex;
+    margin: 5px;
+}
+
+.fa-solid-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 100% green;
+}
+
+.descripcion-reviews {
+    font-size: 10px;
+    margin: 40px 8px;
+}
+
+.comentario-reviews {
+    margin: 5px 7px;
+}
+
+.border-description-reviews {
+    border-bottom: solid 1px #d1d1d1e7;
+}
+
 /* VISTA LOGIN MOBILE */
 
 .formulario-login, 
@@ -605,6 +745,59 @@ footer {
         animation: none;
     }
 
+    /* VISTA PRODUCTS TABLET */
+
+    .carrusel {
+        width: 50%;
+    }
+    .carrusel-fotos {
+      overflow: hidden;
+    }
+    .carrusel-fotos img {
+      width: 350px;
+      height: 250px;
+    }
+    .carrusel-menu {
+      display: block;
+    }
+    .carrusel-menu img {
+      /*box-sizing: border-box;*/
+      width: 50px;
+      height: 40px;
+      border: 5px solid #d1d1d1e7;
+      object-fit: contain;
+    }
+    .carrusel-menu img:hover {
+      border: none;
+    }
+    .detalle {
+        margin: 0 20px;  
+    }
+    .descripcion-prod {
+        display: flex;
+        margin: 30px 20px;
+        justify-content: space-around;
+        border-top: solid 1px #d1d1d1e7;
+        align-items: center;
+    }
+    .comentario-producto {
+        margin: 5px 20px;
+        border-top: solid 1px #d1d1d1e7;
+    }
+    .button {
+        margin: 0 20px;
+    }   
+    .mobil-detalle2 {
+        display: flex;
+    }
+    .tablet-detalle2 {
+        display: flex;
+    }
+    .div-main {
+        border: solid 1px #d1d1d1e7;
+        display: flex;         
+    }
+
      /* /FOOTER -----------------/ */
 
     .contenedor-top-footer{
@@ -813,6 +1006,60 @@ footer {
       padding: 4.5px
     }
 
+    /* VISTA PRODUCTS WEB */
+
+    .div-main {
+        margin: 10px 0;
+    }
+    .imagen {
+        width: 50%;
+    }
+    .imagen-espejo {
+        width: 250px;
+    }
+    .main-detalle {
+        border-left: solid 1px #d1d1d1e7;
+        width: 50%;
+        background-color: rgba(16, 2, 61, 0.301);
+    }
+    .detalle {
+        margin: 0 20px;  
+    }
+    .descripcion {
+        display: flex;
+        margin: 30px 20px;
+        justify-content: space-around;
+        border-top: solid 1px #d1d1d1e7;
+        align-items: center;
+    }
+    #precio {
+        font-size: 20px;
+        margin: 15px 0 0 0;
+    }
+    .comentario-producto {
+        display: block;
+        margin: 5px 20px;
+        border-top: solid 1px #d1d1d1e7;
+    }
+    .button {
+        margin: 15px 20px;
+    }   
+    .mobil-detalle2 {
+        display: flex;
+    }
+    .tablet-detalle2 {
+        display: flex;
+    }
+    .compu-detalle2{
+        display: flex;
+    }
+    .div-main {
+        border: solid 1px #d1d1d1e7;
+        display: flex;         
+    }
+    .comentario-reviews {
+        margin-top: 40px;
+    }
 
     /* VISTA LOGIN  */
     .div-formularios-monitor {
