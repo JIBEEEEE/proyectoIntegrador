@@ -23,7 +23,7 @@ margin: 0;
 /* /HEADER/ */
 
 .parte-top{
-    background-image: url(../images/sillon-gris.jpg);
+    /* background-image: url(../images/sillon-gris.jpg); */
     background-position: center;
     background-size: cover;
     height: 235px;
@@ -38,10 +38,8 @@ margin: 0;
     padding: 7px 15px 0px 15px;
     background-color: rgb(16, 1, 66);
     align-items: center;
-    position: fixed;
     width: 100%;
-    top: 0%;
-    z-index: 10;
+    
 }
 
 .fa-address-card,
@@ -84,8 +82,9 @@ margin: 0;
 .iconos-top-mobile {
     border: solid green 2px;
     width: 60%;
+    color: white;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
     color: rgb(25, 0, 106);
@@ -93,6 +92,7 @@ margin: 0;
 
 .iconos-top-mobile li {
     margin: 10px;
+    color: white;
 }
 
 
@@ -937,7 +937,7 @@ footer {
     /*HEADER -----------------*/
 
     .parte-top{
-        display: flex;
+        /* display: flex; */
         border: red 1px solid;
     }
     .listado-top {
@@ -953,9 +953,6 @@ footer {
         text-decoration: none;
         font-size: 20px;
         font-weight: bold;
-    }
-    .primera-linea {
-        width: 100%;
     }
     .iconos-top-mobile {
         display: none;
