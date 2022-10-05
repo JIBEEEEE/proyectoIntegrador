@@ -1,5 +1,8 @@
 const mainRoutes = require('./src/routes/mainRoutes');
 const userRoutes = require('./src/routes/userRoutes');
+const productsRoutes = require('./src/routes/productsRoutes');
+
+
 
 const express = require ("express");
 const path = require ("path");
@@ -8,6 +11,8 @@ const app = express ();
 app.use("/", mainRoutes);
 
 app.use("/users", userRoutes);
+
+app.use("/products", productsRoutes);
 
 const publicPath = path.resolve (__dirname, "./public" );
 

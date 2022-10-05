@@ -1,42 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&family=Oswald:wght@400;500&family=Roboto&display=swap" rel="stylesheet">    
-    <script src="https://kit.fontawesome.com/4fea1b8ebf.js" crossorigin="anonymous"></script>
-    <title>Digital Deco House</title>
-</head>
+    <%-include ("./partials/head")%>
 <body>
-<header class="main-header fotografia" >
-       <!-- <img src="/images/sillon-amarillo.jpeg" alt="">-->
-        <div class="parte-top">               
-            <div class="primera-linea">
-                <img src="/images/logo.png" class="logo">
-                <nav class="listado-top">
-                    <ul>
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="/products">Catálogo </a></li>
-                        <li><a href="/users/login">Iniciar Sesión / Registrarse </a></li>
-                        <li><a href="/users/carrito">Carrito</a></li>
-                    </ul>
-                </nav>
-
-                <!-- <nav class="iconos-header-mobile"> -->
-                    <ul class="iconos-top-mobile">
-                        <li><i class="fa-solid fa-cart-arrow-down"></i></li>
-                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                        <li><i class="fa-solid fa-bars"></i></li>
-                    </ul>
-                <!-- </nav> -->
-            </div>
-
-
-        </div>
-        
-</header>
+    <%-include ("./partials/header")%>
 
 <main class="main-login-registrarse">
     <div class="div-formularios-monitor">    
@@ -87,44 +53,6 @@
     </section>
 
 </main>
-<footer>
-    <section class="big-container">    
-        <div class="contenedor-top-footer">
-            <div class="footer1">
-                <ul class="list-footer1"> 
-                    <h2> Enlaces </h2> 
-                    <li class="footer-item"><a class="enlaces-footer" href="/">Inicio</a></li>
-                    <li class="footer-item"><a class="enlaces-footer" href="/views/products.html">Catálogo</a></li>
-                    <li class="footer-item"><a class="enlaces-footer" href="/views/cart.html">Carrito</a></li>
-                    <li class="footer-item"><a class="enlaces-footer" href="/views/login.html">Iniciar Sesión / Registrarse</a></li>
-                </ul>
-            </div>
-            <div class="footer2">
-                <ul class="list-footer2">
-                    <h2 > Ayuda </h2>
-                    <li class="footer-item"><a href="#" class="enlaces-footer">Cambios y devoluciones</a></li>
-                    <li class="footer-item"><a href="#" class="enlaces-footer">Términos y condiciones</a></li>
-                    <li class="footer-item"><a href="#" class="enlaces-footer">Política de privacidad</a></li>
-                    <li class="footer-item"><a href="#" class="enlaces-footer">Información sobre envíos</a></li>
-                </ul>
-            </div>
-        </div>
-            
-            <div class="footer3">
-                <ul class="list-footer-icons">
-                    <li class="footer-icon"><a href="#" class="enlaces-footer-redes"> <i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="footer-icon"><a href="#" class="enlaces-footer-redes"> <i class="fa-brands fa-facebook"></i></a></li>
-                    <li class="footer-icon"><a href="#" class="enlaces-footer-redes"> <i class="fa-solid fa-envelope"></i></a></li>
-                    <li class="footer-icon"><a href="#" class="enlaces-footer-redes"> <i class="fa-brands fa-whatsapp"></i></a></li>
-                </ul>
-            </div>
-    </section>
-    <div class="marca-registrada">
-        <h1>
-            Copyright © 2022 Digital Deco House ®
-        </h1>
-    </div>
-
-</footer>  
+        <%-include ("./partials/footer")%>
 </body>
 </html>
