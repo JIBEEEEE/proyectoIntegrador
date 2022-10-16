@@ -1,9 +1,12 @@
 const path = require("path");
+const fs = require("fs");
+
+const productsFilePath = path.join(__dirname, '../database/productsBase.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const mainController = {
     index: function (req,res){
-        res.render("index")
-        //res.sendFile(path.resolve (__dirname, "../views/index.ejs"))
+        res.render("index", {ps: products})
     }
 }
 
