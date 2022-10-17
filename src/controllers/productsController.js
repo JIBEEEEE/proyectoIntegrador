@@ -15,7 +15,10 @@ const productsController = {
 				break;
 			}
 		}
-        res.render("products", {producto: objProducto})
+        res.render("products-detail", {producto: objProducto})
+    },
+	catalogo: function (req,res){
+        res.render("products")
     },
     create: function (req,res){
         res.render("product-create")

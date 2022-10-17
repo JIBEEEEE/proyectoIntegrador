@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include ("./partials/head")%>
+<body>
+    <%-include ("./partials/header")%>
+
+    <main class="main-main">
+        <div class="div-detail-1">
+            <div class="div-detail-2">
+                <img src="/images/<%= producto.image %>">
+            </div>
+                <div class="main-detalle">  
+                    <div class="detalle">     
+                        <h3 class="titulo-producto"><%= producto.name %></h3>
+                        <i class="fa-solid fa-star fa-solid2"></i>
+                        <p class="puntacion-reviews">10 reviews</p>
+                    </div>
+                    <div class="descripcion-prod">
+                        <p id="precio">$<%=producto.price%></p>
+                        <p id="precio"><%= producto.discount %>% Off en efectivo</p>
+                        <p id="precio">Precio con descuento: $<%=producto.price - ((producto.discount * producto.price) /100) %></p>
+                    </div>
+                    <div class="comentario-producto">
+                        <p><%=producto.description %></p>
+                    </div>
+                    <div class="botones-productos">
+                        <button class="button">Añadir a tu carrito</button>
+                        <a href="/products/edit/<%=producto.id %>">
+                            <button type="submit" class="button">Editar Producto</button>
+                        </a>
+                        <form action="/products/delete/<%=producto.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+                            <button type="submit" class="button">Eliminar</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        
+        
+
+    </main>
+
+         <%-include ("./partials/footer")%>
+
+
+</body>
+</html>

@@ -5,16 +5,23 @@
     <%-include ("./partials/header")%>
 
     <main class="main-main">
-        <div class="div-main">
-            <div class="carrusel">
-                <img src="/public/images/<% producto.image %>">
-				<p class="product-detail-description">
-					<%=producto.description %>
-				</p>
-            </div>
+            <div class="div-main">
+                <div class="carrusel">
+                    <ul class="carrusel-fotos">
+                      <li id="foto1"><img src="/images/espejo.jpg" alt=""></li>
+                      <li id="foto2"><img src="/images/espejo2.jpeg" alt=""></li>
+                      <li id="foto3"><img src="/images/espejo3.jpeg" alt=""></li>
+                    </ul>
+                    <ul class="carrusel-menu">
+                      <li><a href="#foto1"><img src="/images/espejo.jpg" alt=""></a></li>
+                      <li><a href="#foto2"><img src="/images/espejo2.jpeg" alt=""></a></li>
+                      <li><a href="#foto3"><img src="/images/espejo3.jpeg" alt=""></a></li>
+                    </ul>
+                </div>
+            
                 <div class="main-detalle">  
                     <div class="detalle">     
-                        <h3 class="titulo-producto"><%= producto.name %></h3>
+                        <h3 class="titulo-producto">Espejo</h3>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -23,21 +30,14 @@
                         <p class="puntacion-reviews">10 reviews</p>
                     </div>
                     <div class="descripcion-prod">
-                        <p id="precio">$<%=producto.price%></p>
-                        <p id="precio"><%= producto.discount %>% Off en efectivo</p>
-                        <p id="precio">Precio con descuento: $<%=producto.price - ((producto.discount * producto.price) /100) %></p>
+                        <p id="precio">$1000</p>
+                        <p id="precio">5% Off en efectivo</p>
                     </div>
                     <div class="comentario-producto">
-                        <p><%=producto.description %></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adip</p>
                     </div>
                     <div class="botones-productos">
                         <button class="button">Añadir a tu carrito</button>
-                        <a href="/products/edit/<%=producto.id %>">
-                            <button type="submit" class="button">Editar Producto</button>
-                        </a>
-                        <form action="/products/delete/<%=producto.id %>?_method=DELETE" method="POST" style="display: inline-flex">
-                            <button type="submit" class="button">Eliminar</button>
-                        </form>
                     </div>
                 </div>
         </div>
