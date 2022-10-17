@@ -21,59 +21,23 @@
     <div class="productosdestacados">
         <p>Productos Destacados</p>
     </div>
+    <div class="probando4321">
+    <% for (let obj of ps) { %>
     <div class="contenedor-img">
         <nav class="productos">
-            <div class="imagenes">
-            <img src="/images/espejo.jpeg"></img>
-            <div class="descripcion">
-                <p>Espejo Redondo EGIPTO </p>
-                <i class="fa-solid fa-truck"></i>
-            </div>
-            </div>
-        </nav>
-
-        <nav class="productos">
-            <div class="imagenes">
-            <img src="/images/silla-y-funda.jpeg"></img>
-            <div class="descripcion">
-                <p>Silla de roble MADRID</p>
-                <i class="fa-solid fa-truck"></i>
-            </div>
-            </div>
-        </nav>
-
-        <nav class="productos">
-            <div class="imagenes">
-            <img src="/images/sillon-y-funda.jpeg"></img>
-            <div class="descripcion">
-                <p>Sillon tres cuerpos BRASIL</p>
-                <i class="fa-solid fa-truck"></i>
-            </div>
-            </div>
-        </nav>
-    <section class="ocultando-imagen">
-        <nav class="productos">
-            <div class="imagenes">
-            <img src="/images/silla-y-maceta.jpeg"></img>
-            <div class="descripcion">
-                <p>Silla escritorio RUSIA</p>
-                <i class="fa-solid fa-truck"></i>
-            </div>
-            </div>
-        </nav>
-    </section>
-        <nav class="productos">
-            <div class="imagenes">
-            <img src="/images/silla.jpeg"></img>
-            <div class="descripcion">
-                <p>Silla oficina PARIS</p>
-                <i class="fa-solid fa-truck"></i>
-            </div>
-            </div>
+            <a href="/products/detail/<%= obj.id %>">
+                <div class="imagenes">
+                    <img src="images/<%= obj.image %>"></img>
+                <div class="descripcion">
+                    <p> <%= obj.name %> </p>
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                </div>
+            </a>
         </nav>
     </div>
-  
-
+    <% } %>
+    </div>
 </main>
 
     <%-include ("./partials/footer")%>
