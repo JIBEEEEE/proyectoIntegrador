@@ -420,10 +420,12 @@ button:hover{
     flex-direction: column;
     align-items: center;
     padding: 60px;
+    margin-top: 60px;
 }
 
 .formulario-registrarse {
     background-color: rgb(233, 233, 233);
+    margin-top: 29px;
 }
 
 .boton-login,
@@ -432,7 +434,7 @@ button:hover{
     border: none;
     border-bottom: solid 0.5px grey;
     outline: none;
-    width: 90%;
+    width: 70%;
     margin-bottom: 26px;
     padding: 17px 0px;
 }
@@ -441,8 +443,20 @@ button:hover{
     background-color: rgb(233, 233, 233);
 }
 
-.formulario-login a {
+.formulario-login a,
+ #crear-cuenta {
     text-decoration: none;
+}
+#crear-cuenta {
+    font-weight: bold;
+    margin-top: 35px;
+    padding: 6px;
+    color:  rgb(9, 1, 36);
+    border: solid  1px  rgb(9, 1, 36);
+    border-radius: 0.3em;
+    width: 22%;
+    text-align: center;
+    font-size: 12px;
 }
 
 .formulario-login p,
@@ -463,6 +477,7 @@ button:hover{
 .formulario-registrarse p {
     margin-right: 23px;
 }
+
 
 .boton-login-registrar {
     width: 70%;
