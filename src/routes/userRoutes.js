@@ -10,7 +10,10 @@ router.get("/login", userController.login);
 router.get('/login/register', userController.register);
 router.post('/login/register', userController.store);
 
+router.get('/login/register-edit/:id', userController.edit);
+router.put('/login/register-edit/:id', userController.update);
 
-router.get("/carrito", userController.cart)
+
+router.get('/carrito', userController.cart)
 
 module.exports = router;

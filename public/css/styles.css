@@ -443,11 +443,11 @@ button:hover{
     background-color: rgb(233, 233, 233);
 }
 
-.formulario-login a,
- #crear-cuenta {
+.formulario-login a {
     text-decoration: none;
 }
-#crear-cuenta {
+#buttons-cuenta,
+#buttons-cuenta-delete {
     font-weight: bold;
     margin-top: 35px;
     padding: 6px;
@@ -458,7 +458,9 @@ button:hover{
     text-align: center;
     font-size: 12px;
 }
-
+#buttons-cuenta-delete {
+    color: red;
+}
 .formulario-login p,
 .formulario-registrarse p {
     font-size: 14px;
@@ -1585,8 +1587,8 @@ font-size: 15px;
     }
 
     .descripcion i{
-      font-size: 18px;
-      padding: 4.5px
+    font-size: 18px;
+    padding: 4.5px
     }
 
     /* VISTA PRODUCTS WEB */
@@ -1594,7 +1596,7 @@ font-size: 15px;
     .carrusel-fotos img {
         width: 500px;
         height: 400px;
-      }
+    }
     .main-detalle {
         border-left: solid 1px #d1d1d1e7;
         width: 50%;
@@ -1649,7 +1651,7 @@ font-size: 15px;
     .formulario-login,
     .formulario-registrarse {
         width: 100%;
-        padding-bottom: 233px;
+        padding-bottom: 100px;
     }
 
     .boton-login,
