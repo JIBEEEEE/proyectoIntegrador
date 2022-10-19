@@ -24,7 +24,7 @@ app.use (express.static (publicPath));
 app.set('view engine', 'ejs');
 
 app.listen(process.env.PORT || 3100, () => {
-    console.log("Servidor corriendo en el puerto 3100")
+    console.log("***   Servidor corriendo de forma exitosa en el puerto 3100   ***")
 })
 
 

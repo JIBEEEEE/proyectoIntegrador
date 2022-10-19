@@ -36,7 +36,7 @@ margin: 0;
     display: flex;
     justify-content: space-around;
     justify-content: space-between;
-    padding: 7px 15px 0px 15px;
+    padding: 0px 15px 0px 15px;
     background-color: rgb(16, 1, 66);
     align-items: center;
     position: fixed;
@@ -99,8 +99,7 @@ margin: 0;
 
 
 .logo{
-    width: 75px;
-     
+    width: 75px;   
 }
 
 .listado-top ul{
@@ -273,8 +272,7 @@ margin: 0;
     display: flex;
     gap: 5px;
     justify-content: center;
-  }
-  
+}  
 .carrusel ul {
     list-style: none;
     margin: 0 20px;
@@ -282,23 +280,20 @@ margin: 0;
     /*max-width: 1030px;*/
     max-width: 500px;
     scroll-behavior: smooth;
-  }
-  
+}
 .carrusel-fotos {
     display: flex;
     gap: 10px;
     overflow: auto;
-  }
-  
+}
 .carrusel-fotos img {
     width: 350px;
     height: 200px;
     object-fit: contain;
-  }
-  
+}
 .carrusel-menu {
     display: none;
-  }
+}
 .main-detalle {
     margin: 0 10px;
 }
@@ -414,7 +409,8 @@ button:hover{
 /* VISTA LOGIN MOBILE */
 
 .formulario-login, 
-.formulario-registrarse {
+.formulario-registrarse,
+.formulario-create {
 
     display: flex;
     flex-direction: column;
@@ -422,10 +418,21 @@ button:hover{
     padding: 60px;
     margin-top: 60px;
 }
+.form-label {
+    font-size: 20px;
+}
 
 .formulario-registrarse {
     background-color: rgb(233, 233, 233);
     margin-top: 29px;
+}
+.textarea-create {
+
+    width: 40%;
+    height: 75px;
+    margin-top: 26px;
+    margin-bottom: 28px;
+    
 }
 
 .boton-login,
@@ -595,8 +602,8 @@ footer {
     font-size: 28px;
 }
 
-.contenedor-total-edit{
-    margin-top: 40px;
+.contenedor-total-edit h2{
+    margin-top: 110px;
 }
 
 .contenedor-total-edit h2{
@@ -653,11 +660,10 @@ text-align: center;
 
     /*HEADER -----------------*/
 
-    .logo{
-        width: 110px;
-        height: 110px;;
+    .logo {
+        width: 109px;
+        height: 104px;
     }
-
     .hamb-button{
         font-size: 28px;
     }
@@ -930,7 +936,7 @@ font-size: 15px;
     }
     .listado-top li {
         margin-left: 15px;
-        font-size: 18px;
+        font-size: 14px;
         display: flex;
     }
     .listado-top a:hover {
@@ -1258,7 +1264,7 @@ font-size: 15px;
 
     .listado-top li,
     .listado-top a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     /*--MAIN -----------------*/
@@ -1539,7 +1545,7 @@ font-size: 15px;
  
     .listado-top a {
         
-        font-size: 20px;
+        font-size: 14px;
     
     }
     .iconos-top-mobile {

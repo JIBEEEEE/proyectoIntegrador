@@ -10,13 +10,16 @@ const userController = {
         res.render('login')
         //res.sendFile(path.resolve (__dirname, "../views/login.html"))
     },
+
     cart: (req,res) => {
         res.render('cart')
         //res.sendFile(path.resolve (__dirname, "../views/cart.html"))
     },
+
     register: (req,res) => {
         res.render('register');
     },
+
     store: (req,res) => {
 
         let usuarioNuevo = {
@@ -33,6 +36,7 @@ const userController = {
 		res.redirect('/');
 
     },
+
     edit: (req,res) => {
         let userEdit = req.params.id;
         let objUser;
@@ -47,6 +51,7 @@ const userController = {
         }
         res.render('register-edit', {user: objUser});
     },
+
     update: (req,res) => {
         
         let userEdit = req.params.id;
@@ -64,7 +69,20 @@ const userController = {
         fs.writeFileSync(usersFilePath,JSON.stringify(users,null," "));
 
 		res.redirect('/');
+    },
+
+    delete: (req,res) => {
+        let idProducto = req.params.id;
+		
+		let arrProductos = users.filter(function(elemento) {
+			return elemento.id != idProducto;
+		});
+
+		fs.writeFileSync(usersFilePath,JSON.stringify(arrProductos,null," "));
+
+		res.redirect('/');
     }
+
 }
 
 module.exports = userController;
