@@ -71,10 +71,8 @@ const productsController = {
     },
 	update: (req, res) => {
 
-		console.log(req.file);
-
 		let idProducto = req.params.id;
-		let nombreImagen = req.file.filename;
+		/*let nombreImagen = req.file.filename;*/
 
 		for (let obj of products){
 			if (idProducto==obj.id){
@@ -84,9 +82,14 @@ const productsController = {
 				obj.price =	req.body.price;
 				obj.discount = req.body.discount;
 				obj.category = req.body.category;
-				obj.image = nombreImagen;
-
+				if (req.file != undefined){
+					fs.unlinkSync(path.join(__dirname, '../../public/images/', obj.image));
+					obj.image = req.file.filename;
+				}
 				break;
+				/*obj.image = nombreImagen;
+
+				break;*/
 			}
 		}
 		fs.writeFileSync(productsFilePath,JSON.stringify(products, null, " "));
