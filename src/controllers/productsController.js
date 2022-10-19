@@ -3,6 +3,8 @@ const fs = require("fs");
 
 const productsFilePath = path.join(__dirname, '../database/productsBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const productoFilePath = path.join(__dirname, '../database/catalogoBase.json');
+const productos = JSON.parse(fs.readFileSync(productoFilePath, 'utf-8'));
 
 const productsController = {
 	/*Detalle producto*/
@@ -10,7 +12,7 @@ const productsController = {
         let idProducto = req.params.id;
 		let objProducto;
 
-		for (let o of products){
+		for (let o of productos){
 			if (idProducto == o.id){
 				objProducto=o;
 				break;
@@ -20,7 +22,7 @@ const productsController = {
     },
 	/*Catalogo productos*/
 	catalogo: function (req,res){
-        res.render("products")
+        res.render("catalogo", {prod: productos});
     },
 	/*Crear producto*/
     create: function (req,res){
@@ -61,7 +63,7 @@ const productsController = {
         let idProducto = req.params.id;
 		let objProducto;
 
-		for (let o of products){
+		for (let o of productos){
 			if (idProducto == o.id){
 				objProducto=o;
 				break;

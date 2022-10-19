@@ -81,6 +81,10 @@ const userController = {
 		fs.writeFileSync(usersFilePath,JSON.stringify(arrProductos,null," "));
 
 		res.redirect('/');
+    },
+
+    detalle: (req,res) => {
+        res.render('products');
     }
 
 }
