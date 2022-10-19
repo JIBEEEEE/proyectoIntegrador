@@ -24,26 +24,7 @@ app.use (express.static (publicPath));
 app.set('view engine', 'ejs');
 
 app.listen(process.env.PORT || 3100, () => {
-    console.log("Servidor corriendo en el puerto 3100")
+    console.log("***   Servidor corriendo de forma exitosa en el puerto 3100   ***")
 })
 
-
-/*
-app.get("/", (req,res) => {
-    res.sendFile(path.resolve (__dirname, "./views/index.html"))
-})
-
-app.get("/views/login.html", (req,res) => {
-    res.sendFile(path.resolve (__dirname, "./views/login.html"))
-})
-
-app.get("/views/products.html", (req,res) => {
-    res.sendFile(path.resolve (__dirname, "./views/products.html"))
-})
-
-app.get("/views/cart.html", (req,res) => {
-    res.sendFile(path.resolve (__dirname, "./views/cart.html"))
-})
-
-*/
 

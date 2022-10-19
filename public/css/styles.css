@@ -36,7 +36,7 @@ margin: 0;
     display: flex;
     justify-content: space-around;
     justify-content: space-between;
-    padding: 7px 15px 0px 15px;
+    padding: 0px 15px 0px 15px;
     background-color: rgb(16, 1, 66);
     align-items: center;
     position: fixed;
@@ -99,8 +99,7 @@ margin: 0;
 
 
 .logo{
-    width: 75px;
-     
+    width: 75px;   
 }
 
 .listado-top ul{
@@ -273,8 +272,7 @@ margin: 0;
     display: flex;
     gap: 5px;
     justify-content: center;
-  }
-  
+}  
 .carrusel ul {
     list-style: none;
     margin: 0 20px;
@@ -282,23 +280,20 @@ margin: 0;
     /*max-width: 1030px;*/
     max-width: 500px;
     scroll-behavior: smooth;
-  }
-  
+}
 .carrusel-fotos {
     display: flex;
     gap: 10px;
     overflow: auto;
-  }
-  
+}
 .carrusel-fotos img {
     width: 350px;
     height: 200px;
     object-fit: contain;
-  }
-  
+}
 .carrusel-menu {
     display: none;
-  }
+}
 .main-detalle {
     margin: 0 10px;
 }
@@ -414,16 +409,30 @@ button:hover{
 /* VISTA LOGIN MOBILE */
 
 .formulario-login, 
-.formulario-registrarse {
+.formulario-registrarse,
+.formulario-create {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 60px;
+    margin-top: 60px;
+}
+.form-label {
+    font-size: 20px;
 }
 
 .formulario-registrarse {
     background-color: rgb(233, 233, 233);
+    margin-top: 29px;
+}
+.textarea-create {
+
+    width: 40%;
+    height: 75px;
+    margin-top: 26px;
+    margin-bottom: 28px;
+    
 }
 
 .boton-login,
@@ -432,7 +441,7 @@ button:hover{
     border: none;
     border-bottom: solid 0.5px grey;
     outline: none;
-    width: 90%;
+    width: 70%;
     margin-bottom: 26px;
     padding: 17px 0px;
 }
@@ -444,7 +453,21 @@ button:hover{
 .formulario-login a {
     text-decoration: none;
 }
-
+#buttons-cuenta,
+#buttons-cuenta-delete {
+    font-weight: bold;
+    margin-top: 35px;
+    padding: 6px;
+    color:  rgb(9, 1, 36);
+    border: solid  1px  rgb(9, 1, 36);
+    border-radius: 0.3em;
+    width: 22%;
+    text-align: center;
+    font-size: 12px;
+}
+#buttons-cuenta-delete {
+    color: red;
+}
 .formulario-login p,
 .formulario-registrarse p {
     font-size: 14px;
@@ -463,6 +486,7 @@ button:hover{
 .formulario-registrarse p {
     margin-right: 23px;
 }
+
 
 .boton-login-registrar {
     width: 70%;
@@ -578,8 +602,8 @@ footer {
     font-size: 28px;
 }
 
-.contenedor-total-edit{
-    margin-top: 40px;
+.contenedor-total-edit h2{
+    margin-top: 110px;
 }
 
 .contenedor-total-edit h2{
@@ -612,15 +636,34 @@ text-align: center;
     border-radius: 0.5em;
 }
 
+.div-detail-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(16, 2, 61, 0.301)
+}
+
+.div-detail-1 img{
+    width: 95%;
+    padding: 10px;
+    margin-top: 25px;
+    max-width: 380px;
+    max-height: 360px;
+}
+
+.titulo-producto-detail{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
 @media (min-width: 500px) {
 
     /*HEADER -----------------*/
 
-    .logo{
-        width: 110px;
-        height: 110px;;
+    .logo {
+        width: 109px;
+        height: 104px;
     }
-
     .hamb-button{
         font-size: 28px;
     }
@@ -893,7 +936,7 @@ font-size: 15px;
     }
     .listado-top li {
         margin-left: 15px;
-        font-size: 18px;
+        font-size: 14px;
         display: flex;
     }
     .listado-top a:hover {
@@ -1009,6 +1052,14 @@ font-size: 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+    }
+
+    .div-detail-1 img{
+        width: 95%;
+        padding: 10px;
+        margin-top: 40px;
+        max-width: 400px;
+        max-height: 385px;
     }
 
      /* /FOOTER -----------------/ */
@@ -1213,7 +1264,7 @@ font-size: 15px;
 
     .listado-top li,
     .listado-top a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     /*--MAIN -----------------*/
@@ -1260,6 +1311,24 @@ font-size: 15px;
     .descripcion i{
       font-size: 17px;
       padding: 4px
+    }
+
+    .div-detail-1 {
+        flex-direction: row;
+        margin-top: 38px;
+        justify-content: space-around;
+    }
+    
+    .div-detail-1 img{
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        max-width: 420px;
+        max-height: 395px;
+    }
+
+    .detalle-detail h3{
+        margin-top: 20px;
     }
 
      /*--FOOTER -----------------*/
@@ -1476,7 +1545,7 @@ font-size: 15px;
  
     .listado-top a {
         
-        font-size: 20px;
+        font-size: 14px;
     
     }
     .iconos-top-mobile {
@@ -1524,8 +1593,8 @@ font-size: 15px;
     }
 
     .descripcion i{
-      font-size: 18px;
-      padding: 4.5px
+    font-size: 18px;
+    padding: 4.5px
     }
 
     /* VISTA PRODUCTS WEB */
@@ -1533,7 +1602,7 @@ font-size: 15px;
     .carrusel-fotos img {
         width: 500px;
         height: 400px;
-      }
+    }
     .main-detalle {
         border-left: solid 1px #d1d1d1e7;
         width: 50%;
@@ -1588,7 +1657,7 @@ font-size: 15px;
     .formulario-login,
     .formulario-registrarse {
         width: 100%;
-        padding-bottom: 233px;
+        padding-bottom: 100px;
     }
 
     .boton-login,
