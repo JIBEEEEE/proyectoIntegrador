@@ -9,15 +9,6 @@
   "image": "espejo.jpg"
  },
  {
-  "id": 3,
-  "name": "Sillon tres cuerpos Brasil",
-  "description": "Sillon especial para disfrutar un dia en familia",
-  "price": 80000,
-  "discount": 10,
-  "image": "sillon-y-funda.jpeg",
-  "category": "in-sale"
- },
- {
   "id": 4,
   "name": "Silla oficina Paris",
   "description": "Silla ideal para la oficina - HomeOficce",
