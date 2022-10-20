@@ -172,6 +172,15 @@ margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+}
+.botones-productos a {
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.descripcion-prod-detail {
+    border-bottom: solid rgb(199, 199, 199) 1px;
+    margin-bottom: 20px;
 }
 
 @keyframes cambio-slider {
@@ -337,6 +346,9 @@ margin: 0;
     color: white;
     border: 0.1px solid rgb(195,194,194);
 }
+.button a {
+    text-decoration: none;
+}
 
 button:hover{
     background-color: grey;
@@ -444,6 +456,15 @@ button:hover{
     width: 70%;
     margin-bottom: 26px;
     padding: 17px 0px;
+}
+.boton-login-select {
+    margin: 16px;
+    border: none;
+    outline: none;
+    width: 50%;
+    margin-bottom: 26px;
+    padding: 17px 0px;
+    
 }
 
 .boton-registrarse {
@@ -639,23 +660,46 @@ text-align: center;
 .div-detail-1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    background-color: rgba(16, 2, 61, 0.301)
+    width: 67%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-.div-detail-1 img{
+.div-detail-1 img {
     width: 95%;
-    padding: 10px;
-    margin-top: 25px;
+    margin-top: 75px;
     max-width: 380px;
     max-height: 360px;
+    
 }
-
 .titulo-producto-detail{
     font-size: 24px;
     letter-spacing: 1px;
 }
-
+.main-detalle-edit {
+    border-bottom: solid rgb(199, 199, 199) 1px;
+    width: 72%;
+}
+#precio-base {
+    text-decoration: line-through;
+}
+p#precio-base {
+    color: grey;
+    margin-right: 114px;
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+#off {
+    color: rgb(0, 237, 32);
+    font-size: 25px;
+    font-weight: lighter;
+}
+p#precio-discount {
+    font-size: 22px;
+}
 @media (min-width: 500px) {
 
     /*HEADER -----------------*/
@@ -993,24 +1037,24 @@ font-size: 15px;
         width: 50%;
     }
     .carrusel-fotos {
-      overflow: hidden;
+    overflow: hidden;
     }
     .carrusel-fotos img {
-      width: 350px;
-      height: 250px;
+    width: 350px;
+    height: 250px;
     }
     .carrusel-menu {
-      display: block;
+    display: block;
     }
     .carrusel-menu img {
-      /*box-sizing: border-box;*/
-      width: 50px;
-      height: 40px;
-      border: 5px solid #d1d1d1e7;
-      object-fit: contain;
+    /*box-sizing: border-box;*/
+    width: 50px;
+    height: 40px;
+    border: 5px solid #d1d1d1e7;
+    object-fit: contain;
     }
     .carrusel-menu img:hover {
-      border: none;
+    border: none;
     }
     .detalle {
         margin: 0 20px;  
@@ -1055,11 +1099,31 @@ font-size: 15px;
     }
 
     .div-detail-1 img{
-        width: 95%;
-        padding: 10px;
-        margin-top: 40px;
+        width: 100%;
+        margin-top: 25px;
         max-width: 400px;
         max-height: 385px;
+    }
+    .div-detail-1 {
+        flex-direction: row;
+        margin-top: 83px;
+        justify-content: space-around;
+        width: 96%;
+        padding: 0px;
+        margin-bottom: 69px;
+    }
+
+    .botones-productos {
+        margin: 25px;
+    }
+    .comentario-producto {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        margin-bottom: 65px;
+    }
+    .comentario-producto h2 {
+        font-weight: lighter;
     }
 
      /* /FOOTER -----------------/ */
@@ -1311,12 +1375,6 @@ font-size: 15px;
     .descripcion i{
       font-size: 17px;
       padding: 4px
-    }
-
-    .div-detail-1 {
-        flex-direction: row;
-        margin-top: 30px;
-        justify-content: space-around;
     }
     
     .div-detail-1 img{
@@ -1673,6 +1731,7 @@ font-size: 15px;
 
     .cartas-beneficios {
         display: flex;
+        justify-content: space-between;
         margin-bottom: 50px;
     }
     /*FOOTER -----------------*/
@@ -1915,4 +1974,7 @@ font-size: 15px;
         position: relative;
   
         
+    }
+    .comentario-producto {
+        margin-bottom: 150px;
     }

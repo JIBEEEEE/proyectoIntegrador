@@ -5,7 +5,7 @@
      "price": 12000,
      "discount": 10,
      "category": "in-sale",
-     "description": "Espejo redondo modelo de Egipto 90 x 90",
+     "description": "Espejo redondo modelo de Egipto 90 x 90. Con un estilo industrial basado en los estilos de Europa Occidente de la decada del 1980 donde se utilizaban para decorar las casas de las familias de clase media.",
      "image": "espejo.jpg"
     },
     {
@@ -14,13 +14,13 @@
      "price": 15000,
      "discount": 15,
      "category": "in-sale",
-     "description": "Silla especial para interior",
+     "description": "Silla especial para interior realizada en roble importado del Castillo de Sauron de las tierras de Narnia, insipirada en la silla utilizada por el Rey Feudal Guillermo XV para dirigir su reinado.",
      "image": "silla-y-funda.jpeg"
     },
     {
      "id": 3,
      "name": "Sillon tres cuerpos Brasil",
-     "description": "Sillon especial para disfrutar un dia en familia",
+     "description": "Sillon especial para disfrutar un dia en familia, bendecido por el Brujo Manuel, automáticamente al utilizarlo en familia a uno le mejora el ánimo y la suerte.",
      "price": 80000,
      "discount": 10,
      "image": "sillon-y-funda.jpeg",
@@ -29,7 +29,7 @@
     {
      "id": 4,
      "name": "Silla oficina Paris",
-     "description": "Silla ideal para la oficina - HomeOficce",
+     "description": "Silla ideal para la oficina y HomeOficce. Destaca por su robustez, realizada enteramente en composite, una aleación de metales mas livianos e igual de resistentes que el acero, utilizados en la industria aeroespacial.",
      "price": 14000,
      "discount": 5,
      "image": "silla.jpeg",
@@ -38,7 +38,7 @@
     {
      "id": 5,
      "name": "Juego de mesa exterior",
-     "description": "Mesa ideal para el exterior de tu casa y disfrutar del aire libre",
+     "description": "Mesa ideal para el exterior de tu casa y disfrutar del aire libre. Disfruta del asado del findesemana con amigos con este terrible juego de mesa y de sillas y convertite en el anfitrión que todos desearían tener.",
      "price": 50000,
      "discount": 10,
      "image": "mesa-exterior.jpeg",
@@ -47,7 +47,7 @@
     {
      "id": 6,
      "name": "Mesa moderna interior",
-     "description": "Mesa ideal para el interior de tu casa",
+     "description": "Mesa ideal para el interior de tu casa, con un estilo austro-hungaro, diseñada en colaboración con el artista y diseñador de interiores argentino Guido Suller. Edición limitada de 5 mesas hasta agotar stock.",
      "price": 20000,
      "discount": 5,
      "image": "mesa-4-patas.jpeg",
@@ -59,7 +59,7 @@
     "price": 8000,
     "discount": 15,
     "category": "in-sale",
-    "description": "Sillon dos plazas igual para familias pequeñas",
+    "description": "Sillon dos plazas ideal para familias pequeñas, se caracteriza por sus almohadones viscolasticos ideales para largas sesiones de Netflix. Homologado para 3 temporadas y 6 capitulos por día.",
     "image": "sillon-amarillo.jpg"
     },
     {
@@ -68,13 +68,13 @@
     "price": 30000,
     "discount": 10,
     "category": "in-sale",
-    "description": "Sillon exterior ideal para balcones",
+    "description": "Sillon exterior ideal para balcones. Realizado de materiales aptos para estar expuestos a la interperie, llueve, truene, nieve o haga 40°C a la sombra.",
     "image": "sillon-exterior.jpg"
     },
     {
     "id": 9,
     "name": "Sillon sofa",
-    "description": "Sillon sofa en formato L",
+    "description": "Sillon sofa en formato L, si estas intentando encontrar el sillon definitivo para tu living. No busques mas, acá esta. Sillon en L gama premium, no more.",
     "price": 80000,
     "discount": 10,
     "image": "sillon-sofa-gris.jpg",
@@ -83,7 +83,7 @@
     {
     "id": 10,
     "name": "Modular televisor",
-    "description": "Modular excelente para living",
+    "description": "Modular excelente para living. Acomodá todas esas cosas que venis arrastrando hace 2 mudanzas y pensas que en algun momento de tu vida para algo te van a servir.",
     "price": 40000,
     "discount": 5,
     "image": "modulares-modernos.jpg",
@@ -92,7 +92,7 @@
     {
     "id": 11,
     "name": "Sillon tres cuerpos",
-    "description": "Sillon tres cuerpos modernos, ideal para familias numerosas",
+    "description": "Sillon tres cuerpos modernos, ideal para familias numerosas. Testeado con familias de hasta 6 integrantes.",
     "price": 70000,
     "discount": 20,
     "image": "sillon-gris.jpg",
@@ -101,7 +101,7 @@
     {
     "id": 12,
     "name": "Mesa moderna",
-    "description": "Mesa ideal para el interior de tu casa",
+    "description": "Mesa ideal para el interior de tu casa, con un diseño moderno y minimalista. Si sos estudiante de Digital House accedes a un 20% extra de descuento.",
     "price": 90000,
     "discount": 10,
     "image": "mesa-madera.jpeg",

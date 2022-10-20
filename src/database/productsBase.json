@@ -9,15 +9,6 @@
   "image": "espejo.jpg"
  },
  {
-  "id": 2,
-  "name": "Silla roble Madrid",
-  "price": 15000,
-  "discount": 15,
-  "category": "in-sale",
-  "description": "Silla especial para interior",
-  "image": "silla-y-funda.jpeg"
- },
- {
   "id": 3,
   "name": "Sillon tres cuerpos Brasil",
   "description": "Sillon especial para disfrutar un dia en familia",
