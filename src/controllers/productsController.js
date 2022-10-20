@@ -1,8 +1,8 @@
 const path = require("path");
 const fs = require("fs");
 
-const productsFilePath = path.join(__dirname, '../database/productsBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+/*const productsFilePath = path.join(__dirname, '../database/productsBase.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));*/
 const productoFilePath = path.join(__dirname, '../database/catalogoBase.json');
 const productos = JSON.parse(fs.readFileSync(productoFilePath, 'utf-8'));
 
@@ -31,7 +31,7 @@ const productsController = {
 	store: function (req,res){
 		
 		idNuevo=0;
-		for (let obje of products){
+		for (let obje of productos){
 			if (idNuevo < obje.id){
 				idNuevo = obje.id;
 			}
@@ -51,9 +51,9 @@ const productsController = {
 			image: nombreImagen
 		}
 
-		products.push(productoNuevo);
+		productos.push(productoNuevo);
 
-		fs.writeFileSync(productsFilePath, JSON.stringify(products,null,' '));
+		fs.writeFileSync(productoFilePath, JSON.stringify(productos,null,' '));
 
 		res.redirect("/");
 	},
@@ -76,7 +76,7 @@ const productsController = {
 		let idProducto = req.params.id;
 		/*let nombreImagen = req.file.filename;*/
 
-		for (let obj of products){
+		for (let obj of productos){
 			if (idProducto==obj.id){
 				
 				obj.name = req.body.name;
@@ -94,7 +94,7 @@ const productsController = {
 				break;*/
 			}
 		}
-		fs.writeFileSync(productsFilePath,JSON.stringify(products, null, " "));
+		fs.writeFileSync(productoFilePath,JSON.stringify(productos, null, " "));
 		res.redirect("/");
 	},
 	destroy: (req, res) => {
@@ -102,11 +102,11 @@ const productsController = {
 		let idProducto = req.params.id;
 		let productoEncontrado;
 
-		let Nproducts = products.filter(function(e){
+		let Nproducts = productos.filter(function(e){
 			return idProducto != e.id;
 		})
 
-		for (let producto of products){
+		for (let producto of productos){
 			if (producto.id == idProducto){
 				productoEncontrado = producto;
 			}
@@ -114,7 +114,7 @@ const productsController = {
 
 		fs.unlinkSync(path.join(__dirname, "../../public/images", productoEncontrado.image));
 
-		fs.writeFileSync(productsFilePath,JSON.stringify(Nproducts, null, " "));
+		fs.writeFileSync(productoFilePath,JSON.stringify(Nproducts, null, " "));
 
 		res.redirect("/");
 	}

@@ -34,5 +34,14 @@
   "discount": 5,
   "image": "mesa-4-patas.jpeg",
   "category": "in-sale"
+ },
+ {
+  "id": 7,
+  "name": "abcv",
+  "description": "abc",
+  "price": "15000",
+  "discount": "10",
+  "category": "in-sale",
+  "image": "1666286849248.jpeg"
  }
 ]
