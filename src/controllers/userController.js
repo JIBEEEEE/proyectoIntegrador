@@ -10,6 +10,21 @@ const userController = {
         res.render('login')
         //res.sendFile(path.resolve (__dirname, "../views/login.html"))
     },
+    profile: (req,res) => {
+
+        let mailUsuario = req.body.email;
+        console.log(req.body);
+		let usuarioIngresado;
+
+		for (let usuario of users){
+			if (mailUsuario == usuario.email){
+				usuarioIngresado = usuario;
+				break;
+			}
+		}
+
+        res.render('perfil', {usuario: usuarioIngresado});
+    },
 
     cart: (req,res) => {
         res.render('cart')

@@ -6,13 +6,15 @@
 
 <main class="main-login-registrarse">
     <div class="div-formularios-monitor">    
-        <form action="POST" class="formulario-login">
+        <form action="/users/perfil" method="POST" class="formulario-login">
             
             <h2>Ingresa <br> a tu cuenta. <br></h2>
             <p>Bienvenido nuevamente. Ingresa tus datos</p>
-            <input class="boton-login" type="email" placeholder="E-mail" required>
-            <input class="boton-login" type="password" placeholder="Contraseña" required>
-            <input class="boton-login-registrar" type="submit" value="INGRESAR">
+            <form action="/users/perfil" method="POST">
+                <input class="boton-login" type="email" placeholder="E-mail" name="email" required>
+                <input class="boton-login" type="password" placeholder="Contraseña" required>
+                <input class="boton-login-registrar" type="submit" value="INGRESAR">
+            <form>
             <a href="#">¿Olvidaste tu contraseña?</a>
             <a href="/users/login/register" id="buttons-cuenta">Crea tu cuenta</a>
             <a href="/users/login/register-edit" id="buttons-cuenta">Edita tu cuenta</a>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include ("./partials/head")%>
+<body>
+    <%-include ("./partials/header")%>
+
+<main class="main-login-registrarse">
+    <div class="data-user">  
+        <p>NOMBRE: <%= usuario.name %></p>
+        <p>APELLIDO: <%= usuario.surname %></p>
+        <p>DOMICILIO: <%= usuario.home %></p>
+        <p>EMAIL: <%= usuario.email %></p>   
+    </div>
+        <%-include ('./partials/cartas-beneficios') %>
+</main>
+        <%-include ("./partials/footer")%>
+</body>
+</html>

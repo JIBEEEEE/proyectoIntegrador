@@ -5,6 +5,7 @@ const router = express.Router();
 
 //LOGUEARSE
 router.get("/login", userController.login);
+router.post("/perfil", userController.profile);
 
 //CREAR USUARIO
 router.get('/login/register', userController.register);
