@@ -458,12 +458,12 @@ button:hover{
     padding: 17px 0px;
 }
 .boton-login-select {
-    margin: 16px;
     border: none;
     outline: none;
     width: 50%;
-    margin-bottom: 26px;
+    margin: 30px;
     padding: 17px 0px;
+
     
 }
 
