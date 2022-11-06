@@ -6,15 +6,23 @@
 
 <main class="main-login-registrarse">
     <div class="div-formularios-monitor">    
-        <form action="/users/login/register" method="POST" class="formulario-registrarse">
+        <form action="/users/login/register" method="POST" class="formulario-registrarse" enctype="multipart/form-data">
             <h2>Registrate <br> ahora. <br></h2>
             <p>Completa los datos para registrarte</p>
             <input class="boton-registrarse" type="text" placeholder="Nombre" name="name">
+
             <input class="boton-registrarse" type="text" placeholder="Apellido" name="surname">
+
             <input class="boton-registrarse" type="text" placeholder="Dirección" name="home">
+
             <input class="boton-registrarse" type="email" placeholder="E-mail" name="email">
+
             <input class="boton-registrarse" type="password" placeholder="Contraseña" required>
             <input class="boton-registrarse" type="password" placeholder="Repita Contraseña" required>
+
+            <label for="avatarUsuario"> Imagen de perfil: </label>
+            <input type="file" name="avatarUsuario">
+
             <input class="boton-login-registrar" type="submit" value="REGISTRARME">
             
         </form>

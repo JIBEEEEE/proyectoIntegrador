@@ -36,20 +36,24 @@ const userController = {
     },
 
     store: (req,res) => {
+        if(req.file) {
 
-        let usuarioNuevo = {
-			id: (users[users.length-1].id)+1,
-			name: req.body.name,
-			surname: req.body.surname,
-			email: req.body.email,
-			home: req.body.home
-		}
-		users.push(usuarioNuevo);
+            let usuarioNuevo = {
+                id: (users[users.length-1].id)+1,
+                name: req.body.name,
+                surname: req.body.surname,
+                email: req.body.email,
+                home: req.body.home,
+                avatarUsuario: req.body.avatarUsuario
+            }
+            users.push(usuarioNuevo);
 
-		fs.writeFileSync(usersFilePath,JSON.stringify(users,null," "));
+            fs.writeFileSync(usersFilePath,JSON.stringify(users,null," "));
 
-		res.redirect('/');
-
+            res.redirect('/');
+        } else {
+            res.render('register');
+        }   
     },
 
     edit: (req,res) => {
