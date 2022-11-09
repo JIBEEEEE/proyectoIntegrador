@@ -27,7 +27,7 @@ router.post("/perfil", userController.profile);
 
 //CREAR USUARIO
 router.get('/login/register', userController.register);
-router.post('/login/register',fileUpload.single('avatarUsuario'), userController.store);
+router.post('/login/perfil', userController.processRegister);
 
 router.get('/login/register-edit/:id', userController.edit);
 router.put('/login/register-edit/:id', userController.update);

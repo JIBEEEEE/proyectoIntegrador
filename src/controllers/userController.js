@@ -35,8 +35,7 @@ const userController = {
         res.render('register');
     },
 
-    store: (req,res) => {
-        if(req.file) {
+    processRegister: (req,res) => {
 
             let usuarioNuevo = {
                 id: (users[users.length-1].id)+1,
@@ -50,10 +49,7 @@ const userController = {
 
             fs.writeFileSync(usersFilePath,JSON.stringify(users,null," "));
 
-            res.redirect('/');
-        } else {
-            res.render('register');
-        }   
+            res.render('perfil', {usuario: usuarioNuevo}); 
     },
 
     edit: (req,res) => {
