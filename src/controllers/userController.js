@@ -3,6 +3,8 @@ const fs = require('fs');
 
 const usersFilePath = path.join(__dirname, '../database/userBase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+const productoFilePath = path.join(__dirname, '../database/catalogoBase.json');
+const productos = JSON.parse(fs.readFileSync(productoFilePath, 'utf-8'));
 
 const userController = {
     login: (req,res) => {
@@ -26,10 +28,19 @@ const userController = {
         res.render('perfil', {usuario: usuarioIngresado});
     },
 
-    cart: (req,res) => {
-        res.render('cart')
-        //res.sendFile(path.resolve (__dirname, "../views/cart.html"))
+    cart: function (req,res){
+        let idProducto = req.params.id;
+		let objProducto;
+
+		for (let o of productos){
+			if (idProducto == o.id){
+				objProducto=o;
+				break;
+			}
+		}
+        res.render("cart", {producto: objProducto})
     },
+
 
     register: (req,res) => {
         res.render('register');
