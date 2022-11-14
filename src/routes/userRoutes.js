@@ -5,6 +5,12 @@ const router = express.Router();
 const multer = require('multer');
 const path = require('path');
 
+const { body } = require('express-validator');
+
+//Middlewares
+const guestMiddleWare = require('../../middlewares/guestMiddleware'); //para que si esta logeado no pueda ingresar a registrarse o logearse
+const authMiddleware = require('../../middlewares/authMiddleware');//para que si no estas logeado, te mande a logearte.
+
 
 const multerDiskStorage = multer.diskStorage ({
     destination: (req, file, cb) => 
@@ -22,8 +28,9 @@ const fileUpload = multer({ multerDiskStorage});
 
 
 //LOGUEARSE
-router.get("/login", userController.login);
+router.get("/login", guestMiddleWare, userController.login);
 router.post("/perfil", userController.profile);
+router.post("/login", userController.loginProcess); //Progresar el login
 
 //CREAR USUARIO
 router.get('/login/register', userController.register);
@@ -32,6 +39,8 @@ router.post('/login/perfil', userController.processRegister);
 router.get('/login/register-edit/:id', userController.edit);
 router.put('/login/register-edit/:id', userController.update);
 router.delete('/login/delete/:id', userController.delete);
+
+router.get('/cerrarsesion', userController.cerrarSesion);
 
 //DETALLE PRODUCTO USERS
 router.get("/", userController.detalle);

@@ -7,11 +7,18 @@
         </a> 
          <nav class="listado-top">
              <ul>
-                 <li><a href="/">Home</a></li>
-                 <li><a href="/products/">Catálogo</a></li>
-                 <li><a href="/products/create">Crear Producto</a></li>
-                 <li><a href="/users/login">Iniciar Sesión</a></li>
-                 <li><a href="/users/carrito/2">Carrito</a></li>
+                <% if (locals.isLogged) { %>
+                    <li><a href="/users/profile">Hola <%= locals.userLogged.name %></a></li>
+                    <% } %>  
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products/">Catálogo</a></li>
+                    <li><a href="/users/carrito">Carrito</a></li>
+                   <% if (!locals.isLogged) { %>
+                    <li><a href="/users/login">Iniciar Sesión</a></li>
+                    <% } else {%>
+                    <li><a href="/products/create">Crear Producto</a></li>
+                    <li><a href="/users/cerrarsesion">Cerrar Sesión</a></li>
+                    <% } %>
             </ul>
          </nav>
 
