@@ -2,13 +2,14 @@ const path = require('path');
 const fs = require('fs');
 
 const usersFilePath = path.join(__dirname, '../database/userBase.json');
+const productoFilePath = path.join(__dirname, '../database/catalogoBase.json');
+const productos = JSON.parse(fs.readFileSync(productoFilePath, 'utf-8'));
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator');
 
 const User = require('../../models/User')
-//const { traceDeprecation } = require('process');
 
 const userController = {
     login: (req,res) => {
@@ -50,7 +51,8 @@ const userController = {
     },
 
     cart: (req,res) => {
-        res.render('cart')
+        res.render('cart', {producto: productos});
+
         //res.sendFile(path.resolve (__dirname, "../views/cart.html"))
     },
 
@@ -83,6 +85,7 @@ const userController = {
             });
         }
         //console.log(req.body)
+
         let userToCreate = {
             ...req.body,
             password: bcryptjs.hashSync(req.body.password, 10)

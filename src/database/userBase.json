@@ -1,18 +1,26 @@
 [
-    {
-     "id": 1,
-     "name": "ezequiel ",
-     "surname": "scoffoni",
-     "home": "quirno 123",
-     "email": "ezequiel@hotmail.com",
-     "password": "$2a$10$Qt8uLBpF8U1Et6RzTXz51em.yRk.EzPBAc9hs69PjSEReMj0eNcJu"
-    },
-    {
-     "id": 2,
-     "name": "santiago",
-     "surname": "hernandez",
-     "home": "bonifica 2386",
-     "email": "santiago@hotmail.com",
-     "password": "$2a$10$yRPcpk8v0NCyyUkBT01LCOwT9JD2tqWRedhvXpjpdgyN52iOThm.a"
-    }
-   ]
+ {
+  "id": 1,
+  "name": "ezequiel ",
+  "surname": "scoffoni",
+  "home": "quirno 123",
+  "email": "ezequiel@hotmail.com",
+  "password": "$2a$10$Qt8uLBpF8U1Et6RzTXz51em.yRk.EzPBAc9hs69PjSEReMj0eNcJu"
+ },
+ {
+  "id": 2,
+  "name": "santiago",
+  "surname": "hernandez",
+  "home": "bonifica 2386",
+  "email": "santiago@hotmail.com",
+  "password": "$2a$10$yRPcpk8v0NCyyUkBT01LCOwT9JD2tqWRedhvXpjpdgyN52iOThm.a"
+ },
+ {
+  "id": 3,
+  "name": "Leonel",
+  "surname": "Messi",
+  "home": "Directorio 2357",
+  "email": "leomessi@hotmail.com",
+  "password": "$2a$10$DVeQEBXELfWVN1bCTcGfKOkzBagjGWdcSAsWCjNSUQ24zlbAMrXDG"
+ }
+]

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include ("./partials/head")%>
+<body>
+    <%-include ("./partials/header")%>
+<main>  
+    <div>
+        <h2> Hola <%= user.name %></h2>
+    </div>
+    <br>
+    <br>
+    <p> <%= user.email %> </p>
+
+    <%-include ('./partials/cartas-beneficios') %>
+</main>
+    <%-include ("./partials/footer")%>
+</body>
+</html>
