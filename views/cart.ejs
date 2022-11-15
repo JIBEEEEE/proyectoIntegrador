@@ -1,9 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
     <%-include ("./partials/head")%>
+<body>
+    <%-include ("./partials/header")%>
+
+    <main class="main-main">
+        <div class="div-detail-1">
+            <div class="div-detail-2">
+                <img src="/images/<%= producto.image %>">
+            </div>
+            <div>
+                    <div class="main-detalle-edit">  
+                            
+                            <h3 class="titulo-producto-detail"><%= producto.name %></h3>
+                    </div>
+                    <div>
+                        <div class="descripcion-prod-detail">
+                            <p id="precio-base">$<%=producto.price%></p>
+                            <p id="precio"> <span id="off"><%= producto.discount %>% OFF</span> en Efectivo</p>
+                            <p id="precio-discount" >Precio con descuento: $<%=producto.price - ((producto.discount * producto.price) /100) %></p>
+                        </div>
+
+                        <div class="botones-productos">
+
+                            <a href="#" class="button-edit-product">
+                                <button type="submit" class="button">Ir a Pagar</button>
+                            </a>
+                            <a href="/users/login" class="button-edit-product">
+                                <button type="submit" class="button">Iniciar Seción</button>
+                            </a>
+                            <form action="/products/" style="margin-bottom: 25px">
+                                <button type="submit" class="button">Seguir Comprando</button>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="comentario-producto">
+            <h2>Descripción</h2>
+            <p><%=producto.description %></p>
+        </div>
+        
+        
+
+    </main>
+
+         <%-include ("./partials/footer")%>
+
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  // PARTIAL include ("./partials/head")%>
     
     <body>
-    <%-include ("./partials/header")%>
+   // PARTIAL     include ("./partials/header")%>
         
      <main class="main-carrito">
         <div class="opciones-box"></div>
@@ -48,6 +102,8 @@
         <p class="escritorio-precio">$300</p>
     </main>
         
-     <%-include ("./partials/footer")%>
+    // PARTIAL    include ("./partials/footer")%>
  </body>
 </html>
+
+-->

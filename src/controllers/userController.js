@@ -3,12 +3,19 @@ const fs = require('fs');
 
 const usersFilePath = path.join(__dirname, '../database/userBase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+const productoFilePath = path.join(__dirname, '../database/catalogoBase.json');
+const productos = JSON.parse(fs.readFileSync(productoFilePath, 'utf-8'));
+
+const bcryptjs = require('bcryptjs');
+const { validationResult } = require('express-validator');
+
+const User = require('../../models/User');
 
 const { validationResult } = require('express-validator');
 
 const userController = {
     login: (req,res) => {
-        const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+        //const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
         res.render('login')
         //res.sendFile(path.resolve (__dirname, "../views/login.html"))
     },
@@ -28,10 +35,51 @@ const userController = {
         res.render('perfil', {usuario: usuarioIngresado});
     },
 
-    cart: (req,res) => {
-        res.render('cart')
-        //res.sendFile(path.resolve (__dirname, "../views/cart.html"))
+    loginProcess: (req, res) => {
+        let userToLogin = User.findByField('email', req.body.email);
+
+        if (userToLogin) {
+            let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+            if (isOkThePassword) {
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+
+                if (req.body.remember_user) {
+                    res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 2 }) //equivale a 2 minutos
+                }
+
+                return res.redirect('/')
+            }
+            return res.render('login', {
+                errors: {
+                    email: {
+                        msg: 'Las credenciales son incorrectas'
+                    }
+                }
+            })
+        }
+        return res.render('login', {
+            errors: {
+                email: {
+                    msg: 'No se encuentra registrado este correo electronico'
+                }
+            }
+        })
     },
+
+    cart: function (req,res){
+        let idProducto = req.params.id;
+		let objProducto;
+
+		for (let o of productos){
+			if (idProducto == o.id){
+				objProducto=o;
+				break;
+			}
+		}
+        res.render("cart", {producto: objProducto})
+    },
+
 
     register: (req,res) => {
         res.render('register');
@@ -117,6 +165,12 @@ const userController = {
 
     detalle: (req,res) => {
         res.render('products');
+    },
+
+    cerrarSesion: (req, res) => {
+        res.clearCookie('userEmail');
+        req.session.destroy();
+        return res.redirect('/');
     }
 
 }

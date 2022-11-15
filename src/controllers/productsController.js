@@ -1,8 +1,8 @@
 const path = require("path");
 const fs = require("fs");
+const { validationResult } = require("express-validator")
 
-/*const productsFilePath = path.join(__dirname, '../database/productsBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));*/
+
 const productoFilePath = path.join(__dirname, '../database/catalogoBase.json');
 const productos = JSON.parse(fs.readFileSync(productoFilePath, 'utf-8'));
 
@@ -29,6 +29,14 @@ const productsController = {
         res.render("product-create")
     },
 	store: function (req,res){
+		const result = validationResult(req);
+		
+		if (result.errors.length > 0 ){
+			return res.render("product-create", {errors: result.mapped(),
+			oldData: req.body
+			})
+
+ 		} else {
 		
 		idNuevo=0;
 		for (let obje of productos){
@@ -38,9 +46,7 @@ const productsController = {
 		}
 
 		idNuevo ++;
-
 		let nombreImagen = req.file.filename;
-
 		let productoNuevo = {
 			id: idNuevo,
 			name: req.body.name,
@@ -50,12 +56,10 @@ const productsController = {
 			category: req.body.category,
 			image: nombreImagen
 		}
-
 		productos.push(productoNuevo);
-
 		fs.writeFileSync(productoFilePath, JSON.stringify(productos,null,' '));
-
 		res.redirect("/");
+		}
 	},
 	/*Editar producto*/
     edit: function (req,res){
