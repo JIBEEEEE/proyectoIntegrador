@@ -140,7 +140,10 @@ margin: 0;
 
 
 /*Comienza MAIN*/
+.text-danger {
+    color: red;
 
+}
 .div-main {
     border: solid 1px #d1d1d1e7;
     margin-top: 30px;

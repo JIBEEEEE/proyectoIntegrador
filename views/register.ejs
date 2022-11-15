@@ -5,20 +5,84 @@
     <%-include ("./partials/header")%>
 
 <main class="main-login-registrarse">
+
     <div class="div-formularios-monitor">    
         <form action="/users/login/perfil" method="POST" class="formulario-registrarse">
             <h2>Registrate <br> ahora. <br></h2>
             <p>Completa los datos para registrarte</p>
-            <input class="boton-registrarse" type="text" placeholder="Nombre" name="name">
+                <input 
+                    type="text" 
+                    name="name"
+                    class="boton-registrarse is-invalid"
+                    value="<%=  locals.oldData ? oldData.name : null %>"
+                    placeholder="Nombre">
+                    <% if (locals.errors && errors.name ) { %>
+                        <div class="text-danger">
+                            <%= errors.name.msg  %> 
+                        </div> 
+                    <% } %> 
 
-            <input class="boton-registrarse" type="text" placeholder="Apellido" name="surname">
 
-            <input class="boton-registrarse" type="text" placeholder="Dirección" name="home">
 
-            <input class="boton-registrarse" type="email" placeholder="E-mail" name="email">
 
-            <input class="boton-registrarse" type="password" placeholder="Contraseña" required>
-            <input class="boton-registrarse" type="password" placeholder="Repita Contraseña" required>
+                <input 
+                    class="boton-registrarse" 
+                    type="text" 
+                    placeholder="Apellido" 
+                    name="surname"
+                    value="<%=  locals.oldData ? oldData.surname : null %>">
+                    <% if (locals.errors && errors.surname ) { %>
+                        <div class="text-danger">
+                            <%= errors.surname.msg  %> 
+                        </div> 
+                    <% } %> 
+
+
+
+
+            
+                <input 
+                    class="boton-registrarse" 
+                    type="text" 
+                    placeholder="Dirección" 
+                    name="home"
+                    value="<%=  locals.oldData ? oldData.home : null %>">
+                    <% if (locals.errors && errors.home ) { %>
+                        <div class="text-danger">
+                            <%= errors.home.msg  %> 
+                        </div> 
+                    <% } %> 
+
+
+
+
+                <input 
+                    class="boton-registrarse" 
+                    placeholder="E-mail" 
+                    name="email"
+                    value="<%=  locals.oldData ? oldData.email : null %>">
+                    <% if (locals.errors && errors.email ) { %>
+
+                        <div class="text-danger">
+                            <%= errors.email.msg  %> 
+                        </div> 
+
+                    <% } %> 
+
+
+
+
+                <input class="boton-registrarse" type="password" placeholder="Contraseña" name="password">
+                    <% if (locals.errors && errors.password ) { %>
+
+                        <div class="text-danger">
+                            <%= errors.password.msg  %> 
+                        </div> 
+                    <% } %>
+            
+            
+            <input class="boton-registrarse" type="password" placeholder="Repita Contraseña" name="confirm-password" required>
+
 
             <input class="boton-login-registrar" type="submit" value="REGISTRARME">
             

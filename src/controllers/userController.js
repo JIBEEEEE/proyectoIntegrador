@@ -4,6 +4,8 @@ const fs = require('fs');
 const usersFilePath = path.join(__dirname, '../database/userBase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
+const { validationResult } = require('express-validator');
+
 const userController = {
     login: (req,res) => {
         const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
@@ -37,19 +39,34 @@ const userController = {
 
     processRegister: (req,res) => {
 
-            let usuarioNuevo = {
-                id: (users[users.length-1].id)+1,
-                name: req.body.name,
-                surname: req.body.surname,
-                email: req.body.email,
-                home: req.body.home,
-                avatarUsuario: req.body.avatarUsuario
+        const resultValidation = validationResult(req);
+
+        if (resultValidation.errors.length > 0) {
+            
+            console.log(resultValidation.errors);
+
+            return res.render('register', {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+
+            });
+
+        } else {
+
+                let usuarioNuevo = {
+                    id: (users[users.length-1].id)+1,
+                    name: req.body.name,
+                    surname: req.body.surname,
+                    email: req.body.email,
+                    home: req.body.home,
+                    avatarUsuario: req.body.avatarUsuario
+                }
+                users.push(usuarioNuevo);
+
+                fs.writeFileSync(usersFilePath,JSON.stringify(users,null," "));
+
+                res.render('perfil', {usuario: usuarioNuevo}); 
             }
-            users.push(usuarioNuevo);
-
-            fs.writeFileSync(usersFilePath,JSON.stringify(users,null," "));
-
-            res.render('perfil', {usuario: usuarioNuevo}); 
     },
 
     edit: (req,res) => {

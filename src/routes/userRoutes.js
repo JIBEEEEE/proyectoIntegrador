@@ -6,6 +6,10 @@ const multer = require('multer');
 const path = require('path');
 
 
+
+
+const registerValidations = require('../../middlewares/registerMiddleware');
+
 const multerDiskStorage = multer.diskStorage ({
     destination: (req, file, cb) => 
     { 
@@ -27,10 +31,15 @@ router.post("/perfil", userController.profile);
 
 //CREAR USUARIO
 router.get('/login/register', userController.register);
-router.post('/login/perfil', userController.processRegister);
 
+//PROCESAR REGISTRO
+router.post('/login/perfil',registerValidations, userController.processRegister);
+
+//EDITAR USUARIO
 router.get('/login/register-edit/:id', userController.edit);
 router.put('/login/register-edit/:id', userController.update);
+
+//ELIMINAR USUARIO
 router.delete('/login/delete/:id', userController.delete);
 
 //DETALLE PRODUCTO USERS
