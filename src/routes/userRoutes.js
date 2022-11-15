@@ -31,6 +31,6 @@ router.get('/cerrarsesion', userController.cerrarSesion)
 //DETALLE PRODUCTO USERS
 router.get("/", userController.detalle);
 
-router.get('/carrito', userController.cart)
+router.get('/carrito/:id', userController.cart)
 
 module.exports = router;

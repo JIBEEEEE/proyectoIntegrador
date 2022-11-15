@@ -51,9 +51,16 @@ const userController = {
     },
 
     cart: (req,res) => {
-        res.render('cart', {producto: productos});
+        let idProducto = req.params.id;
+		let objProducto;
 
-        //res.sendFile(path.resolve (__dirname, "../views/cart.html"))
+		for (let o of productos){
+			if (idProducto == o.id){
+				objProducto=o;
+				break;
+			}
+		}
+        res.render("cart", {producto: objProducto})
     },
 
     register: (req,res) => {
