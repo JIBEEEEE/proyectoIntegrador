@@ -3,36 +3,18 @@ const fs = require('fs');
 
 const usersFilePath = path.join(__dirname, '../database/userBase.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-const productoFilePath = path.join(__dirname, '../database/catalogoBase.json');
-const productos = JSON.parse(fs.readFileSync(productoFilePath, 'utf-8'));
 
 const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator');
 
-const User = require('../../models/User');
-
-const { validationResult } = require('express-validator');
+const User = require('../../models/User')
+//const { traceDeprecation } = require('process');
 
 const userController = {
     login: (req,res) => {
         //const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-        res.render('login')
+        res.render('login');
         //res.sendFile(path.resolve (__dirname, "../views/login.html"))
-    },
-    profile: (req,res) => {
-
-        let mailUsuario = req.body.email;
-        console.log(req.body);
-		let usuarioIngresado;
-
-		for (let usuario of users){
-			if (mailUsuario == usuario.email){
-				usuarioIngresado = usuario;
-				break;
-			}
-		}
-
-        res.render('perfil', {usuario: usuarioIngresado});
     },
 
     loginProcess: (req, res) => {
@@ -67,54 +49,48 @@ const userController = {
         })
     },
 
-    cart: function (req,res){
-        let idProducto = req.params.id;
-		let objProducto;
-
-		for (let o of productos){
-			if (idProducto == o.id){
-				objProducto=o;
-				break;
-			}
-		}
-        res.render("cart", {producto: objProducto})
+    cart: (req,res) => {
+        res.render('cart')
+        //res.sendFile(path.resolve (__dirname, "../views/cart.html"))
     },
-
 
     register: (req,res) => {
         res.render('register');
     },
 
-    processRegister: (req,res) => {
+    store: (req,res) => {
+
 
         const resultValidation = validationResult(req);
-
+        
         if (resultValidation.errors.length > 0) {
-            
-            console.log(resultValidation.errors);
-
             return res.render('register', {
                 errors: resultValidation.mapped(),
                 oldData: req.body
-
             });
+        }
 
-        } else {
+        let userInDB = User.findByField('email', req.body.email);
 
-                let usuarioNuevo = {
-                    id: (users[users.length-1].id)+1,
-                    name: req.body.name,
-                    surname: req.body.surname,
-                    email: req.body.email,
-                    home: req.body.home,
-                    avatarUsuario: req.body.avatarUsuario
-                }
-                users.push(usuarioNuevo);
+        if (userInDB) {
+            return res.render('register', {
+                errors: {
+                    email: {
+                        msg: 'Este email ya esta registrado'
+                    }
+                },
+                oldData: req.body
+            });
+        }
+        //console.log(req.body)
+        let userToCreate = {
+            ...req.body,
+            password: bcryptjs.hashSync(req.body.password, 10)
+        }
+        
+        let userCreated = User.create(userToCreate);
 
-                fs.writeFileSync(usersFilePath,JSON.stringify(users,null," "));
-
-                res.render('perfil', {usuario: usuarioNuevo}); 
-            }
+        return res.redirect('/users/login');
     },
 
     edit: (req,res) => {
@@ -166,6 +142,12 @@ const userController = {
     detalle: (req,res) => {
         res.render('products');
     },
+
+    profile: (req, res) => {
+		return res.render('userProfile', {
+			user: req.session.userLogged
+		});
+	},
 
     cerrarSesion: (req, res) => {
         res.clearCookie('userEmail');

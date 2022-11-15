@@ -1,29 +1,9 @@
-const { body } = require('express-validator');  
+const { body } = require('express-validator');
 
-const registerValidations = [
-    body('name', 'Debes completar tu nombre')
-        .notEmpty(),
-
-    body('surname', 'Debes completar con un apellido')
-        .notEmpty(),
-
-    body('home','Debes completar una dirección')
-        .notEmpty(),
-
-    body('email')
-        .notEmpty().withMessage('Debes completar un email')
-        .isEmail().withMessage('Debes escribir un formato de correo válido'),
-
-    body('password', 'Debes completar una contraseña de mínimo 5 caracteres')
-        .trim()
-        .isLength({ min: 4 }),
-        
-    body('confirm-password','Las contraseñas no coinciden')
-        .trim()
-        .isLength({ min: 4 })
-        
-        
-];
-
-
-module.exports = registerValidations;
+module.exports = [
+	body('name').notEmpty().withMessage('Tienes que escribir un nombre'),
+    body('surname').notEmpty().withMessage('Tienes que escribir un apellido'),
+    body('home').notEmpty().withMessage('Tienes que escribir tu direccion'),
+	body('email').notEmpty().withMessage('Tienes que escribir un correo electrónico').bail().isEmail().withMessage('Debes escribir un formato de correo válido'),
+	body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
+]
