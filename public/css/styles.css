@@ -30,6 +30,7 @@ margin: 0;
     width: 100%;
     top: 0%;
     z-index: 10;
+    transition: .8s;
 }
 
 .fa-address-card,
@@ -122,7 +123,7 @@ margin: 0;
         font-family: 'Oswald', sans-serif;
     }
     .borde-bajo{
-        font-weight: 400
+        font-weight: 400;
     }
 
 
@@ -493,10 +494,10 @@ button:hover{
     margin-left: 10px;
 }
 
-.formulario-login h2,
+/*.formulario-login h2,
 .formulario-registrarse h2 {
     margin-right: 105px;
-}
+}*/
 
 .formulario-registrarse p {
     margin-right: 23px;
@@ -522,7 +523,8 @@ button:hover{
 
 .cartas-beneficios {
     text-align: center;
-    padding: 70px;
+    padding: 20px 40px;
+    background-color: rgb(233, 233, 233);
 }
 
 .cartas-beneficios i {
@@ -714,7 +716,8 @@ p#precio-discount {
     color: rgb(25, 0, 106);
 }
 
-.texto-rojo {
+.texto-rojo,
+.text-validation {
     color: salmon;
     margin-bottom: 35px;
 }
@@ -1751,7 +1754,6 @@ font-size: 15px;
     .cartas-beneficios {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 50px;
     }
     /*FOOTER -----------------*/
 
