@@ -5,5 +5,17 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&family=Oswald:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4fea1b8ebf.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 70){
+                    $(".primera-linea").css({"opacity" : "0.4"})
+                } else {
+                    $(".primera-linea").css({"opacity" : "1"})
+                }
+            })
+        })
+    </script>
     <title>Digital Deco House</title>
 </head>

@@ -8,7 +8,7 @@
 
     <div class="div-formularios-monitor">    
         <form action="/users/login/register" method="POST" class="formulario-registrarse">
-            <h2>Registrate <br> ahora. <br></h2>
+            <h2>Registrate ahora.</h2>
             <p>Completa los datos para registrarte</p>
                 <input type="text" name="name" class="boton-registrarse is-invalid" value="<%=  locals.oldData ? oldData.name : null %>"placeholder="Nombre">
                     <% if (locals.errors && errors.name ) { %>
