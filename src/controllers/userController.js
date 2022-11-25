@@ -1,15 +1,16 @@
 const path = require('path');
 const fs = require('fs');
 
-const usersFilePath = path.join(__dirname, '../database/userBase.json');
-const productoFilePath = path.join(__dirname, '../database/catalogoBase.json');
+const usersFilePath = path.join(__dirname, '../Json/userBase.json');
+const productoFilePath = path.join(__dirname, '../Json/catalogoBase.json');
 const productos = JSON.parse(fs.readFileSync(productoFilePath, 'utf-8'));
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator');
 
-const User = require('../../models/User')
+const User = require('../../modelos/User')
+const db = require('../database/models');
 
 const userController = {
     login: (req,res) => {

@@ -3,7 +3,7 @@ const fs = require("fs");
 
 /*const productsFilePath = path.join(__dirname, '../database/productsBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));*/
-const productoFilePath = path.join(__dirname, '../database/catalogoBase.json');
+const productoFilePath = path.join(__dirname, '../Json/catalogoBase.json');
 const productos = JSON.parse(fs.readFileSync(productoFilePath, 'utf-8'));
 
 const mainController = {

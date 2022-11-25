@@ -3,7 +3,7 @@ const fs = require("fs");
 const { validationResult } = require("express-validator")
 
 
-const productoFilePath = path.join(__dirname, '../database/catalogoBase.json');
+const productoFilePath = path.join(__dirname, '../Json/catalogoBase.json');
 const productos = JSON.parse(fs.readFileSync(productoFilePath, 'utf-8'));
 
 const productsController = {
