@@ -9,8 +9,7 @@ function integrador(sequelize, Datatypes){
       email: {type: Datatypes.STRING(100)},
       clave: {type: Datatypes.STRING(100)},
       imagen: {type: Datatypes.STRING(100)},
-      admin: {type: Datatypes.BOOLEAN},
-      super_admin: {type: Datatypes.BOOLEAN}
+      rol: {type: Datatypes.ENUM('comun','administrador','superadministrador')}
     }
     
     let config = {camelCase: false, timestamps: false, tableName: "usuario"}; 
