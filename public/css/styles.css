@@ -432,7 +432,7 @@ button:hover{
 }
 
 .formulario-registrarse {
-    background-color: rgb(233, 233, 233);
+    /*background-color: rgb(233, 233, 233);*/
     margin-top: 29px;
 }
 .textarea-create {
@@ -458,12 +458,6 @@ button:hover{
     width: 50%;
     margin: 30px;
     padding: 17px 0px;
-
-    
-}
-
-.boton-registrarse {
-    background-color: rgb(233, 233, 233);
 }
 
 .formulario-login a {
